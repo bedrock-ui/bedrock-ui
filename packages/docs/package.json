@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "npm run rm-docs && next build && next export && node ./scripts/build.js",
-    "rm-docs": "rimraf docs",
+    "rm-docs": "rimraf ../../docs",
     "start": "next start",
     "lint": "next lint"
   },
