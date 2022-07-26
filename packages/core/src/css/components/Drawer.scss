@@ -1,0 +1,29 @@
+.drawer {
+  --drawer-background-color: var(--color-paper);
+  --drawer-box-shadow: var(--shadow-1);
+  --drawer-width: 320px;
+
+  background-color: var(--drawer-background-color);
+  bottom: 0;
+  box-shadow: var(--drawer-box-shadow);
+  display: none;
+  height: 100vh;
+  max-height: 100vh;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  width: var(--drawer-width);
+
+  &.open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &.left {
+    left: 0;
+  }
+
+  &.right {
+    right: 0;
+  }
+}

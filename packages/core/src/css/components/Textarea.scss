@@ -1,0 +1,41 @@
+.textarea {
+  --textarea-border-color: var(--color-neutral-400);
+  --textarea-border-color-error: var(--color-error-600);
+  --textarea-border-color-focus: var(--color-primary-600);
+  --textarea-border-color-hover: var(--color-neutral-600);
+  --textarea-border-color-success: var(--color-success-600);
+
+  --textarea-color-success: var(--color-success-600);
+
+  --textarea-border-radius: calc(var(--spacing) * 1px);
+
+  border-color: var(--textarea-border-color);
+  border-radius: var(--textarea-border-radius);
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 22px;
+  padding-top: calc(var(--spacing) * 2px);
+  padding-bottom: calc(var(--spacing) * 2px);
+  padding-left: calc(var(--spacing) * 4px);
+  padding-right: calc(var(--spacing) * 4px);
+  outline: none;
+  width: 100%;
+
+  &:focus {
+    border-color: var(--textarea-border-color-focus);
+  }
+
+  &:hover:not(:focus):not(.error):not(.success) {
+    border-color: var(--textarea-border-color-hover);
+  }
+
+  &.error {
+    border-color: var(--textarea-border-color-error);
+  }
+
+  &.success {
+    border-color: var(--textarea-border-color-success);
+  }
+}

@@ -1,0 +1,31 @@
+@for $i from 1 through 16 {
+  .p-#{$i} {
+    padding: calc(#{$i} * var(--spacing) * 1px);
+  }
+
+  .px-#{$i} {
+    padding-left: calc(#{$i} * var(--spacing) * 1px);
+    padding-right: calc(#{$i} * var(--spacing) * 1px);
+  }
+
+  .py-#{$i} {
+    padding-top: calc(#{$i} * var(--spacing) * 1px);
+    padding-bottom: calc(#{$i} * var(--spacing) * 1px);
+  }
+
+  .pt-#{$i} {
+    padding-top: calc(#{$i} * var(--spacing) * 1px);
+  }
+
+  .pb-#{$i} {
+    padding-bottom: calc(#{$i} * var(--spacing) * 1px);
+  }
+
+  .pl-#{$i} {
+    padding-left: calc(#{$i} * var(--spacing) * 1px);
+  }
+
+  .pr-#{$i} {
+    padding-right: calc(#{$i} * var(--spacing) * 1px);
+  }
+}

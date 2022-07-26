@@ -1,0 +1,20 @@
+.text {
+  --text-color: var(--color-black);
+  --text-color-primary: var(--color-primary-600);
+
+  --text-font-size: calc(var(--spacing) * 4px);
+  --text-line-height: calc(var(--spacing) * 6px);
+
+  color: var(--text-color);
+  display: inline-flex;
+  font-size: var(--text-font-size);
+  line-height: var(--text-line-height);
+
+  &.primary {
+    color: var(--text-color-primary);
+  }
+
+  &.white {
+    color: var(--color-white);
+  }
+}

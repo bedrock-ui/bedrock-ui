@@ -1,0 +1,84 @@
+.radio-container {
+  --radio-border-color: var(--color-neutral-400);
+  --radio-border-color-checked: var(--color-primary-600);
+  --radio-border-color-error: var(--color-error-600);
+  --radio-border-color-focus: var(--color-primary-600);
+  --radio-border-color-hover: var(--color-primary-600);
+  --radio-border-color-success: var(--color-success-600);
+
+  --radio-border-radius: calc(var(--spacing) * 4px);
+  --radio-border-size: 1px;
+
+  --radio-box-shadow-focus: 0px 0px 0px 4px var(--color-primary-50);
+  --radio-box-shadow-focus-error: 0px 0px 0px 4px var(--color-error-50);
+  --radio-box-shadow-focus-success: 0px 0px 0px 4px var(--color-success-50);
+
+  --radio-size: 20px;
+
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(var(--radio-size) + var(--spacing) * 1px);
+
+  .radio {
+    border-color: var(--radio-border-color);
+    border-radius: var(--radio-border-radius);
+    border-style: solid;
+    border-width: var(--radio-border-size);
+    box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    height: var(--radio-size);
+    width: var(--radio-size);
+
+    &:focus {
+      box-shadow: var(--radio-box-shadow-focus);
+      border-color: var(--radio-border-color-focus);
+      border-width: 1px;
+      outline: none;
+    }
+
+    &:hover:not(:focus):not(.error):not(.success) {
+      border-color: var(--radio-border-color-hover);
+    }
+
+    &.checked {
+      border-color: var(--radio-border-color-checked);
+      border-width: calc(calc(var(--radio-size) / 4) + 2px);
+
+      &.error {
+        border-color: var(--radio-border-color-error);
+        border-width: calc(calc(var(--radio-size) / 4) + 2px);
+      }
+
+      &.success {
+        border-color: var(--radio-border-color-success);
+        border-width: calc(calc(var(--radio-size) / 4) + 2px);
+      }
+    }
+
+    &.error {
+      border-color: var(--radio-border-color-error);
+      border-width: 1px;
+
+      &:focus {
+        box-shadow: var(--radio-box-shadow-focus-error);
+      }
+    }
+
+    &.success {
+      border-color: var(--radio-border-color-success);
+      border-width: 1px;
+
+      &:focus {
+        box-shadow: var(--radio-box-shadow-focus-success);
+      }
+    }
+  }
+}
+
+.radio-input {
+  appearance: none;
+  margin: 0;
+}

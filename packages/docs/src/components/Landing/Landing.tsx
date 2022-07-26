@@ -1,7 +1,6 @@
 import { useRouter } from 'next/router';
-import styles from './Landing.module.css';
-
 import { Button, Flex, Heading, Text } from '@bedrock-ui/core';
+import styles from './Landing.module.css';
 
 function Landing() {
   const router = useRouter();

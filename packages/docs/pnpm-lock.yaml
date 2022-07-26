@@ -5,6 +5,7 @@ specifiers:
   '@types/node': ^18.6.1
   '@types/react': ^18.0.15
   '@types/react-dom': ^18.0.6
+  clsx: ^1.2.1
   eslint: ^8.20.0
   eslint-config-next: ^12.2.3
   mv: ^2.1.1
@@ -18,6 +19,7 @@ specifiers:
 
 dependencies:
   '@bedrock-ui/core': 0.0.4_react@18.2.0
+  clsx: 1.2.1
   next: 12.2.3_react-dom@18.2.0+react@18.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
