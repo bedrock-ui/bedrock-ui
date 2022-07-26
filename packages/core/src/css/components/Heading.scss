@@ -1,0 +1,43 @@
+.heading {
+  --heading-color: var(--color-black);
+  --heading-font-size-multiplier: 10;
+  --heading-font-weight: 500;
+
+  color: var(--heading-color);
+  font-weight: var(--heading-font-weight);
+  margin: 0;
+}
+
+h1.heading {
+  font-size: calc(var(--heading-font-size-multiplier) * var(--spacing) * 1px);
+}
+
+h2.heading {
+  font-size: calc(
+    calc(var(--heading-font-size-multiplier) - 1) * var(--spacing) * 1px
+  );
+}
+
+h3.heading {
+  font-size: calc(
+    calc(var(--heading-font-size-multiplier) - 2) * var(--spacing) * 1px
+  );
+}
+
+h4.heading {
+  font-size: calc(
+    calc(var(--heading-font-size-multiplier) - 3) * var(--spacing) * 1px
+  );
+}
+
+h5.heading {
+  font-size: calc(
+    calc(var(--heading-font-size-multiplier) - 4) * var(--spacing) * 1px
+  );
+}
+
+h6.heading {
+  font-size: calc(
+    calc(var(--heading-font-size-multiplier) - 5) * var(--spacing) * 1px
+  );
+}

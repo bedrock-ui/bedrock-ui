@@ -1,0 +1,10 @@
+.highlight {
+  --highlight-background-color: var(--color-warning-200);
+
+  display: inline-flex;
+  white-space: pre-wrap;
+
+  mark {
+    background-color: var(--highlight-background-color);
+  }
+}

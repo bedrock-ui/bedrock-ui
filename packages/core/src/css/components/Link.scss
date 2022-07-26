@@ -1,0 +1,15 @@
+.link {
+  --link-color: var(--color-primary-600);
+  --link-color-hover: var(--color-primary-600);
+
+  color: var(--link-color);
+  cursor: pointer;
+  display: inline;
+  font-size: 16px;
+  line-height: 24px;
+
+  &:hover {
+    color: var(--link-color-hover);
+    text-decoration: underline;
+  }
+}

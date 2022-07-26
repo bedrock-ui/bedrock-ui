@@ -1,0 +1,16 @@
+.divider {
+  --divider-color: var(--color-neutral-400);
+  --divider-size: 1px;
+
+  border: 0;
+  border-bottom: var(--divider-size) solid var(--divider-color);
+  width: 100%;
+
+  &.dashed {
+    border-style: dashed;
+  }
+
+  &.dotted {
+    border-style: dotted;
+  }
+}

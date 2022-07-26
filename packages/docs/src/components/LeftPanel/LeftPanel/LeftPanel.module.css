@@ -1,0 +1,15 @@
+.leftPanel {
+  background-color: #fff;
+  box-shadow: var(--shadow-1);
+  box-sizing: border-box;
+  height: 100vh;
+  overflow-y: scroll;
+  padding: 16px;
+  position: fixed;
+  width: 300px;
+}
+
+.leftPanelDivider {
+  margin-top: calc(var(--spacing) * 4px);
+  margin-bottom: calc(var(--spacing) * 4px);
+}

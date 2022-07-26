@@ -1,0 +1,17 @@
+.grid {
+  --grid-gap: 16px;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gap);
+}
+
+.grid-item {
+  display: block;
+}
+
+@for $i from 1 through 12 {
+  .grid-item.col-#{$i} {
+    grid-column: span #{$i} / auto;
+  }
+}
