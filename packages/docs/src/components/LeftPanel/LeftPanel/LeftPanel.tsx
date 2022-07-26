@@ -1,4 +1,4 @@
-import { Divider, Flex } from '@bedrock-ui/core';
+import { Flex } from '@bedrock-ui/core';
 import { Link } from '../Link';
 
 import styles from './LeftPanel.module.css';
@@ -9,7 +9,7 @@ function LeftPanel() {
       <Link href="/getting-started/overview">Getting Started</Link>
       <Link href="/getting-started/install">Installation</Link>
 
-      <Divider className={styles.leftPanelDivider} />
+      <div className={styles.leftPanelDivider} />
 
       <Link href="/components/alert">Alert</Link>
       <Link href="/components/button">Button</Link>

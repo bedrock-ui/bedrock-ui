@@ -1,4 +1,4 @@
-import '../lib/css/bedrock-ui.css';
+import '../css/bedrock-ui.css';
 
 export const decorators = [
   (Story) => (
