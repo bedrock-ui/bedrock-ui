@@ -1,0 +1,22 @@
+.page {
+  padding-top: 220px;
+}
+
+h1.heading {
+  font-size: 120px;
+}
+
+.subheading {
+  font-size: 34px;
+  line-height: 36px;
+  margin-top: calc(var(--spacing) * 4px);
+}
+
+.actions {
+  margin-top: calc(var(--spacing) * 16px);
+}
+
+.actions button {
+  margin-left: calc(var(--spacing) * 1px);
+  margin-right: calc(var(--spacing) * 1px);
+}
