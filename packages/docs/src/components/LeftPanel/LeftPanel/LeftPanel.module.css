@@ -1,12 +1,13 @@
 .leftPanel {
-  background-color: #fff;
-  box-shadow: var(--shadow-1);
+  background-color: var(--color-paper);
+  border: 1px solid;
+  border-color: var(--color-neutral-200);
   box-sizing: border-box;
   height: 100vh;
   overflow-y: scroll;
   padding: 16px;
   position: fixed;
-  width: 300px;
+  width: 260px;
 }
 
 .leftPanelDivider {
