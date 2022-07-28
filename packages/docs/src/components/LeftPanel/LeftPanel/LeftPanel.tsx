@@ -6,10 +6,12 @@ import styles from './LeftPanel.module.css';
 function LeftPanel() {
   return (
     <Flex className={styles.leftPanel} flexDirection="column">
+      <p>Getting Started</p>
+
       <Link href="/getting-started/overview">Getting Started</Link>
       <Link href="/getting-started/install">Installation</Link>
 
-      <div className={styles.leftPanelDivider} />
+      <p>Core</p>
 
       <Link href="/components/alert">Alert</Link>
       <Link href="/components/button">Button</Link>
@@ -30,6 +32,10 @@ function LeftPanel() {
       <Link href="/components/text">Text</Link>
       <Link href="/components/textarea">Textarea</Link>
       <Link href="/components/textinput">TextInput</Link>
+
+      <p>Breakpoints</p>
+
+      <Link href="/breakpoints">Usage</Link>
     </Flex>
   );
 }

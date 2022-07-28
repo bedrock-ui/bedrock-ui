@@ -2,21 +2,19 @@ import { CodeHighlight } from 'components/CodeHighlight';
 import { ComponentDocumentation } from 'components/ComponentDocumentation';
 
 const CODE = `
-import { Alert } from '@bedrock-ui/core';
+import { Card } from '@bedrock-ui/core';
 
 function Example() {
-  return (
-    <Alert severity="error">Example alert</Alert>
-  );
+  return null;
 }
 `.trim();
 
-function ComponentsAlert() {
+function ComponentsCard() {
   return (
-    <ComponentDocumentation name="Alert">
+    <ComponentDocumentation name="Card">
       <CodeHighlight>{CODE}</CodeHighlight>
     </ComponentDocumentation>
   );
 }
 
-export default ComponentsAlert;
+export default ComponentsCard;

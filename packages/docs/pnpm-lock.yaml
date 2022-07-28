@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@bedrock-ui/breakpoints': ^0.0.3
   '@bedrock-ui/core': ^0.0.4
   '@types/node': ^18.6.1
   '@types/react': ^18.0.15
@@ -20,6 +21,7 @@ specifiers:
   typescript: ^4.7.4
 
 dependencies:
+  '@bedrock-ui/breakpoints': 0.0.3_react@18.2.0
   '@bedrock-ui/core': 0.0.4_react@18.2.0
   clsx: 1.2.1
   next: 12.2.3_react-dom@18.2.0+react@18.2.0
@@ -55,6 +57,14 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.9
+
+  /@bedrock-ui/breakpoints/0.0.3_react@18.2.0:
+    resolution: {integrity: sha512-3Jzg+tPZsXIyz6ijSr5lRCNFxYOqaVv0dKumTYdtiL7gQNCbRT0zJMARlAh9GMeOoPr8DFrLdGYURvsh1gRfvQ==}
+    peerDependencies:
+      react: ^17 || ^18
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /@bedrock-ui/core/0.0.4_react@18.2.0:
     resolution: {integrity: sha512-mXhvwl2+1JlJ8gGxv/DnN9G0JCPJUAU/MvNShcJbxpY+aR+qARehWMYDevwrLQCDoHOyJIcXox5qC+Tyve8cuw==}
