@@ -1,5 +1,4 @@
-import type { Breakpoints } from 'types/breakpoints';
-import { BreakpointMediaQuery } from 'types/media';
+import type { BreakpointMediaQuery, Breakpoints } from 'types/breakpoints';
 
 function getMediaQueryLists(
   breakpoints: Breakpoints
