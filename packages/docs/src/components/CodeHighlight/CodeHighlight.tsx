@@ -1,5 +1,5 @@
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { tomorrowNight } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
+import { xcode } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 
 import type { Props } from './CodeHighlight.types';
 
@@ -9,7 +9,7 @@ const CUSTOM_STYLE = {
 
 function CodeHighlight({ children }: Props) {
   return (
-    <SyntaxHighlighter customStyle={CUSTOM_STYLE} language="typescript" style={tomorrowNight}>
+    <SyntaxHighlighter customStyle={CUSTOM_STYLE} language="typescript" style={xcode}>
       {children}
     </SyntaxHighlighter>
   );
