@@ -11,21 +11,16 @@ specifiers:
   '@storybook/react': ^6.5.9
   '@testing-library/react': ^13.3.0
   '@types/jest': ^28.1.6
-  '@types/lodash': ^4.14.182
   '@types/react': ^18.0.15
   babel-loader: ^8.2.5
   jest: ^28.1.3
   jest-environment-jsdom: ^28.1.3
-  lodash: ^4.17.21
   prettier: ^2.7.1
   react: ^18.2.0
   react-dom: ^18.2.0
   ts-jest: ^28.0.7
   tsc-alias: ^1.7.0
   typescript: ^4.7.4
-
-dependencies:
-  lodash: 4.17.21
 
 devDependencies:
   '@babel/core': 7.18.9
@@ -38,7 +33,6 @@ devDependencies:
   '@storybook/react': 6.5.9_21f1c2eeaf201167a0f9fda1904bf614
   '@testing-library/react': 13.3.0_react-dom@18.2.0+react@18.2.0
   '@types/jest': 28.1.6
-  '@types/lodash': 4.14.182
   '@types/react': 18.0.15
   babel-loader: 8.2.5_@babel+core@7.18.9
   jest: 28.1.3
@@ -8318,6 +8312,7 @@ packages:
 
   /lodash/4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
+    dev: true
 
   /loose-envify/1.4.0:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}

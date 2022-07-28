@@ -1,11 +1,19 @@
-import mapValues from 'lodash/mapValues';
-
 import type { BreakpointMatches, Breakpoints } from 'types/breakpoints';
 
 interface GenerateHandlerOptions {
   breakpointKey: string;
   breakpoints: Breakpoints;
   setMatches: (matches: BreakpointMatches) => void;
+}
+
+function mapValues(breakpoints: Breakpoints): BreakpointMatches {
+  const mappedValues: BreakpointMatches = {};
+
+  Object.keys(breakpoints).forEach((breakpoint) => {
+    mappedValues[breakpoint] = false;
+  });
+
+  return mappedValues;
 }
 
 function generateHandler({
@@ -15,12 +23,10 @@ function generateHandler({
 }: GenerateHandlerOptions) {
   return function handleChange(event: MediaQueryListEvent) {
     if (event.matches) {
-      setMatches(
-        mapValues({
-          ...mapValues(breakpoints, () => false),
-          [breakpointKey]: true,
-        })
-      );
+      setMatches({
+        ...mapValues(breakpoints),
+        [breakpointKey]: true,
+      });
     }
   };
 }
