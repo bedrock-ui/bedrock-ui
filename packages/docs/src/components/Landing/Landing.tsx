@@ -8,14 +8,16 @@ function Landing() {
   return (
     <Flex className={styles.page} flexDirection="column">
       <Flex justifyContent="center">
-        <Heading className={styles.heading}>Bedrock UI</Heading>
+        <Heading className={styles.heading} level={1}>
+          Bedrock UI
+        </Heading>
       </Flex>
 
       <Flex justifyContent="center">
         <Text className={styles.subheading}>A bedrock for building design systems</Text>
       </Flex>
 
-      <Flex className={styles.actions} justifyContent="center">
+      <Flex className={`${styles.actions} mb-16`} justifyContent="center">
         <Button onClick={() => router.push('/getting-started/overview')}>Get Started</Button>
         <Button onClick={() => router.push('/components/alert')} variant="outlined">
           Browse Components

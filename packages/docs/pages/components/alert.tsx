@@ -86,7 +86,7 @@ function ComponentsAlert() {
 
       <Grid className="mb-16">
         <Grid.Col span={12}>
-          <Heading level={3}>Filled Variant</Heading>
+          <Heading level={3}>Filled</Heading>
         </Grid.Col>
 
         <Grid.Col span={12}>
@@ -132,7 +132,7 @@ function ComponentsAlert() {
 
       <Grid className="mb-16">
         <Grid.Col span={12}>
-          <Heading level={3}>Outlined Variant</Heading>
+          <Heading level={3}>Outlined</Heading>
         </Grid.Col>
 
         <Grid.Col span={12}>

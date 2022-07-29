@@ -37,6 +37,10 @@ function LeftPanel() {
 
       <Link href="/breakpoints/install">Install</Link>
 
+      <p>Icons</p>
+
+      <Link href="/icons/libraries">Icon Libraries</Link>
+
       <p>Variables</p>
 
       <Link href="/variables/root">Root Variables</Link>
