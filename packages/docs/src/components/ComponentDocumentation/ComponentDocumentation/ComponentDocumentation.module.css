@@ -3,6 +3,6 @@
   margin-right: auto;
   padding-top: calc(var(--spacing) * 8px);
   padding-bottom: calc(var(--spacing) * 8px);
-  max-width: 1200px;
+  max-width: 1024px;
   width: 100%;
 }
