@@ -1,16 +1,26 @@
 import '@bedrock-ui/core/css/bedrock-ui.css';
 import 'assets/css/app.css';
 
+import dynamic from 'next/dynamic';
+import { BreakpointsProvider } from '@bedrock-ui/breakpoints';
 import { Layout } from 'components/Layout';
 
 import type { AppProps } from 'next/app';
 
-function MyApp({ Component, pageProps }: AppProps) {
+const BREAKPOINTS = {
+  mobile: 0,
+  tablet: 600,
+  desktop: 1024,
+};
+
+function App({ Component, pageProps }: AppProps) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <BreakpointsProvider breakpoints={BREAKPOINTS}>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </BreakpointsProvider>
   );
 }
 
-export default MyApp;
+export default App;

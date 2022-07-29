@@ -2,9 +2,13 @@ const isProduction = process.env.NODE_ENV === 'production';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  assetPrefix: isProduction ? '/bedrock-ui/' : '',
-  basePath: isProduction ? '/bedrock-ui/' : '',
-  reactStrictMode: true,
+  ...(isProduction
+    ? {
+        assetPrefix: '/bedrock-ui/',
+        basePath: '/bedrock-ui/',
+      }
+    : {}),
+  reactStrictMode: false,
   swcMinify: true,
 };
 
