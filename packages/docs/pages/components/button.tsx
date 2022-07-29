@@ -3,10 +3,6 @@ import { ComponentDocumentation } from 'components/ComponentDocumentation';
 
 const CODE = `
 import { Button } from '@bedrock-ui/core';
-
-function Example() {
-  return null;
-}
 `.trim();
 
 function ComponentsButton() {

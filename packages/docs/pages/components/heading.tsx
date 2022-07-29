@@ -3,10 +3,6 @@ import { ComponentDocumentation } from 'components/ComponentDocumentation';
 
 const CODE = `
 import { Heading } from '@bedrock-ui/core';
-
-function Example() {
-  return null;
-}
 `.trim();
 
 function ComponentsHeading() {
