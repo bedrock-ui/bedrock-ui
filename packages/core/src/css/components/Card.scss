@@ -6,4 +6,8 @@
   border-radius: calc(var(--spacing) * 1px);
   box-shadow: var(--card-box-shadow);
   padding: calc(var(--spacing) * 5px);
+
+  &.no-padding {
+    padding: 0;
+  }
 }

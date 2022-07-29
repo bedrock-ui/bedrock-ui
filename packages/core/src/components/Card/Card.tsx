@@ -3,8 +3,8 @@ import clsx from 'clsx';
 
 import type { Props } from './Card.types';
 
-function Card({ className, ...props }: Props) {
-  return <div {...props} className={clsx('card', className)} />;
+function Card({ className, noPadding = false, ...props }: Props) {
+  return <div {...props} className={clsx('card', className, { ['no-padding']: noPadding })} />;
 }
 
 export default Card;
