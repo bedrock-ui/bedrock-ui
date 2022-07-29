@@ -3,10 +3,6 @@ import { ComponentDocumentation } from 'components/ComponentDocumentation';
 
 const CODE = `
 import { TextInput } from '@bedrock-ui/core';
-
-function Example() {
-  return null;
-}
 `.trim();
 
 function ComponentsTextInput() {

@@ -3,10 +3,6 @@ import { ComponentDocumentation } from 'components/ComponentDocumentation';
 
 const CODE = `
 import { Divider } from '@bedrock-ui/core';
-
-function Example() {
-  return null;
-}
 `.trim();
 
 function ComponentsDivider() {
