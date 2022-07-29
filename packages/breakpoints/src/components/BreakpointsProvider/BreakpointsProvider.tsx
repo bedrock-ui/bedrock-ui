@@ -24,18 +24,22 @@ function BreakpointsProvider({
 
   useEffect(() => {
     mediaQueryLists.forEach(({ breakpointKey, mediaQuery }) => {
-      mediaQuery.addEventListener(
-        'change',
-        generateHandler({ breakpointKey, breakpoints, setMatches })
-      );
-    });
-
-    return () => {
-      mediaQueryLists.forEach(({ breakpointKey, mediaQuery }) => {
+      if (mediaQuery) {
         mediaQuery.addEventListener(
           'change',
           generateHandler({ breakpointKey, breakpoints, setMatches })
         );
+      }
+    });
+
+    return () => {
+      mediaQueryLists.forEach(({ breakpointKey, mediaQuery }) => {
+        if (mediaQuery) {
+          mediaQuery.addEventListener(
+            'change',
+            generateHandler({ breakpointKey, breakpoints, setMatches })
+          );
+        }
       });
     };
   }, [breakpoints, mediaQueryLists, setMatches]);

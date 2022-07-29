@@ -8,7 +8,7 @@ function getMatches(
 ): BreakpointMatches {
   return mediaQueryLists.reduce<BreakpointMatches>(
     (matches, { breakpointKey, mediaQuery }) => {
-      matches[breakpointKey] = mediaQuery.matches;
+      matches[breakpointKey] = mediaQuery?.matches || false;
 
       return matches;
     },

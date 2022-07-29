@@ -11,7 +11,7 @@ function getMediaQueryLists(
     if (index === breakpointKeys.length - 1) {
       return {
         breakpointKey: key,
-        mediaQuery: window.matchMedia(`(min-width: ${minWidth}px)`),
+        mediaQuery: mediaQuery(`(min-width: ${minWidth}px)`),
       };
     }
 
@@ -19,11 +19,19 @@ function getMediaQueryLists(
 
     return {
       breakpointKey: key,
-      mediaQuery: window.matchMedia(
+      mediaQuery: mediaQuery(
         `(min-width: ${minWidth}px) and (max-width: ${maxWidth}px)`
       ),
     };
   });
+}
+
+function mediaQuery(query: string): MediaQueryList | undefined {
+  if (typeof window !== 'undefined' && 'matchMedia' in window) {
+    return window.matchMedia(query);
+  }
+
+  return undefined;
 }
 
 export default getMediaQueryLists;

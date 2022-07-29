@@ -35,7 +35,7 @@ function LeftPanel() {
 
       <p>Breakpoints</p>
 
-      <Link href="/breakpoints">Usage</Link>
+      <Link href="/breakpoints/install">Install</Link>
     </Flex>
   );
 }
