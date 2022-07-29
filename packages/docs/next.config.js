@@ -5,7 +5,7 @@ const nextConfig = {
   ...(isProduction
     ? {
         assetPrefix: '/bedrock-ui/',
-        basePath: '/bedrock-ui/',
+        basePath: '/bedrock-ui',
       }
     : {}),
   reactStrictMode: false,
