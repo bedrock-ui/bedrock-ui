@@ -1,7 +1,7 @@
 import '@bedrock-ui/core/css/bedrock-ui.css';
 import 'assets/css/app.css';
 
-import dynamic from 'next/dynamic';
+import Head from 'next/head';
 import { BreakpointsProvider } from '@bedrock-ui/breakpoints';
 import { Layout } from 'components/Layout';
 
@@ -15,11 +15,19 @@ const BREAKPOINTS = {
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <BreakpointsProvider breakpoints={BREAKPOINTS}>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </BreakpointsProvider>
+    <>
+      <Head>
+        <title>Bedrock UI</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+
+      <BreakpointsProvider breakpoints={BREAKPOINTS}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </BreakpointsProvider>
+    </>
   );
 }
 
