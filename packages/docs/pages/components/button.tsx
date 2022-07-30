@@ -35,7 +35,7 @@ function ComponentsButton() {
     <ComponentDocumentation name="Button">
       <CodeHighlight>{CODE}</CodeHighlight>
 
-      <Grid className="my-16">
+      <Grid style={{ marginTop: 64, marginBottom: 64 }}>
         <Grid.Col span={12}>
           <Heading level={3}>Contained</Heading>
         </Grid.Col>
@@ -49,7 +49,7 @@ function ComponentsButton() {
         </Grid.Col>
       </Grid>
 
-      <Grid className="mb-16">
+      <Grid style={{ marginBottom: 64 }}>
         <Grid.Col span={12}>
           <Heading level={3}>Outlined</Heading>
         </Grid.Col>
@@ -63,7 +63,7 @@ function ComponentsButton() {
         </Grid.Col>
       </Grid>
 
-      <Grid className="mb-16">
+      <Grid style={{ marginBottom: 64 }}>
         <Grid.Col span={12}>
           <Heading level={3}>Text</Heading>
         </Grid.Col>
@@ -77,7 +77,7 @@ function ComponentsButton() {
         </Grid.Col>
       </Grid>
 
-      <Grid className="mb-16">
+      <Grid style={{ marginBottom: 64 }}>
         <Grid.Col span={12}>
           <Heading level={3}>Square</Heading>
         </Grid.Col>
