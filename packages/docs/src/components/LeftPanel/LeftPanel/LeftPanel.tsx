@@ -1,11 +1,31 @@
-import { Flex } from '@bedrock-ui/core';
+import { useBreakpoints } from '@bedrock-ui/breakpoints';
+import { Drawer, Flex } from '@bedrock-ui/core';
 import { Link } from '../Link';
-
 import styles from './LeftPanel.module.css';
+
+import type { ReactNode } from 'react';
+
+interface WrapperProps {
+  children: ReactNode;
+}
+
+function Wrapper({ children }: WrapperProps) {
+  const matches = useBreakpoints();
+
+  if (matches.mobile) {
+    return <Drawer>{children}</Drawer>;
+  }
+
+  return (
+    <Flex className={styles.leftPanel} flexDirection="column">
+      {children}
+    </Flex>
+  );
+}
 
 function LeftPanel() {
   return (
-    <Flex className={styles.leftPanel} flexDirection="column">
+    <Wrapper>
       <p>Getting Started</p>
 
       <Link href="/getting-started/overview">Getting Started</Link>
@@ -44,7 +64,7 @@ function LeftPanel() {
       <p>Variables</p>
 
       <Link href="/variables/root">Root Variables</Link>
-    </Flex>
+    </Wrapper>
   );
 }
 

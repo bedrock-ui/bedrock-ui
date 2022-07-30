@@ -1,15 +1,32 @@
 .page {
+  padding: 16px;
   padding-top: 220px;
 }
 
 h1.heading {
-  font-size: 120px;
+  font-size: 100px;
+}
+
+@media (max-width: 600px) {
+  h1.heading {
+    font-size: 64px;
+  }
+
+  .subheading {
+    font-size: 24px;
+  }
 }
 
 .subheading {
-  font-size: 34px;
+  font-size: 32px;
   line-height: 36px;
   margin-top: calc(var(--spacing) * 4px);
+}
+
+@media (max-width: 600px) {
+  .subheading {
+    font-size: 24px;
+  }
 }
 
 .actions {
