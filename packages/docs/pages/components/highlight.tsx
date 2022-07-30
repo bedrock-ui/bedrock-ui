@@ -1,3 +1,4 @@
+import { Grid, Heading, Highlight } from '@bedrock-ui/core';
 import { CodeHighlight } from 'components/CodeHighlight';
 import { ComponentDocumentation } from 'components/ComponentDocumentation';
 
@@ -5,10 +6,58 @@ const CODE = `
 import { Highlight } from '@bedrock-ui/core';
 `.trim();
 
+const HIGHLIGHT_CODE = `
+<Highlight highlight="consectetur">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+  incididunt ut labore et dolore magna aliqua.
+</Highlight>
+`.trim();
+
+const HIGHLIGHT_MULTIPLE_CODE = `
+<Highlight highlight={['consectetur', 'dolore']}>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+  incididunt ut labore et dolore magna aliqua.
+</Highlight>
+`.trim();
+
 function ComponentsHighlight() {
   return (
     <ComponentDocumentation name="Highlight">
       <CodeHighlight>{CODE}</CodeHighlight>
+
+      <Grid style={{ marginTop: 64, marginBottom: 64 }}>
+        <Grid.Col span={12}>
+          <Heading level={3}>Single Word</Heading>
+        </Grid.Col>
+
+        <Grid.Col span={12}>
+          <CodeHighlight>{HIGHLIGHT_CODE}</CodeHighlight>
+        </Grid.Col>
+
+        <Grid.Col span={12}>
+          <Highlight highlight="consectetur">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
+          </Highlight>
+        </Grid.Col>
+      </Grid>
+
+      <Grid style={{ marginBottom: 64 }}>
+        <Grid.Col span={12}>
+          <Heading level={3}>Multiple Words</Heading>
+        </Grid.Col>
+
+        <Grid.Col span={12}>
+          <CodeHighlight>{HIGHLIGHT_MULTIPLE_CODE}</CodeHighlight>
+        </Grid.Col>
+
+        <Grid.Col span={12}>
+          <Highlight highlight={['consectetur', 'dolore']}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
+          </Highlight>
+        </Grid.Col>
+      </Grid>
     </ComponentDocumentation>
   );
 }
