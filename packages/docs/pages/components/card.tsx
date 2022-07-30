@@ -19,7 +19,7 @@ const NO_PADDING_CODE = `
 <Card noPadding>
   <Image />
   
-  <Flex className="p-3">
+  <Flex style={{ padding: 12 }}>
     <Text>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
       incididunt ut labore et dolore magna aliqua.
@@ -33,7 +33,7 @@ function ComponentsCard() {
     <ComponentDocumentation name="Card">
       <CodeHighlight>{CODE}</CodeHighlight>
 
-      <Grid className="my-16">
+      <Grid style={{ marginTop: 64, marginBottom: 64 }}>
         <Grid.Col span={12}>
           <Heading level={3}>Default</Heading>
         </Grid.Col>
@@ -44,9 +44,13 @@ function ComponentsCard() {
 
         <Grid.Col span={12}>
           <Flex
-            className="py-16"
             justifyContent="center"
-            style={{ backgroundColor: 'var(--color-neutral-100)', width: '100%' }}
+            style={{
+              backgroundColor: 'var(--color-neutral-100)',
+              paddingTop: 64,
+              paddingBottom: 64,
+              width: '100%',
+            }}
           >
             <Card style={{ maxWidth: 320 }}>
               <Text>
@@ -58,7 +62,7 @@ function ComponentsCard() {
         </Grid.Col>
       </Grid>
 
-      <Grid className="mb-16">
+      <Grid style={{ paddingTop: 64, paddingBottom: 64 }}>
         <Grid.Col span={12}>
           <Heading level={3}>No Padding</Heading>
         </Grid.Col>
@@ -69,16 +73,20 @@ function ComponentsCard() {
 
         <Grid.Col span={12}>
           <Flex
-            className="py-16"
             justifyContent="center"
-            style={{ backgroundColor: 'var(--color-neutral-100)', width: '100%' }}
+            style={{
+              backgroundColor: 'var(--color-neutral-100)',
+              paddingTop: 64,
+              paddingBottom: 64,
+              width: '100%',
+            }}
           >
             <Card noPadding style={{ overflow: 'hidden', maxWidth: 320 }}>
               <img
                 width="100%"
                 src="https://images.unsplash.com/photo-1650198147183-4a802821f1ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
               />
-              <Flex className="p-3">
+              <Flex style={{ padding: 12 }}>
                 <Text>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                   incididunt ut labore et dolore magna aliqua.

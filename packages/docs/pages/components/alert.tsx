@@ -38,7 +38,7 @@ function ComponentsAlert() {
     <ComponentDocumentation name="Alert">
       <CodeHighlight>{CODE}</CodeHighlight>
 
-      <Grid className="my-16">
+      <Grid style={{ marginTop: 64, marginBottom: 64 }}>
         <Grid.Col span={12}>
           <Heading level={3}>Severity</Heading>
         </Grid.Col>
@@ -84,7 +84,7 @@ function ComponentsAlert() {
         </Grid.Col>
       </Grid>
 
-      <Grid className="mb-16">
+      <Grid style={{ marginBottom: 64 }}>
         <Grid.Col span={12}>
           <Heading level={3}>Filled</Heading>
         </Grid.Col>
@@ -130,7 +130,7 @@ function ComponentsAlert() {
         </Grid.Col>
       </Grid>
 
-      <Grid className="mb-16">
+      <Grid style={{ marginBottom: 64 }}>
         <Grid.Col span={12}>
           <Heading level={3}>Outlined</Heading>
         </Grid.Col>
