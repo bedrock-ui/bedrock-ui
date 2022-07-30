@@ -2,11 +2,11 @@ lockfileVersion: 5.3
 
 specifiers:
   '@bedrock-ui/breakpoints': ^0.0.4
-  '@bedrock-ui/core': ^0.0.4
-  '@types/node': ^18.6.1
+  '@bedrock-ui/core': ^0.0.5
+  '@types/node': ^18.6.2
   '@types/react': ^18.0.15
   '@types/react-dom': ^18.0.6
-  '@types/react-syntax-highlighter': ^15.5.3
+  '@types/react-syntax-highlighter': ^15.5.4
   clsx: ^1.2.1
   eslint: ^8.20.0
   eslint-config-next: ^12.2.3
@@ -22,7 +22,7 @@ specifiers:
 
 dependencies:
   '@bedrock-ui/breakpoints': 0.0.4_react@18.2.0
-  '@bedrock-ui/core': 0.0.4_react@18.2.0
+  '@bedrock-ui/core': 0.0.5_react@18.2.0
   clsx: 1.2.1
   next: 12.2.3_react-dom@18.2.0+react@18.2.0
   react: 18.2.0
@@ -30,10 +30,10 @@ dependencies:
   react-syntax-highlighter: 15.5.0_react@18.2.0
 
 devDependencies:
-  '@types/node': 18.6.1
+  '@types/node': 18.6.2
   '@types/react': 18.0.15
   '@types/react-dom': 18.0.6
-  '@types/react-syntax-highlighter': 15.5.3
+  '@types/react-syntax-highlighter': 15.5.4
   eslint: 8.20.0
   eslint-config-next: 12.2.3_eslint@8.20.0+typescript@4.7.4
   mv: 2.1.1
@@ -48,7 +48,7 @@ packages:
     resolution: {integrity: sha512-qZEWeccZCrHA2Au4/X05QW5CMdm4VjUDCrGq5gf1ZDcM4hRqreKrtwAn7yci9zfgAS9apvnsFXiGBHBAxZdK9A==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      core-js-pure: 3.24.0
+      core-js-pure: 3.24.1
       regenerator-runtime: 0.13.9
     dev: true
 
@@ -66,8 +66,8 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@bedrock-ui/core/0.0.4_react@18.2.0:
-    resolution: {integrity: sha512-mXhvwl2+1JlJ8gGxv/DnN9G0JCPJUAU/MvNShcJbxpY+aR+qARehWMYDevwrLQCDoHOyJIcXox5qC+Tyve8cuw==}
+  /@bedrock-ui/core/0.0.5_react@18.2.0:
+    resolution: {integrity: sha512-+A8l1RVRGG/0A4CttAQhHRZohsx1xKopnXiD9Mm2+vAxvfXeeCFAu3rHmeFoHzUaOB5y3PeeltIuSiZsWhr3iA==}
     peerDependencies:
       react: ^17 || ^18
     dependencies:
@@ -275,8 +275,8 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
-  /@types/node/18.6.1:
-    resolution: {integrity: sha512-z+2vB6yDt1fNwKOeGbckpmirO+VBDuQqecXkgeIqDlaOtmKn6hPR/viQ8cxCfqLU4fTlvM3+YjM367TukWdxpg==}
+  /@types/node/18.6.2:
+    resolution: {integrity: sha512-KcfkBq9H4PI6Vpu5B/KoPeuVDAbmi+2mDBqGPGUgoL7yXQtcWGu2vJWmmRkneWK3Rh0nIAX192Aa87AqKHYChQ==}
     dev: true
 
   /@types/prop-types/15.7.5:
@@ -289,8 +289,8 @@ packages:
       '@types/react': 18.0.15
     dev: true
 
-  /@types/react-syntax-highlighter/15.5.3:
-    resolution: {integrity: sha512-N5bgZxolo+wFuYnx4nOvIQO2P0E+KYHt3dDwb8ydUvZ96QN8Lpq60ReT+0W0JmXKZjp4udkYkIDYt9GIygBY1Q==}
+  /@types/react-syntax-highlighter/15.5.4:
+    resolution: {integrity: sha512-GYXA4nRBG4jTGFfYMLO2/yuqyOyaQ415oeJWw6akE5gipOEsGhvXFvWhsctGVMHzAfRI7e/J0B9cpqrfMOwZhA==}
     dependencies:
       '@types/react': 18.0.15
     dev: true
@@ -503,8 +503,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /caniuse-lite/1.0.30001370:
-    resolution: {integrity: sha512-3PDmaP56wz/qz7G508xzjx8C+MC2qEm4SYhSEzC9IBROo+dGXFWRuaXkWti0A9tuI00g+toiriVqxtWMgl350g==}
+  /caniuse-lite/1.0.30001373:
+    resolution: {integrity: sha512-pJYArGHrPp3TUqQzFYRmP/lwJlj8RCbVe3Gd3eJQkAV8SAC6b19XS9BjMvRdvaS8RMkaTN8ZhoHP6S1y8zzwEQ==}
     dev: false
 
   /chalk/4.1.2:
@@ -551,8 +551,8 @@ packages:
     resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
     dev: true
 
-  /core-js-pure/3.24.0:
-    resolution: {integrity: sha512-uzMmW8cRh7uYw4JQtzqvGWRyC2T5+4zipQLQdi2FmiRqP83k3d6F3stv2iAlNhOs6cXN401FCD5TL0vvleuHgA==}
+  /core-js-pure/3.24.1:
+    resolution: {integrity: sha512-r1nJk41QLLPyozHUUPmILCEMtMw24NG4oWK6RbsDdjzQgg9ZvrUsPBj1MnG0wXXp1DCDU6j+wUvEmBSrtRbLXg==}
     requiresBuild: true
     dev: true
 
@@ -1478,7 +1478,7 @@ packages:
     dependencies:
       '@next/env': 12.2.3
       '@swc/helpers': 0.4.3
-      caniuse-lite: 1.0.30001370
+      caniuse-lite: 1.0.30001373
       postcss: 8.4.14
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0

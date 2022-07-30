@@ -8,6 +8,7 @@
   padding: calc(var(--spacing) * 5px);
 
   &.no-padding {
+    overflow: hidden;
     padding: 0;
   }
 }
