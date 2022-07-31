@@ -1,10 +1,10 @@
 import { Flex } from '@bedrock-ui/core';
 import { Banner } from '../Banner';
-import styles from './ComponentDocumentation.module.css';
+import styles from './DocSection.module.css';
 
-import type { Props } from './ComponentDocumentation.types';
+import type { Props } from './DocSection.types';
 
-function ComponentDocumentation({ children, name }: Props) {
+function DocSection({ children, name }: Props) {
   return (
     <Flex className={styles.container} flexDirection="column">
       <Banner name={name} />
@@ -14,4 +14,4 @@ function ComponentDocumentation({ children, name }: Props) {
   );
 }
 
-export default ComponentDocumentation;
+export default DocSection;

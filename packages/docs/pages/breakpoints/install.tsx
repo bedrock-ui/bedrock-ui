@@ -1,6 +1,6 @@
 import { Flex, Heading, Text } from '@bedrock-ui/core';
 import { CodeHighlight } from 'components/CodeHighlight';
-import { ComponentDocumentation } from 'components/ComponentDocumentation';
+import { DocSection } from 'components/DocSection';
 
 const INSTALL_CODE = `
 (npm|yarn|pnpm) install @bedrock-ui/breakpoints
@@ -40,7 +40,7 @@ function Responsive() {
 
 function BreakpointsInstall() {
   return (
-    <ComponentDocumentation name="Breakpoints">
+    <DocSection name="Breakpoints">
       <Flex style={{ marginTop: 32, marginBottom: 32 }}>
         <Heading level={5}>Install</Heading>
       </Flex>
@@ -85,7 +85,7 @@ function BreakpointsInstall() {
       </Flex>
 
       <CodeHighlight>{USE_BREAKPOINT_VALUES_CODE}</CodeHighlight>
-    </ComponentDocumentation>
+    </DocSection>
   );
 }
 

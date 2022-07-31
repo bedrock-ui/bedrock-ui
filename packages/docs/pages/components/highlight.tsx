@@ -1,6 +1,6 @@
 import { Grid, Heading, Highlight } from '@bedrock-ui/core';
 import { CodeHighlight } from 'components/CodeHighlight';
-import { ComponentDocumentation } from 'components/ComponentDocumentation';
+import { DocSection } from 'components/DocSection';
 
 const CODE = `
 import { Highlight } from '@bedrock-ui/core';
@@ -22,7 +22,7 @@ const HIGHLIGHT_MULTIPLE_CODE = `
 
 function ComponentsHighlight() {
   return (
-    <ComponentDocumentation name="Highlight">
+    <DocSection name="Highlight">
       <CodeHighlight>{CODE}</CodeHighlight>
 
       <Grid style={{ marginTop: 64, marginBottom: 64 }}>
@@ -58,7 +58,7 @@ function ComponentsHighlight() {
           </Highlight>
         </Grid.Col>
       </Grid>
-    </ComponentDocumentation>
+    </DocSection>
   );
 }
 

@@ -1,6 +1,6 @@
 import { Button, Grid, Heading, Text } from '@bedrock-ui/core';
 import { CodeHighlight } from 'components/CodeHighlight';
-import { ComponentDocumentation } from 'components/ComponentDocumentation';
+import { DocSection } from 'components/DocSection';
 
 const CODE = `
 import { Button } from '@bedrock-ui/core';
@@ -32,7 +32,7 @@ const SQUARE_CODE = `
 
 function ComponentsButton() {
   return (
-    <ComponentDocumentation name="Button">
+    <DocSection name="Button">
       <CodeHighlight>{CODE}</CodeHighlight>
 
       <Grid style={{ marginTop: 64, marginBottom: 64 }}>
@@ -90,7 +90,7 @@ function ComponentsButton() {
           <Button square>Button</Button>
         </Grid.Col>
       </Grid>
-    </ComponentDocumentation>
+    </DocSection>
   );
 }
 

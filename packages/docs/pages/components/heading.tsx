@@ -1,6 +1,6 @@
 import { Flex, Grid, Heading } from '@bedrock-ui/core';
 import { CodeHighlight } from 'components/CodeHighlight';
-import { ComponentDocumentation } from 'components/ComponentDocumentation';
+import { DocSection } from 'components/DocSection';
 
 const CODE = `
 import { Heading } from '@bedrock-ui/core';
@@ -12,7 +12,7 @@ const HEADING_CODE = `
 
 function ComponentsHeading() {
   return (
-    <ComponentDocumentation name="Heading">
+    <DocSection name="Heading">
       <CodeHighlight>{CODE}</CodeHighlight>
 
       <Grid style={{ marginTop: 64, marginBottom: 64 }}>
@@ -31,7 +31,7 @@ function ComponentsHeading() {
           </Flex>
         </Grid.Col>
       </Grid>
-    </ComponentDocumentation>
+    </DocSection>
   );
 }
 

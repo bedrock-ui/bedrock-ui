@@ -1,5 +1,5 @@
 import { CodeHighlight } from 'components/CodeHighlight';
-import { ComponentDocumentation } from 'components/ComponentDocumentation';
+import { DocSection } from 'components/DocSection';
 
 const CODE = `
 import { Drawer } from '@bedrock-ui/core';
@@ -7,9 +7,9 @@ import { Drawer } from '@bedrock-ui/core';
 
 function ComponentsDrawer() {
   return (
-    <ComponentDocumentation name="Drawer">
+    <DocSection name="Drawer">
       <CodeHighlight>{CODE}</CodeHighlight>
-    </ComponentDocumentation>
+    </DocSection>
   );
 }
 

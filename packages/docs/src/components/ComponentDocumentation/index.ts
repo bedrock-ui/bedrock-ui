@@ -1,1 +1,0 @@
-export { ComponentDocumentation } from './ComponentDocumentation';

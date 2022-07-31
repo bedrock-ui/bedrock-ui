@@ -1,6 +1,6 @@
 import { Card, Flex, Heading, Grid, Text } from '@bedrock-ui/core';
 import { CodeHighlight } from 'components/CodeHighlight';
-import { ComponentDocumentation } from 'components/ComponentDocumentation';
+import { DocSection } from 'components/DocSection';
 
 const CODE = `
 import { Card } from '@bedrock-ui/core';
@@ -30,7 +30,7 @@ const NO_PADDING_CODE = `
 
 function ComponentsCard() {
   return (
-    <ComponentDocumentation name="Card">
+    <DocSection name="Card">
       <CodeHighlight>{CODE}</CodeHighlight>
 
       <Grid style={{ marginTop: 64, marginBottom: 64 }}>
@@ -96,7 +96,7 @@ function ComponentsCard() {
           </Flex>
         </Grid.Col>
       </Grid>
-    </ComponentDocumentation>
+    </DocSection>
   );
 }
 

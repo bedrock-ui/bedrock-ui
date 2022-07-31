@@ -1,6 +1,6 @@
 import { Divider, Flex, Grid, Heading } from '@bedrock-ui/core';
 import { CodeHighlight } from 'components/CodeHighlight';
-import { ComponentDocumentation } from 'components/ComponentDocumentation';
+import { DocSection } from 'components/DocSection';
 
 const CODE = `
 import { Divider } from '@bedrock-ui/core';
@@ -16,7 +16,7 @@ const DIVIDER_CODE = `
 
 function ComponentsDivider() {
   return (
-    <ComponentDocumentation name="Divider">
+    <DocSection name="Divider">
       <CodeHighlight>{CODE}</CodeHighlight>
 
       <Grid style={{ marginTop: 64, marginBottom: 64 }}>
@@ -44,7 +44,7 @@ function ComponentsDivider() {
           </Flex>
         </Grid.Col>
       </Grid>
-    </ComponentDocumentation>
+    </DocSection>
   );
 }
 

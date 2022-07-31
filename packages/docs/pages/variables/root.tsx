@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Flex, Text } from '@bedrock-ui/core';
-import { ComponentDocumentation } from 'components/ComponentDocumentation';
+import { DocSection } from 'components/DocSection';
 import { getRootVariables } from 'utils/getRootVariables';
 
 import type { VariablePair } from 'utils/getRootVariables';
@@ -17,7 +17,7 @@ function VariablesRoot() {
   }
 
   return (
-    <ComponentDocumentation name="Root Variables">
+    <DocSection name="Root Variables">
       <Flex style={{ marginBottom: 32 }}>
         <Text>
           These are all the global CSS variables that Bedrock UI provides. They primarily serve as
@@ -33,7 +33,7 @@ function VariablesRoot() {
           </Text>
         </Flex>
       ))}
-    </ComponentDocumentation>
+    </DocSection>
   );
 }
 

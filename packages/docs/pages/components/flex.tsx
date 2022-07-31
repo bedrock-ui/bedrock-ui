@@ -1,5 +1,5 @@
 import { CodeHighlight } from 'components/CodeHighlight';
-import { ComponentDocumentation } from 'components/ComponentDocumentation';
+import { DocSection } from 'components/DocSection';
 
 const CODE = `
 import { Flex } from '@bedrock-ui/core';
@@ -7,9 +7,9 @@ import { Flex } from '@bedrock-ui/core';
 
 function ComponentsFlex() {
   return (
-    <ComponentDocumentation name="Flex">
+    <DocSection name="Flex">
       <CodeHighlight>{CODE}</CodeHighlight>
-    </ComponentDocumentation>
+    </DocSection>
   );
 }
 

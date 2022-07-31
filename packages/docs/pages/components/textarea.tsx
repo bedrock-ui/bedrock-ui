@@ -1,6 +1,6 @@
 import { Grid, Heading, Textarea } from '@bedrock-ui/core';
 import { CodeHighlight } from 'components/CodeHighlight';
-import { ComponentDocumentation } from 'components/ComponentDocumentation';
+import { DocSection } from 'components/DocSection';
 
 const CODE = `
 import { Textarea } from '@bedrock-ui/core';
@@ -20,7 +20,7 @@ const TEXTAREA_SUCCESS_CODE = `
 
 function ComponentsTextarea() {
   return (
-    <ComponentDocumentation name="Textarea">
+    <DocSection name="Textarea">
       <CodeHighlight>{CODE}</CodeHighlight>
 
       <Grid style={{ marginTop: 64, marginBottom: 64 }}>
@@ -64,7 +64,7 @@ function ComponentsTextarea() {
           <Textarea success />
         </Grid.Col>
       </Grid>
-    </ComponentDocumentation>
+    </DocSection>
   );
 }
 
