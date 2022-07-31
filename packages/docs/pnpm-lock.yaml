@@ -3,6 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@bedrock-ui/breakpoints': ^0.0.4
   '@bedrock-ui/core': ^0.1.1
+  '@tabler/icons': ^1.78.1
   '@types/node': ^18.6.3
   '@types/react': ^18.0.15
   '@types/react-dom': ^18.0.6
@@ -23,6 +24,7 @@ specifiers:
 dependencies:
   '@bedrock-ui/breakpoints': 0.0.4_react@18.2.0
   '@bedrock-ui/core': 0.1.1_react@18.2.0
+  '@tabler/icons': 1.78.1_react-dom@18.2.0+react@18.2.0
   clsx: 1.2.1
   next: 12.2.3_react-dom@18.2.0+react@18.2.0
   react: 18.2.0
@@ -263,6 +265,21 @@ packages:
     resolution: {integrity: sha512-6JrF+fdUK2zbGpJIlN7G3v966PQjyx/dPt1T9km2wj+EUBqgrxCk3uX4Kct16MIm9gGxfKRcfax2hVf5jvlTzA==}
     dependencies:
       tslib: 2.4.0
+    dev: false
+
+  /@tabler/icons/1.78.1_react-dom@18.2.0+react@18.2.0:
+    resolution: {integrity: sha512-QT/94Hufvzn4PxsEyN9NTh96XmNaGGgMh7sKcBZ2216pE9B+Ala98KpdNwTKKBlEvRvHw9y14zW4qFYzxGOhZw==}
+    peerDependencies:
+      react: ^16.x || 17.x || 18.x
+      react-dom: ^16.x || 17.x || 18.x
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-dom:
+        optional: true
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /@types/hast/2.3.4:

@@ -1,8 +1,9 @@
+import { IconBrandGithub, IconMenu2 } from '@tabler/icons';
+import { Button, Flex, Header, Heading } from '@bedrock-ui/core';
+import { useBreakpoints } from '@bedrock-ui/breakpoints';
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
-import { Button, Flex, Header, Heading } from '@bedrock-ui/core';
-import { useBreakpoints } from '@bedrock-ui/breakpoints';
 import { LeftPanel } from 'components/LeftPanel';
 import styles from './Layout.module.css';
 
@@ -29,7 +30,7 @@ function Layout({ children }: Props) {
           {matches.mobile && (
             <Flex>
               <Button onClick={() => setOpen(!open)} variant="text">
-                Menu
+                <IconMenu2 />
               </Button>
             </Flex>
           )}
@@ -45,9 +46,10 @@ function Layout({ children }: Props) {
           <Flex>
             <Button
               onClick={() => window.open('https://github.com/matthewwolfe/bedrock-ui', '_blank')}
+              square
               variant="text"
             >
-              Github
+              <IconBrandGithub />
             </Button>
           </Flex>
         </Flex>
