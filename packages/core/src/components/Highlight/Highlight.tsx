@@ -13,8 +13,6 @@ function Highlight({ className, children, highlight, ...props }: Props) {
     [children, highlight]
   );
 
-  console.log(fragments);
-
   return (
     <div {...props} className={clsx('highlight', className)}>
       {fragments.map(({ text, match }) => {
