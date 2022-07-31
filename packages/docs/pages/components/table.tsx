@@ -7,19 +7,63 @@ import { Table } from '@bedrock-ui/core';
 `.trim();
 
 const TABLE_CODE = `
-<Tabs>
-  <Tabs.Tab active={active === 0} onClick={() => setActive(0)}>
-    Lorem ipsum
-  </Tabs.Tab>
+const rows = [
+  { firstName: 'John', lastName: 'Smith', email: 'john.smith@example.com', status: 'Active' },
+  { firstName: 'Jane', lastName: 'Jones', email: 'jane.jones@example.com', status: 'Inactive' },
+  { firstName: 'Phil', lastName: 'Wolf', email: 'phil.wolf@example.com', status: 'Inactive' },
+  { firstName: 'Derek', lastName: 'Rose', email: 'derek.rose@example.com', status: 'Active' },
+];
 
-  <Tabs.Tab active={active === 1} onClick={() => setActive(1)}>
-    dolor sit amet
-  </Tabs.Tab>
+<Table>
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    {rows.map((row, index) => (
+      <tr key={index}>
+        <td>{row.firstName}</td>
+        <td>{row.lastName}</td>
+        <td>{row.email}</td>
+        <td>{row.status}</td>
+      </tr>
+    ))}
+  </tbody>
+</Table>
+`.trim();
 
-  <Tabs.Tab active={active === 2} onClick={() => setActive(2)}>
-    consectetur adipiscing elit
-  </Tabs.Tab>
-</Tabs>
+const TABLE_FIXED_CODE = `
+const rows = [
+  { firstName: 'John', lastName: 'Smith', email: 'john.smith@example.com', status: 'Active' },
+  { firstName: 'Jane', lastName: 'Jones', email: 'jane.jones@example.com', status: 'Inactive' },
+  { firstName: 'Phil', lastName: 'Wolf', email: 'phil.wolf@example.com', status: 'Inactive' },
+  { firstName: 'Derek', lastName: 'Rose', email: 'derek.rose@example.com', status: 'Active' },
+];
+
+<Table fixed>
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    {rows.map((row, index) => (
+      <tr key={index}>
+        <td>{row.firstName}</td>
+        <td>{row.lastName}</td>
+        <td>{row.email}</td>
+        <td>{row.status}</td>
+      </tr>
+    ))}
+  </tbody>
+</Table>
 `.trim();
 
 const rows = [
@@ -45,6 +89,39 @@ function ComponentsTable() {
 
         <Grid.Col span={12}>
           <Table>
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((row, index) => (
+                <tr key={index}>
+                  <td>{row.firstName}</td>
+                  <td>{row.lastName}</td>
+                  <td>{row.email}</td>
+                  <td>{row.status}</td>
+                </tr>
+              ))}
+            </tbody>
+          </Table>
+        </Grid.Col>
+      </Grid>
+
+      <Grid style={{ marginBottom: 64 }}>
+        <Grid.Col span={12}>
+          <Heading level={3}>Fixed</Heading>
+        </Grid.Col>
+
+        <Grid.Col span={12}>
+          <CodeHighlight>{TABLE_FIXED_CODE}</CodeHighlight>
+        </Grid.Col>
+
+        <Grid.Col span={12}>
+          <Table fixed>
             <thead>
               <tr>
                 <th>First Name</th>
