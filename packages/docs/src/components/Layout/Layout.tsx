@@ -30,7 +30,7 @@ function Layout({ children }: Props) {
           {matches.mobile && (
             <Flex>
               <Button onClick={() => setOpen(!open)} variant="text">
-                <IconMenu2 />
+                <IconMenu2 size={24} />
               </Button>
             </Flex>
           )}
@@ -49,7 +49,7 @@ function Layout({ children }: Props) {
               square
               variant="text"
             >
-              <IconBrandGithub />
+              <IconBrandGithub size={24} />
             </Button>
           </Flex>
         </Flex>
