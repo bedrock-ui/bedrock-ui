@@ -39,7 +39,7 @@ function ComponentsDrawer() {
         <Grid.Col span={12}>
           <Button onClick={() => setLeftOpen(!leftOpen)}>Open/Close Drawer</Button>
 
-          <Drawer open={leftOpen}>
+          <Drawer open={leftOpen} onClose={() => setLeftOpen(false)}>
             <Flex style={{ padding: 16 }}>
               <Text>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -66,7 +66,7 @@ function ComponentsDrawer() {
         <Grid.Col span={12}>
           <Button onClick={() => setRightOpen(!rightOpen)}>Open/Close Drawer</Button>
 
-          <Drawer position="right" open={rightOpen}>
+          <Drawer position="right" open={rightOpen} onClose={() => setRightOpen(false)}>
             <Flex style={{ padding: 16 }}>
               <Text>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
