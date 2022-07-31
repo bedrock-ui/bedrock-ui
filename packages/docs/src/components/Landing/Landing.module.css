@@ -1,6 +1,6 @@
 .page {
   padding: 16px;
-  padding-top: 220px;
+  padding-top: 160px;
 }
 
 h1.heading {
@@ -32,10 +32,16 @@ h1.heading {
 
 .actions {
   margin-top: calc(var(--spacing) * 16px);
-  margin-bottom: calc(var(--spacing) * 16px);
+  margin-bottom: calc(var(--spacing) * 32px);
 }
 
 .actions button {
   margin-left: calc(var(--spacing) * 1px);
   margin-right: calc(var(--spacing) * 1px);
+}
+
+.highlights {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
 }

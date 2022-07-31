@@ -1,9 +1,12 @@
 import { useRouter } from 'next/router';
-import { Button, Flex, Heading, Text } from '@bedrock-ui/core';
+import { useBreakpoints } from '@bedrock-ui/breakpoints';
+import { Button, Flex, Grid, Heading, Text } from '@bedrock-ui/core';
+import { IconLicense, IconSettings, IconRocket } from '@tabler/icons';
 import styles from './Landing.module.css';
 
 function Landing() {
   const router = useRouter();
+  const matches = useBreakpoints();
 
   return (
     <Flex className={styles.page} flexDirection="column">
@@ -23,6 +26,46 @@ function Landing() {
           Browse Components
         </Button>
       </Flex>
+
+      <Grid className={styles.highlights}>
+        <Grid.Col span={matches.mobile ? 12 : 4}>
+          <Flex flexDirection="column">
+            <Flex justifyContent="center">
+              <IconRocket size={64} style={{ marginBottom: 16 }} />
+            </Flex>
+
+            <Flex justifyContent="center">
+              <Text style={{ fontWeight: 'bold' }}>Fast. 3kb gzipped + 5kb gzipped CSS</Text>
+            </Flex>
+          </Flex>
+        </Grid.Col>
+
+        <Grid.Col span={matches.mobile ? 12 : 4}>
+          <Flex flexDirection="column">
+            <Flex justifyContent="center">
+              <IconLicense size={64} style={{ marginBottom: 16 }} />
+            </Flex>
+
+            <Flex justifyContent="center">
+              <Text style={{ fontWeight: 'bold' }}>Open source and MIT licensed</Text>
+            </Flex>
+          </Flex>
+        </Grid.Col>
+
+        <Grid.Col span={matches.mobile ? 12 : 4}>
+          <Flex flexDirection="column">
+            <Flex justifyContent="center">
+              <IconSettings size={64} style={{ marginBottom: 16 }} />
+            </Flex>
+
+            <Flex justifyContent="center">
+              <Text style={{ fontWeight: 'bold' }}>
+                Written with Typescript and Sass. Works with SSR.
+              </Text>
+            </Flex>
+          </Flex>
+        </Grid.Col>
+      </Grid>
     </Flex>
   );
 }
