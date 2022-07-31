@@ -5,15 +5,26 @@ import styles from './LeftPanel.module.css';
 
 import type { ReactNode } from 'react';
 
-interface WrapperProps {
+interface SharedProps {
+  open: boolean;
+  onClose: () => void;
+}
+
+interface Props extends SharedProps {}
+
+interface WrapperProps extends SharedProps {
   children: ReactNode;
 }
 
-function Wrapper({ children }: WrapperProps) {
+function Wrapper({ children, open, onClose }: WrapperProps) {
   const matches = useBreakpoints();
 
   if (matches.mobile) {
-    return <Drawer>{children}</Drawer>;
+    return (
+      <Drawer open={open} onClose={onClose} style={{ zIndex: 1100 }}>
+        {children}
+      </Drawer>
+    );
   }
 
   return (
@@ -23,9 +34,9 @@ function Wrapper({ children }: WrapperProps) {
   );
 }
 
-function LeftPanel() {
+function LeftPanel({ open, onClose }: Props) {
   return (
-    <Wrapper>
+    <Wrapper open={open} onClose={onClose}>
       <p>Getting Started</p>
 
       <Link href="/getting-started/overview">Getting Started</Link>

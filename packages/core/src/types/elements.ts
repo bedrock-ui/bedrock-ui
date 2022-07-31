@@ -16,3 +16,5 @@ export type Li = DetailedHTMLProps<React.LiHTMLAttributes<HTMLLIElement>, HTMLLI
 export type Ul = DetailedHTMLProps<HTMLAttributes<HTMLUListElement>, HTMLUListElement>;
 
 export type Table = DetailedHTMLProps<TableHTMLAttributes<HTMLTableElement>, HTMLTableElement>;
+
+export type Header = DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>;
