@@ -17,7 +17,12 @@ function Drawer({ className, onClose, open = false, position = 'left', ...props 
     document.body.style.overflow = open ? 'hidden' : 'scroll';
   }, [open]);
 
-  return <div {...props} className={clsx('drawer', className, position, { open })} ref={ref} />;
+  return (
+    <>
+      <div {...props} className={clsx('drawer', className, position, { open })} ref={ref} />
+      <div className={clsx('drawer-overlay', { open })} />
+    </>
+  );
 }
 
 export default Drawer;
