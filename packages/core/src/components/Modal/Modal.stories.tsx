@@ -15,6 +15,7 @@ export default {
   },
   args: {
     open: false,
+    noPadding: false,
   },
 };
 

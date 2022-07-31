@@ -1,6 +1,6 @@
 import { Grid, Link, List } from '@bedrock-ui/core';
 import { CodeHighlight } from 'components/CodeHighlight';
-import { ComponentDocumentation } from 'components/ComponentDocumentation';
+import { DocSection } from 'components/DocSection';
 
 const CODE = `
 import { List } from '@bedrock-ui/core';
@@ -16,7 +16,7 @@ const LIST_CODE = `
 
 function ComponentsList() {
   return (
-    <ComponentDocumentation name="List">
+    <DocSection name="List">
       <CodeHighlight>{CODE}</CodeHighlight>
 
       <Grid style={{ marginTop: 64, marginBottom: 64 }}>
@@ -32,7 +32,7 @@ function ComponentsList() {
           </List>
         </Grid.Col>
       </Grid>
-    </ComponentDocumentation>
+    </DocSection>
   );
 }
 

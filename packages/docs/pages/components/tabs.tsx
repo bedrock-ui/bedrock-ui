@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Grid, Heading, Tabs } from '@bedrock-ui/core';
 import { CodeHighlight } from 'components/CodeHighlight';
-import { ComponentDocumentation } from 'components/ComponentDocumentation';
+import { DocSection } from 'components/DocSection';
 
 const CODE = `
 import { Tabs } from '@bedrock-ui/core';
@@ -27,7 +27,7 @@ function ComponentsTabs() {
   const [active, setActive] = useState<number>(0);
 
   return (
-    <ComponentDocumentation name="Tabs">
+    <DocSection name="Tabs">
       <CodeHighlight>{CODE}</CodeHighlight>
 
       <Grid style={{ marginTop: 64, marginBottom: 64 }}>
@@ -55,7 +55,7 @@ function ComponentsTabs() {
           </Tabs>
         </Grid.Col>
       </Grid>
-    </ComponentDocumentation>
+    </DocSection>
   );
 }
 

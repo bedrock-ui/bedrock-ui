@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Checkbox, Grid, Flex, Heading, Text } from '@bedrock-ui/core';
 import { CodeHighlight } from 'components/CodeHighlight';
-import { ComponentDocumentation } from 'components/ComponentDocumentation';
+import { DocSection } from 'components/DocSection';
 
 const CODE = `
 import { Checkbox } from '@bedrock-ui/core';
@@ -34,7 +34,7 @@ function ComponentsCheckbox() {
   const [successChecked, setSuccessChecked] = useState<boolean>(false);
 
   return (
-    <ComponentDocumentation name="Checkbox">
+    <DocSection name="Checkbox">
       <CodeHighlight>{CODE}</CodeHighlight>
 
       <Grid style={{ marginTop: 64, marginBottom: 64 }}>
@@ -104,7 +104,7 @@ function ComponentsCheckbox() {
           </Flex>
         </Grid.Col>
       </Grid>
-    </ComponentDocumentation>
+    </DocSection>
   );
 }
 

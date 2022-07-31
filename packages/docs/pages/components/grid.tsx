@@ -1,5 +1,5 @@
 import { CodeHighlight } from 'components/CodeHighlight';
-import { ComponentDocumentation } from 'components/ComponentDocumentation';
+import { DocSection } from 'components/DocSection';
 
 const CODE = `
 import { Grid } from '@bedrock-ui/core';
@@ -7,9 +7,9 @@ import { Grid } from '@bedrock-ui/core';
 
 function ComponentsGrid() {
   return (
-    <ComponentDocumentation name="Grid">
+    <DocSection name="Grid">
       <CodeHighlight>{CODE}</CodeHighlight>
-    </ComponentDocumentation>
+    </DocSection>
   );
 }
 

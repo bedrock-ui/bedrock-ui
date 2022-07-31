@@ -1,5 +1,5 @@
 import { CodeHighlight } from 'components/CodeHighlight';
-import { ComponentDocumentation } from 'components/ComponentDocumentation';
+import { DocSection } from 'components/DocSection';
 
 const CODE = `
 import { Modal } from '@bedrock-ui/core';
@@ -7,9 +7,9 @@ import { Modal } from '@bedrock-ui/core';
 
 function ComponentsModal() {
   return (
-    <ComponentDocumentation name="Modal">
+    <DocSection name="Modal">
       <CodeHighlight>{CODE}</CodeHighlight>
-    </ComponentDocumentation>
+    </DocSection>
   );
 }
 

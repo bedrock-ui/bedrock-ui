@@ -1,9 +1,9 @@
 import { Flex, Link, List, Text } from '@bedrock-ui/core';
-import { ComponentDocumentation } from 'components/ComponentDocumentation';
+import { DocSection } from 'components/DocSection';
 
 function IconsLibraries() {
   return (
-    <ComponentDocumentation name="Icon Libraries">
+    <DocSection name="Icon Libraries">
       <Text>
         Bedrock UI does not ship any icons. There are plenty of open source icon libraries to choose
         from! Here are a few:
@@ -19,7 +19,7 @@ function IconsLibraries() {
           </List.Item>
         </List>
       </Flex>
-    </ComponentDocumentation>
+    </DocSection>
   );
 }
 

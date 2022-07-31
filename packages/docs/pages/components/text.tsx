@@ -1,6 +1,6 @@
 import { Grid, Heading, Text } from '@bedrock-ui/core';
 import { CodeHighlight } from 'components/CodeHighlight';
-import { ComponentDocumentation } from 'components/ComponentDocumentation';
+import { DocSection } from 'components/DocSection';
 
 const CODE = `
 import { Text } from '@bedrock-ui/core';
@@ -26,7 +26,7 @@ const TEXT_WHITE_CODE = `
 
 function ComponentsText() {
   return (
-    <ComponentDocumentation name="Text">
+    <DocSection name="Text">
       <CodeHighlight>{CODE}</CodeHighlight>
 
       <Grid style={{ marginTop: 64, marginBottom: 64 }}>
@@ -91,7 +91,7 @@ function ComponentsText() {
           </Text>
         </Grid.Col>
       </Grid>
-    </ComponentDocumentation>
+    </DocSection>
   );
 }
 

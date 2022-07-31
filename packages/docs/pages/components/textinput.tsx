@@ -1,6 +1,6 @@
 import { Grid, Heading, TextInput } from '@bedrock-ui/core';
 import { CodeHighlight } from 'components/CodeHighlight';
-import { ComponentDocumentation } from 'components/ComponentDocumentation';
+import { DocSection } from 'components/DocSection';
 
 const CODE = `
 import { TextInput } from '@bedrock-ui/core';
@@ -20,7 +20,7 @@ const TEXTINPUT_SUCCESS_CODE = `
 
 function ComponentsTextInput() {
   return (
-    <ComponentDocumentation name="TextInput">
+    <DocSection name="TextInput">
       <CodeHighlight>{CODE}</CodeHighlight>
 
       <Grid style={{ marginTop: 64, marginBottom: 64 }}>
@@ -64,7 +64,7 @@ function ComponentsTextInput() {
           <TextInput success />
         </Grid.Col>
       </Grid>
-    </ComponentDocumentation>
+    </DocSection>
   );
 }
 

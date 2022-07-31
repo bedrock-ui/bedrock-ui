@@ -1,6 +1,6 @@
 import { Alert, Grid, Heading, Text } from '@bedrock-ui/core';
 import { CodeHighlight } from 'components/CodeHighlight';
-import { ComponentDocumentation } from 'components/ComponentDocumentation';
+import { DocSection } from 'components/DocSection';
 
 const CODE = `
 import { Alert } from '@bedrock-ui/core';
@@ -35,7 +35,7 @@ const VARIANT_OUTLINED_CODE = `
 
 function ComponentsAlert() {
   return (
-    <ComponentDocumentation name="Alert">
+    <DocSection name="Alert">
       <CodeHighlight>{CODE}</CodeHighlight>
 
       <Grid style={{ marginTop: 64, marginBottom: 64 }}>
@@ -175,7 +175,7 @@ function ComponentsAlert() {
           </Alert>
         </Grid.Col>
       </Grid>
-    </ComponentDocumentation>
+    </DocSection>
   );
 }
 

@@ -1,6 +1,6 @@
 import { Grid, Heading, Select } from '@bedrock-ui/core';
 import { CodeHighlight } from 'components/CodeHighlight';
-import { ComponentDocumentation } from 'components/ComponentDocumentation';
+import { DocSection } from 'components/DocSection';
 
 const CODE = `
 import { Select } from '@bedrock-ui/core';
@@ -32,7 +32,7 @@ const SELECT_SUCCESS_CODE = `
 
 function ComponentsSelect() {
   return (
-    <ComponentDocumentation name="Select">
+    <DocSection name="Select">
       <CodeHighlight>{CODE}</CodeHighlight>
 
       <Grid style={{ marginTop: 64, marginBottom: 64 }}>
@@ -88,7 +88,7 @@ function ComponentsSelect() {
           </Select>
         </Grid.Col>
       </Grid>
-    </ComponentDocumentation>
+    </DocSection>
   );
 }
 
