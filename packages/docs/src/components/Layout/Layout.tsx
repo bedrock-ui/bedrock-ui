@@ -1,5 +1,8 @@
+import NextLink from 'next/link';
 import { useRouter } from 'next/router';
-import { Flex } from '@bedrock-ui/core';
+import { useState } from 'react';
+import { Button, Flex, Header, Heading } from '@bedrock-ui/core';
+import { useBreakpoints } from '@bedrock-ui/breakpoints';
 import { LeftPanel } from 'components/LeftPanel';
 import styles from './Layout.module.css';
 
@@ -11,16 +14,50 @@ interface Props {
 
 function Layout({ children }: Props) {
   const { pathname } = useRouter();
+  const matches = useBreakpoints();
+
+  const [open, setOpen] = useState<boolean>(false);
 
   if (pathname === '/') {
     return <>{children}</>;
   }
 
   return (
-    <Flex>
-      <LeftPanel />
-      <Flex className={styles.content}>{children}</Flex>
-    </Flex>
+    <>
+      <Header position="fixed" style={{ zIndex: 1000 }}>
+        <Flex justifyContent="space-between" style={{ width: '100%' }}>
+          {matches.mobile && (
+            <Flex>
+              <Button onClick={() => setOpen(!open)} variant="text">
+                Menu
+              </Button>
+            </Flex>
+          )}
+
+          <Flex>
+            <NextLink href="/">
+              <Heading level={2} style={{ cursor: 'pointer' }}>
+                Bedrock UI
+              </Heading>
+            </NextLink>
+          </Flex>
+
+          <Flex>
+            <Button
+              onClick={() => window.open('https://github.com/matthewwolfe/bedrock-ui', '_blank')}
+              variant="text"
+            >
+              Github
+            </Button>
+          </Flex>
+        </Flex>
+      </Header>
+
+      <Flex style={{ paddingTop: 64 }}>
+        <LeftPanel open={open} onClose={() => setOpen(false)} />
+        <Flex className={styles.content}>{children}</Flex>
+      </Flex>
+    </>
   );
 }
 
