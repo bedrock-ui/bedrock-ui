@@ -48,6 +48,7 @@ function LeftPanel() {
       <Link href="/components/modal">Modal</Link>
       <Link href="/components/radio">Radio</Link>
       <Link href="/components/select">Select</Link>
+      <Link href="/components/table">Table</Link>
       <Link href="/components/tabs">Tabs</Link>
       <Link href="/components/text">Text</Link>
       <Link href="/components/textarea">Textarea</Link>
