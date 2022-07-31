@@ -1,6 +1,6 @@
 {
   "name": "@bedrock-ui/core",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Bedrock UI Core",
   "files": [
     "css",
@@ -8,6 +8,7 @@
   ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "sideEffects": false,
   "scripts": {
     "build": "pnpm build:css && pnpm build:ts",
     "build:css": "sass ./src/css/bedrock-ui.scss css/bedrock-ui.css --style compressed --no-source-map",
