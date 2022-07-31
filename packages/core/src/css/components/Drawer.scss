@@ -13,6 +13,7 @@
   position: fixed;
   top: 0;
   width: var(--drawer-width);
+  z-index: 1100;
 
   &.open {
     display: flex;
