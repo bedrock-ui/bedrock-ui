@@ -2,8 +2,8 @@ lockfileVersion: 5.3
 
 specifiers:
   '@bedrock-ui/breakpoints': ^0.0.4
-  '@bedrock-ui/core': ^0.0.6
-  '@types/node': ^18.6.2
+  '@bedrock-ui/core': ^0.0.7
+  '@types/node': ^18.6.3
   '@types/react': ^18.0.15
   '@types/react-dom': ^18.0.6
   '@types/react-syntax-highlighter': ^15.5.4
@@ -22,7 +22,7 @@ specifiers:
 
 dependencies:
   '@bedrock-ui/breakpoints': 0.0.4_react@18.2.0
-  '@bedrock-ui/core': 0.0.6_react@18.2.0
+  '@bedrock-ui/core': 0.0.7_react@18.2.0
   clsx: 1.2.1
   next: 12.2.3_react-dom@18.2.0+react@18.2.0
   react: 18.2.0
@@ -30,7 +30,7 @@ dependencies:
   react-syntax-highlighter: 15.5.0_react@18.2.0
 
 devDependencies:
-  '@types/node': 18.6.2
+  '@types/node': 18.6.3
   '@types/react': 18.0.15
   '@types/react-dom': 18.0.6
   '@types/react-syntax-highlighter': 15.5.4
@@ -66,8 +66,8 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@bedrock-ui/core/0.0.6_react@18.2.0:
-    resolution: {integrity: sha512-k3pCotLyXBu0525KHtWKjHSpkXLyCC1LEDDHrtCsXS8IYFV16+//ihVr8xt0tP7EltzksgGKxb+wcvdAWK1xkg==}
+  /@bedrock-ui/core/0.0.7_react@18.2.0:
+    resolution: {integrity: sha512-rjINNwlxXD8VAm2QCaki6429hCxKrdeV4kklNSMeVkHQLbFOx8/2xJDZwwjeYhj1wbzSCx6/utCLGDZsADKpag==}
     peerDependencies:
       react: ^17 || ^18
     dependencies:
@@ -275,8 +275,8 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
-  /@types/node/18.6.2:
-    resolution: {integrity: sha512-KcfkBq9H4PI6Vpu5B/KoPeuVDAbmi+2mDBqGPGUgoL7yXQtcWGu2vJWmmRkneWK3Rh0nIAX192Aa87AqKHYChQ==}
+  /@types/node/18.6.3:
+    resolution: {integrity: sha512-6qKpDtoaYLM+5+AFChLhHermMQxc3TOEFIDzrZLPRGHPrLEwqFkkT5Kx3ju05g6X7uDPazz3jHbKPX0KzCjntg==}
     dev: true
 
   /@types/prop-types/15.7.5:
