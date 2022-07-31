@@ -5,6 +5,7 @@
 
 h1.heading {
   font-size: 100px;
+  line-height: 104px;
 }
 
 @media (max-width: 600px) {
