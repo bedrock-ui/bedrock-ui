@@ -1,4 +1,9 @@
-import type { DetailedHTMLProps, HTMLAttributes, InputHTMLAttributes } from 'react';
+import type {
+  DetailedHTMLProps,
+  HTMLAttributes,
+  InputHTMLAttributes,
+  TableHTMLAttributes,
+} from 'react';
 
 export type Div = DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
 
@@ -9,3 +14,5 @@ export type Input = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTM
 export type Li = DetailedHTMLProps<React.LiHTMLAttributes<HTMLLIElement>, HTMLLIElement>;
 
 export type Ul = DetailedHTMLProps<HTMLAttributes<HTMLUListElement>, HTMLUListElement>;
+
+export type Table = DetailedHTMLProps<TableHTMLAttributes<HTMLTableElement>, HTMLTableElement>;

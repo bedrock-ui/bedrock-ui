@@ -1,0 +1,28 @@
+.table {
+  --table-border-bottom-color: var(--color-neutral-300);
+  --table-border-bottom-width: 1px;
+  --table-font-size: var(--font-size-default);
+  --table-line-height: 24px;
+  --table-padding: calc(var(--spacing) * 2px);
+
+  border-collapse: collapse;
+  font-size: var(--table-font-size);
+  line-height: var(--table-line-height);
+  width: 100%;
+
+  &.fixed {
+    table-layout: fixed;
+  }
+
+  thead tr th,
+  tbody tr td {
+    border-bottom-color: var(--table-border-bottom-color);
+    border-bottom-style: solid;
+    border-bottom-width: var(--table-border-bottom-width);
+    box-sizing: border-box;
+    display: table-cell;
+    height: 40px;
+    padding: var(--table-padding);
+    text-align: left;
+  }
+}
