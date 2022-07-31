@@ -2,4 +2,4 @@
 
 A bedrock for building design systems
 
-[Documentation](https://matthewwolfe.github.io/bedrock-ui/)
+[Documentation](https://bedrock-ui.github.io/bedrock-ui/)
