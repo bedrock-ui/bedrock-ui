@@ -1,4 +1,5 @@
 import type { Div } from 'types/elements';
+import type { Spacing } from 'types/spacing';
 
 type FlexDirection = 'column' | 'column-reverse' | 'row-reverse';
 
@@ -15,7 +16,7 @@ type JustifyContent =
   | 'start'
   | 'stretch';
 
-export interface Props extends Div {
+export interface Props extends Div, Spacing {
   flexDirection?: FlexDirection;
   justifyContent?: JustifyContent;
 }
