@@ -18,7 +18,7 @@ function VariablesRoot() {
 
   return (
     <DocSection name="Root Variables">
-      <Flex style={{ marginBottom: 32 }}>
+      <Flex mb={8}>
         <Text>
           These are all the global CSS variables that Bedrock UI provides. They primarily serve as
           the basis of the theme colors, and while these variables and the variables specific to
@@ -27,7 +27,7 @@ function VariablesRoot() {
       </Flex>
 
       {rootVariables.map(({ variable, value }, index) => (
-        <Flex key={index} style={{ marginTop: 4, marginBottom: 4 }}>
+        <Flex key={index} my={1}>
           <Text>
             {variable}: {value}
           </Text>

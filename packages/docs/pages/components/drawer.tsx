@@ -40,7 +40,7 @@ function ComponentsDrawer() {
           <Button onClick={() => setLeftOpen(!leftOpen)}>Open/Close Drawer</Button>
 
           <Drawer open={leftOpen} onClose={() => setLeftOpen(false)}>
-            <Flex style={{ padding: 16 }}>
+            <Flex p={4}>
               <Text>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -67,7 +67,7 @@ function ComponentsDrawer() {
           <Button onClick={() => setRightOpen(!rightOpen)}>Open/Close Drawer</Button>
 
           <Drawer position="right" open={rightOpen} onClose={() => setRightOpen(false)}>
-            <Flex style={{ padding: 16 }}>
+            <Flex p={4}>
               <Text>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud

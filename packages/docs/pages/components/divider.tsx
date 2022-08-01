@@ -30,11 +30,11 @@ function ComponentsDivider() {
 
         <Grid.Col span={12}>
           <Flex flexDirection="column">
-            <Flex style={{ marginBottom: 24, width: '100%' }}>
+            <Flex mb={6} style={{ width: '100%' }}>
               <Divider />
             </Flex>
 
-            <Flex style={{ marginBottom: 24, width: '100%' }}>
+            <Flex mb={6} style={{ width: '100%' }}>
               <Divider variant="dashed" />
             </Flex>
 

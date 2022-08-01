@@ -9,7 +9,7 @@ function IconsLibraries() {
         from! Here are a few:
       </Text>
 
-      <Flex style={{ marginTop: 32, marginBottom: 32 }}>
+      <Flex my={8}>
         <List>
           <List.Item>
             <Link href="https://fontawesome.com/icons">Font Awesome</Link>

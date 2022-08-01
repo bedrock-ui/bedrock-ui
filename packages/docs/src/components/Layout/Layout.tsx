@@ -55,7 +55,7 @@ function Layout({ children }: Props) {
         </Flex>
       </Header>
 
-      <Flex style={{ paddingTop: 64 }}>
+      <Flex pt={16}>
         <LeftPanel open={open} onClose={() => setOpen(false)} />
         <Flex className={styles.content}>{children}</Flex>
       </Flex>

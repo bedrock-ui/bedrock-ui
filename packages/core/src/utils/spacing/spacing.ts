@@ -20,7 +20,7 @@ const functions = {
 
 function m(value: number): CSSProperties {
   return {
-    margin: `calc(var(--spacing) * ${value}px`,
+    margin: `calc(var(--spacing) * ${value}px)`,
   };
 }
 
@@ -40,31 +40,31 @@ function my(value: number): CSSProperties {
 
 function mt(value: number): CSSProperties {
   return {
-    marginTop: `calc(var(--spacing) * ${value}px`,
+    marginTop: `calc(var(--spacing) * ${value}px)`,
   };
 }
 
 function mb(value: number): CSSProperties {
   return {
-    marginBottom: `calc(var(--spacing) * ${value}px`,
+    marginBottom: `calc(var(--spacing) * ${value}px)`,
   };
 }
 
 function ml(value: number): CSSProperties {
   return {
-    marginLeft: `calc(var(--spacing) * ${value}px`,
+    marginLeft: `calc(var(--spacing) * ${value}px)`,
   };
 }
 
 function mr(value: number): CSSProperties {
   return {
-    marginRight: `calc(var(--spacing) * ${value}px`,
+    marginRight: `calc(var(--spacing) * ${value}px)`,
   };
 }
 
 function p(value: number): CSSProperties {
   return {
-    margin: `calc(var(--spacing) * ${value}px`,
+    margin: `calc(var(--spacing) * ${value}px)`,
   };
 }
 
@@ -84,25 +84,25 @@ function py(value: number): CSSProperties {
 
 function pt(value: number): CSSProperties {
   return {
-    paddingTop: `calc(var(--spacing) * ${value}px`,
+    paddingTop: `calc(var(--spacing) * ${value}px)`,
   };
 }
 
 function pb(value: number): CSSProperties {
   return {
-    paddingBottom: `calc(var(--spacing) * ${value}px`,
+    paddingBottom: `calc(var(--spacing) * ${value}px)`,
   };
 }
 
 function pl(value: number): CSSProperties {
   return {
-    paddingLeft: `calc(var(--spacing) * ${value}px`,
+    paddingLeft: `calc(var(--spacing) * ${value}px)`,
   };
 }
 
 function pr(value: number): CSSProperties {
   return {
-    paddingRight: `calc(var(--spacing) * ${value}px`,
+    paddingRight: `calc(var(--spacing) * ${value}px)`,
   };
 }
 

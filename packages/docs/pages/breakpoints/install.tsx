@@ -41,14 +41,14 @@ function Responsive() {
 function BreakpointsInstall() {
   return (
     <DocSection name="Breakpoints">
-      <Flex style={{ marginTop: 32, marginBottom: 32 }}>
+      <Flex my={8}>
         <Heading level={5}>Install</Heading>
       </Flex>
 
       <CodeHighlight>{INSTALL_CODE}</CodeHighlight>
 
-      <Flex flexDirection="column" style={{ marginTop: 32, marginBottom: 32 }}>
-        <Flex style={{ marginBottom: 8 }}>
+      <Flex flexDirection="column" my={8}>
+        <Flex mb={2}>
           <Heading level={5}>Usage</Heading>
         </Flex>
 
@@ -60,8 +60,8 @@ function BreakpointsInstall() {
 
       <CodeHighlight>{PROVIDER_CODE}</CodeHighlight>
 
-      <Flex flexDirection="column" style={{ marginTop: 32, marginBottom: 32 }}>
-        <Flex style={{ marginBottom: 8 }}>
+      <Flex flexDirection="column" my={8}>
+        <Flex mb={2}>
           <Heading level={5}>useBreakpoints</Heading>
         </Flex>
 
@@ -73,8 +73,8 @@ function BreakpointsInstall() {
 
       <CodeHighlight>{USE_BREAKPOINTS_CODE}</CodeHighlight>
 
-      <Flex flexDirection="column" style={{ marginTop: 32, marginBottom: 32 }}>
-        <Flex style={{ marginBottom: 8 }}>
+      <Flex flexDirection="column" my={8}>
+        <Flex mb={2}>
           <Heading level={5}>useBreakpointValues</Heading>
         </Flex>
 
