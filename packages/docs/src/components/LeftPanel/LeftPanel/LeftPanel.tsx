@@ -22,7 +22,7 @@ function Wrapper({ children, open, onClose }: WrapperProps) {
   if (matches.mobile) {
     return (
       <Drawer open={open} onClose={onClose} style={{ zIndex: 1100 }}>
-        <Flex flexDirection="column" style={{ padding: 16 }}>
+        <Flex flexDirection="column" p={4}>
           {children}
         </Flex>
       </Drawer>

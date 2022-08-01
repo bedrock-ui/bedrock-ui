@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@bedrock-ui/breakpoints': ^0.0.4
-  '@bedrock-ui/core': ^0.1.4
+  '@bedrock-ui/core': ^0.2.0
   '@tabler/icons': ^1.78.1
   '@types/node': ^18.6.3
   '@types/react': ^18.0.15
@@ -23,7 +23,7 @@ specifiers:
 
 dependencies:
   '@bedrock-ui/breakpoints': 0.0.4_react@18.2.0
-  '@bedrock-ui/core': 0.1.4_react@18.2.0
+  '@bedrock-ui/core': 0.2.0_react@18.2.0
   '@tabler/icons': 1.78.1_react-dom@18.2.0+react@18.2.0
   clsx: 1.2.1
   next: 12.2.3_react-dom@18.2.0+react@18.2.0
@@ -68,8 +68,8 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@bedrock-ui/core/0.1.4_react@18.2.0:
-    resolution: {integrity: sha512-KGS95Vaz8wKYd3lyA+RA8eiNCC1rd0HJR5kEWQ96kPKg7kHnIY1R29TRrZ+N7GBvGJN8rChDiY57OLHQrW/1+A==}
+  /@bedrock-ui/core/0.2.0_react@18.2.0:
+    resolution: {integrity: sha512-yxiQvoIrCVY93jyFKBI+kYiy5aCHBvJ8fJyGWtwDI38Z+FXOcNv5r3DxolreCDMJb+V/imEV25FxsNCU45ic0w==}
     peerDependencies:
       react: ^17 || ^18
     dependencies:

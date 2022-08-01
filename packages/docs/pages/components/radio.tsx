@@ -49,7 +49,7 @@ function ComponentsRadio() {
         <Grid.Col span={12}>
           <Flex>
             <Radio checked={defaultChecked} onChange={() => setDefaultChecked(!defaultChecked)} />
-            <Flex style={{ marginLeft: 12 }}>
+            <Flex ml={3}>
               <Text>Lorem ipsum</Text>
             </Flex>
           </Flex>
@@ -68,7 +68,7 @@ function ComponentsRadio() {
         <Grid.Col span={12}>
           <Flex>
             <Radio checked={errorChecked} error onChange={() => setErrorChecked(!errorChecked)} />
-            <Flex style={{ marginLeft: 12 }}>
+            <Flex ml={3}>
               <Text>Lorem ipsum</Text>
             </Flex>
           </Flex>
@@ -91,7 +91,7 @@ function ComponentsRadio() {
               success
               onChange={() => setSuccessChecked(!successChecked)}
             />
-            <Flex style={{ marginLeft: 12 }}>
+            <Flex ml={3}>
               <Text>Lorem ipsum</Text>
             </Flex>
           </Flex>

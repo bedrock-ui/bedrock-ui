@@ -9,7 +9,7 @@ const INSTALL_CODE = `
 function BreakpointsInstall() {
   return (
     <DocSection name="Core">
-      <Flex style={{ marginTop: 32, marginBottom: 32 }}>
+      <Flex my={8}>
         <Heading level={5}>Install</Heading>
       </Flex>
 
