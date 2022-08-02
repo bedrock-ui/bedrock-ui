@@ -16,7 +16,7 @@
   "author": "Matthew Wolfe",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.18.9",
+    "@babel/core": "^7.18.10",
     "@storybook/addon-actions": "^6.5.9",
     "@storybook/addon-essentials": "^6.5.9",
     "@storybook/addon-interactions": "^6.5.9",
@@ -39,6 +39,5 @@
   },
   "peerDependencies": {
     "react": "^17 || ^18"
-  },
-  "dependencies": {}
+  }
 }
