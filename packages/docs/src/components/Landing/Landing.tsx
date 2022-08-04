@@ -35,7 +35,7 @@ function Landing() {
             </Flex>
 
             <Flex justifyContent="center">
-              <Text style={{ fontWeight: 'bold' }}>Fast. 3kb gzipped + 5kb gzipped CSS</Text>
+              <Text>Fast. 3kb gzipped + 5kb gzipped CSS</Text>
             </Flex>
           </Flex>
         </Grid.Col>
@@ -47,7 +47,7 @@ function Landing() {
             </Flex>
 
             <Flex justifyContent="center">
-              <Text style={{ fontWeight: 'bold' }}>Open source and MIT licensed</Text>
+              <Text>Open source and MIT licensed</Text>
             </Flex>
           </Flex>
         </Grid.Col>
@@ -59,9 +59,7 @@ function Landing() {
             </Flex>
 
             <Flex justifyContent="center">
-              <Text style={{ fontWeight: 'bold' }}>
-                Written with Typescript and Sass. Works with SSR.
-              </Text>
+              <Text>Written with Typescript and Sass. Works with SSR.</Text>
             </Flex>
           </Flex>
         </Grid.Col>
