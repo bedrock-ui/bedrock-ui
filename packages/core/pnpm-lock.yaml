@@ -7,6 +7,7 @@ specifiers:
   '@storybook/addon-interactions': ^6.5.10
   '@storybook/addon-links': ^6.5.10
   '@storybook/builder-webpack4': ^6.5.10
+  '@storybook/client-api': ^6.5.10
   '@storybook/manager-webpack4': ^6.5.10
   '@storybook/react': ^6.5.10
   '@types/react': ^18.0.15
@@ -33,6 +34,7 @@ devDependencies:
   '@storybook/addon-interactions': 6.5.10_218800b4035324d23a54ddd0a8f873c3
   '@storybook/addon-links': 6.5.10_react-dom@18.2.0+react@18.2.0
   '@storybook/builder-webpack4': 6.5.10_bc6f50cf0b6549c5ea71dd58c818affc
+  '@storybook/client-api': 6.5.10_react-dom@18.2.0+react@18.2.0
   '@storybook/manager-webpack4': 6.5.10_bc6f50cf0b6549c5ea71dd58c818affc
   '@storybook/react': 6.5.10_52a383fd08f66b5d5b5209e5dbf56127
   '@types/react': 18.0.15
