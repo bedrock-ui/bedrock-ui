@@ -6,12 +6,17 @@
     "esModuleInterop": true,
     "jsx": "react",
     "lib": ["es2020", "dom"],
-    "module": "commonjs",
+    "module": "esnext",
     "moduleResolution": "node",
-    "outDir": "lib",
+    "outDir": "lib/esm",
     "strict": true,
     "target": "es2019"
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"],
-  "exclude": ["src/**/*.spec.ts", "src/**/*.spec.tsx"]
+  "exclude": [
+    "src/**/*.spec.ts",
+    "src/**/*.spec.tsx",
+    "src/**/*.stories.ts",
+    "src/**/*.stories.tsx"
+  ]
 }

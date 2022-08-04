@@ -1,29 +1,33 @@
 {
   "name": "@bedrock-ui/breakpoints",
-  "version": "0.0.4",
+  "version": "0.2.0",
   "description": "Bedrock UI Breakpoints",
   "files": [
     "lib"
   ],
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "module": "lib/esm/index.js",
+  "main": "lib/cjs/index.js",
+  "types": "lib/cjs/index.d.ts",
+  "sideEffects": false,
   "scripts": {
+    "build": "pnpm build:cjs && pnpm build:esm",
+    "build:cjs": "tsc --project tsconfig.build-cjs.json && tsc-alias -p tsconfig.build-cjs.json",
+    "build:esm": "tsc --project tsconfig.build-esm.json && tsc-alias -p tsconfig.build-esm.json",
     "dev": "start-storybook -p 6006",
-    "build": "tsc --project tsconfig.build.json && tsc-alias -p tsconfig.build.json",
     "test": "jest",
     "typecheck": "tsc --noEmit"
   },
   "author": "Matthew Wolfe",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.18.9",
-    "@storybook/addon-actions": "^6.5.9",
-    "@storybook/addon-essentials": "^6.5.9",
-    "@storybook/addon-interactions": "^6.5.9",
-    "@storybook/addon-links": "^6.5.9",
-    "@storybook/builder-webpack4": "^6.5.9",
-    "@storybook/manager-webpack4": "^6.5.9",
-    "@storybook/react": "^6.5.9",
+    "@babel/core": "^7.18.10",
+    "@storybook/addon-actions": "^6.5.10",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-interactions": "^6.5.10",
+    "@storybook/addon-links": "^6.5.10",
+    "@storybook/builder-webpack4": "^6.5.10",
+    "@storybook/manager-webpack4": "^6.5.10",
+    "@storybook/react": "^6.5.10",
     "@testing-library/react": "^13.3.0",
     "@types/jest": "^28.1.6",
     "@types/react": "^18.0.15",
@@ -39,6 +43,5 @@
   },
   "peerDependencies": {
     "react": "^17 || ^18"
-  },
-  "dependencies": {}
+  }
 }

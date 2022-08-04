@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@bedrock-ui/breakpoints": "^0.0.4",
-    "@bedrock-ui/core": "^0.2.0",
+    "@bedrock-ui/breakpoints": "^0.1.0",
+    "@bedrock-ui/core": "^0.3.0",
     "@tabler/icons": "^1.78.1",
     "clsx": "^1.2.1",
     "next": "^12.2.3",
@@ -23,7 +23,7 @@
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "@types/react-syntax-highlighter": "^15.5.4",
-    "eslint": "^8.20.0",
+    "eslint": "^8.21.0",
     "eslint-config-next": "^12.2.3",
     "mv": "^2.1.1",
     "prettier": "^2.7.1",
