@@ -19,9 +19,9 @@
   border-width: 1px;
   box-sizing: border-box;
   font-size: 16px;
-  line-height: 22px;
-  padding-top: calc(var(--spacing) * 2px);
-  padding-bottom: calc(var(--spacing) * 2px);
+  line-height: 24px;
+  padding-top: calc(var(--spacing) * 2px - 1px);
+  padding-bottom: calc(var(--spacing) * 2px - 1px);
   padding-left: calc(var(--spacing) * 4px);
   padding-right: calc(var(--spacing) * 4px);
   outline: none;
