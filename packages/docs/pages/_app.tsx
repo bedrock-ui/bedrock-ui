@@ -1,5 +1,4 @@
 import '@bedrock-ui/core/css/bedrock-ui.css';
-import 'assets/css/app.css';
 
 import Head from 'next/head';
 import { BreakpointsProvider } from '@bedrock-ui/breakpoints';
