@@ -51,4 +51,20 @@ describe('Button', () => {
       });
     });
   });
+
+  it('square', () => {
+    cy.mount(<Button square>Button</Button>);
+
+    getElement('.button', ({ css }) => {
+      testCss(css, {
+        'background-color': '#1E88E5',
+        'border-radius': '4px',
+        color: '#FFFFFF',
+        'font-size': '16px',
+        height: '40px',
+        'line-height': '24px',
+        padding: '8px',
+      });
+    });
+  });
 });
