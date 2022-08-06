@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "cypress",
     "jsx": "preserve",
     "lib": ["es5", "dom"],
     "target": "es5",
