@@ -22,7 +22,7 @@ const USE_BREAKPOINTS_CODE = `
 import { useBreakpoints } from '@bedrock-ui/breakpoints';
 
 function Responsive() {
-  const matches = useBreakpoints();
+  const { matches } = useBreakpoints();
 
   // { mobile: false, tablet: false, desktop: true }
 }
