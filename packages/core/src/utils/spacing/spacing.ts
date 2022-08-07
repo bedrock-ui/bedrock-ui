@@ -64,7 +64,7 @@ function mr(value: number): CSSProperties {
 
 function p(value: number): CSSProperties {
   return {
-    margin: `calc(var(--spacing) * ${value}px)`,
+    padding: `calc(var(--spacing) * ${value}px)`,
   };
 }
 
