@@ -8,7 +8,7 @@ export default {
 };
 
 export const Breakpoints = () => {
-  const matches = useBreakpoints();
+  const { matches } = useBreakpoints();
 
   return (
     <pre style={{ fontFamily: 'Roboto', fontSize: 24 }}>

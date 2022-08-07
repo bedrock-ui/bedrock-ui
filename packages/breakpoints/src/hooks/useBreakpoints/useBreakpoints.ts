@@ -2,9 +2,9 @@ import { useContext } from 'react';
 import { BreakpointsContext } from 'contexts/breakpoints';
 
 function useBreakpoints() {
-  const { matches } = useContext(BreakpointsContext);
+  const { matches, sx } = useContext(BreakpointsContext);
 
-  return matches;
+  return { matches, sx };
 }
 
 export default useBreakpoints;

@@ -11,6 +11,7 @@ interface IBreakpointsContext {
   matches: BreakpointMatches;
   mediaQueryLists: Array<BreakpointMediaQuery>;
   setMatches: (matches: BreakpointMatches) => void;
+  sx: <T>(values: Record<string, T>) => T | undefined;
 }
 
 const BreakpointsContext = createContext<IBreakpointsContext>({
@@ -18,6 +19,9 @@ const BreakpointsContext = createContext<IBreakpointsContext>({
   matches: {},
   mediaQueryLists: [],
   setMatches: () => {},
+  sx: () => {
+    return undefined;
+  },
 });
 
 export { BreakpointsContext };

@@ -3,6 +3,7 @@ import { BreakpointsContext } from 'contexts/breakpoints';
 import { generateHandler } from 'utils/generateHandler';
 import { getMatches } from 'utils/getMatches';
 import { getMediaQueryLists } from 'utils/getMediaQueryLists';
+import { responsiveValues } from 'utils/responsiveValues';
 
 import type { BreakpointMatches } from 'types/breakpoints';
 import type { Props } from './BreakpointsProvider.types';
@@ -21,6 +22,12 @@ function BreakpointsProvider({
   const [matches, setMatches] = useState<BreakpointMatches>(
     getMatches(mediaQueryLists)
   );
+
+  const sx = useMemo(() => {
+    return function <T>(values: Record<string, T>) {
+      return responsiveValues<T>(matches, values);
+    };
+  }, [matches]);
 
   useEffect(() => {
     mediaQueryLists.forEach(({ breakpointKey, mediaQuery }) => {
@@ -46,7 +53,7 @@ function BreakpointsProvider({
 
   return (
     <BreakpointsContext.Provider
-      value={{ breakpoints, matches, mediaQueryLists, setMatches }}
+      value={{ breakpoints, matches, mediaQueryLists, setMatches, sx }}
     >
       {children}
     </BreakpointsContext.Provider>
