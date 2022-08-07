@@ -8,6 +8,7 @@ function Select({
   children,
   className,
   error = false,
+  rightIcon,
   selectedLabel = '',
   success = false,
   ...props
@@ -25,6 +26,8 @@ function Select({
         tabIndex={0}
       >
         {selectedLabel}
+
+        {!!rightIcon && <div className="right-icon">{rightIcon}</div>}
       </div>
 
       <div className={clsx('menu', { open })} onClick={() => setOpen(false)}>

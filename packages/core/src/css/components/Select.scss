@@ -33,8 +33,10 @@
     box-sizing: border-box;
     color: var(--select-color-selected-label);
     cursor: pointer;
+    display: flex;
     font-size: 16px;
     height: 40px;
+    justify-content: space-between;
     line-height: 24px;
     padding-top: calc(var(--spacing) * 2px - 1px);
     padding-bottom: calc(var(--spacing) * 2px - 1px);
@@ -42,6 +44,10 @@
     padding-right: calc(var(--spacing) * 4px);
     outline: none;
     width: 100%;
+
+    .right-icon {
+      margin-left: auto;
+    }
 
     &:focus {
       box-shadow: var(--select-box-shadow-focus);
