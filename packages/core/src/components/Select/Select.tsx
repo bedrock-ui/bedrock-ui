@@ -27,7 +27,7 @@ function Select({
       >
         {selectedLabel}
 
-        {!!rightIcon && rightIcon}
+        {!!rightIcon && <div className="right-icon">{rightIcon}</div>}
       </div>
 
       <div className={clsx('menu', { open })} onClick={() => setOpen(false)}>
