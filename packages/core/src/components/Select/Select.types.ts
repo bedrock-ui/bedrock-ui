@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import type { Div } from 'types/elements';
 
 export interface OptionProps extends Div {
@@ -6,6 +7,7 @@ export interface OptionProps extends Div {
 
 export interface Props extends Div {
   error?: boolean;
-  selectedLabel?: string;
+  rightIcon?: ReactNode;
+  selectedLabel?: ReactNode;
   success?: boolean;
 }

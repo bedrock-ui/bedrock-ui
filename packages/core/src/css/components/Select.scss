@@ -33,8 +33,10 @@
     box-sizing: border-box;
     color: var(--select-color-selected-label);
     cursor: pointer;
+    display: flex;
     font-size: 16px;
     height: 40px;
+    justify-content: space-between;
     line-height: 24px;
     padding-top: calc(var(--spacing) * 2px - 1px);
     padding-bottom: calc(var(--spacing) * 2px - 1px);
