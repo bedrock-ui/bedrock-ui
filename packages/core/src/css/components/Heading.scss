@@ -1,11 +1,20 @@
 .heading {
-  --heading-color: var(--color-black);
+  --heading-color: var(--color-neutral-900);
+  --heading-color-primary: var(--color-primary-600);
   --heading-font-size-multiplier: 10;
   --heading-font-weight: 500;
 
   color: var(--heading-color);
   font-weight: var(--heading-font-weight);
   margin: 0;
+
+  &.primary {
+    color: var(--heading-color-primary);
+  }
+
+  &.white {
+    color: var(--color-white);
+  }
 }
 
 h1.heading {
