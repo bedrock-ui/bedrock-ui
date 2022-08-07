@@ -12,12 +12,12 @@ const headings = {
   6: 'h6',
 };
 
-function Heading({ className, level = 1, ...props }: Props) {
+function Heading({ className, color, level = 1, ...props }: Props) {
   return createElement(
     headings[level],
     {
       ...props,
-      className: clsx('heading', className),
+      className: clsx('heading', color, className),
     },
     props.children
   );
