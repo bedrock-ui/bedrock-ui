@@ -17,7 +17,7 @@ interface WrapperProps extends SharedProps {
 }
 
 function Wrapper({ children, open, onClose }: WrapperProps) {
-  const matches = useBreakpoints();
+  const { matches } = useBreakpoints();
 
   if (matches.mobile) {
     return (

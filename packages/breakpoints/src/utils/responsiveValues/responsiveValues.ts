@@ -4,6 +4,10 @@ function responsiveValues<T>(
   matches: BreakpointMatches,
   responsiveValues: Record<string, T>
 ): T | undefined {
+  if (typeof window === 'undefined') {
+    return undefined;
+  }
+
   const key = Object.keys(matches).find((match) => matches[match]);
 
   if (!key) {

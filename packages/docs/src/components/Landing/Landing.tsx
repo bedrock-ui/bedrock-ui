@@ -6,7 +6,9 @@ import styles from './Landing.module.css';
 
 function Landing() {
   const router = useRouter();
-  const matches = useBreakpoints();
+  const { sx } = useBreakpoints();
+
+  console.log(sx({ mobile: 12, tablet: 4, desktop: 4 }));
 
   return (
     <Flex className={styles.page} flexDirection="column">
@@ -28,7 +30,7 @@ function Landing() {
       </Flex>
 
       <Grid className={styles.highlights}>
-        <Grid.Col span={matches.mobile ? 12 : 4}>
+        <Grid.Col span={sx({ mobile: 12, tablet: 4, desktop: 4 })}>
           <Flex flexDirection="column">
             <Flex justifyContent="center">
               <IconRocket size={64} style={{ marginBottom: 16 }} />
@@ -40,7 +42,7 @@ function Landing() {
           </Flex>
         </Grid.Col>
 
-        <Grid.Col span={matches.mobile ? 12 : 4}>
+        <Grid.Col span={sx({ mobile: 12, tablet: 4, desktop: 4 })}>
           <Flex flexDirection="column">
             <Flex justifyContent="center">
               <IconLicense size={64} style={{ marginBottom: 16 }} />
@@ -52,7 +54,7 @@ function Landing() {
           </Flex>
         </Grid.Col>
 
-        <Grid.Col span={matches.mobile ? 12 : 4}>
+        <Grid.Col span={sx({ mobile: 12, tablet: 4, desktop: 4 })}>
           <Flex flexDirection="column">
             <Flex justifyContent="center">
               <IconSettings size={64} style={{ marginBottom: 16 }} />

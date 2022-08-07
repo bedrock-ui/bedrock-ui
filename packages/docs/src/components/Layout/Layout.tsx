@@ -15,7 +15,7 @@ interface Props {
 
 function Layout({ children }: Props) {
   const { pathname } = useRouter();
-  const matches = useBreakpoints();
+  const { matches } = useBreakpoints();
 
   const [open, setOpen] = useState<boolean>(false);
 
