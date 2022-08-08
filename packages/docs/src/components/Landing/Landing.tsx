@@ -1,5 +1,4 @@
 import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
 import { useBreakpoints } from '@bedrock-ui/breakpoints';
 import { Button, Flex, Grid, Heading, Text } from '@bedrock-ui/core';
 import { IconLicense, IconSettings, IconRocket } from '@tabler/icons';
@@ -8,16 +7,6 @@ import styles from './Landing.module.css';
 function Landing() {
   const router = useRouter();
   const { sx } = useBreakpoints();
-
-  const [mounted, setMounted] = useState<boolean>(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    return null;
-  }
 
   return (
     <Flex className={styles.page} flexDirection="column">
