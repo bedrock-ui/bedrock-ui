@@ -1,6 +1,6 @@
 {
   "name": "@bedrock-ui/breakpoints",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Bedrock UI Breakpoints",
   "files": [
     "lib"
