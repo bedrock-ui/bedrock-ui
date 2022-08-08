@@ -8,10 +8,6 @@ function Grid({ className, ...props }: Props) {
 }
 
 function GridCol({ className, span, ...props }: ColProps) {
-  if (span === undefined) {
-    return null;
-  }
-
   return <div {...props} className={clsx('grid-item', `col-${span}`)} />;
 }
 
