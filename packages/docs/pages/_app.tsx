@@ -1,6 +1,7 @@
 import '@bedrock-ui/core/css/bedrock-ui.css';
 
 import Head from 'next/head';
+import { useEffect, useState } from 'react';
 import { BreakpointsProvider } from '@bedrock-ui/breakpoints';
 import { Layout } from 'components/Layout';
 
@@ -13,11 +14,20 @@ const BREAKPOINTS = {
 };
 
 function App({ Component, pageProps }: AppProps) {
+  const [mounted, setMounted] = useState<boolean>(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
+
   return (
     <>
       <Head>
         <title>Bedrock UI</title>
-
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
