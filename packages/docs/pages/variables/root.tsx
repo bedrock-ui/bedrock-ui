@@ -36,14 +36,13 @@ function VariablesRoot() {
 
         <tbody>
           {rootVariables.map(({ variable, value }, index) => (
-            <tr key={index} >
+            <tr key={index}>
               <td>{variable}</td>
               <td>{value}</td>
             </tr>
           ))}
         </tbody>
       </Table>
-
     </DocSection>
   );
 }
