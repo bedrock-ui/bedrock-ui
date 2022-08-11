@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Flex, Text } from '@bedrock-ui/core';
+import { Flex, Text, Table } from '@bedrock-ui/core';
 import { DocSection } from 'components/DocSection';
 import { getRootVariables } from 'utils/getRootVariables';
 
@@ -26,13 +26,24 @@ function VariablesRoot() {
         </Text>
       </Flex>
 
-      {rootVariables.map(({ variable, value }, index) => (
-        <Flex key={index} my={1}>
-          <Text>
-            {variable}: {value}
-          </Text>
-        </Flex>
-      ))}
+      <Table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {rootVariables.map(({ variable, value }, index) => (
+            <tr key={index} >
+              <td>{variable}</td>
+              <td>{value}</td>
+            </tr>
+          ))}
+        </tbody>
+      </Table>
+
     </DocSection>
   );
 }
