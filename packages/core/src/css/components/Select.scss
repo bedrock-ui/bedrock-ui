@@ -99,7 +99,7 @@
     &.open {
       display: flex;
       flex-direction: column;
-      margin-top: calc(var(--spacing) * 2px);
+      margin-top: calc(var(--spacing) * 1px);
     }
 
     .option {
