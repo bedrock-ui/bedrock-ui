@@ -14,7 +14,7 @@ const DRAWER_CODE = `
 `.trim();
 
 const DRAWER_RIGHT_CODE = `
-<Drawer open={open}>
+<Drawer open={open} position="right">
   Lorem ipsum dolor sit amet...
 </Drawer>
 `.trim();
@@ -60,7 +60,7 @@ function ComponentsDrawer() {
         </Grid.Col>
 
         <Grid.Col span={12}>
-          <CodeHighlight>{DRAWER_CODE}</CodeHighlight>
+          <CodeHighlight>{DRAWER_RIGHT_CODE}</CodeHighlight>
         </Grid.Col>
 
         <Grid.Col span={12}>
