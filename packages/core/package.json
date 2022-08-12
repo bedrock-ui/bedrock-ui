@@ -1,23 +1,26 @@
 {
   "name": "@bedrock-ui/core",
-  "version": "0.4.10",
+  "version": "0.4.11",
   "description": "Bedrock UI Core",
   "files": [
     "css",
-    "lib"
+    "lib",
+    "sass"
   ],
   "module": "lib/esm/index.js",
   "main": "lib/cjs/index.js",
   "types": "lib/cjs/index.d.ts",
   "sideEffects": false,
   "scripts": {
-    "build": "pnpm build:css && pnpm build:cjs && pnpm build:esm",
+    "build": "pnpm rm:build && pnpm build:css && pnpm build:sass && pnpm build:cjs && pnpm build:esm",
     "build:css": "sass ./src/css/bedrock-ui.scss css/bedrock-ui.css --style compressed --no-source-map",
     "build:cjs": "tsc --project tsconfig.build-cjs.json && tsc-alias -p tsconfig.build-cjs.json",
     "build:esm": "tsc --project tsconfig.build-esm.json && tsc-alias -p tsconfig.build-esm.json",
+    "build:sass": "node ./scripts/copy-sass.mjs",
     "build-storybook": "build-storybook",
     "css-size": "node ./scripts/css-size.mjs",
     "dev": "concurrently \"npm run sass:watch\" \"npm run storybook\"",
+    "rm:build": "rimraf css lib sass",
     "storybook": "start-storybook -p 6006",
     "typecheck": "tsc --noEmit",
     "sass:watch": "sass --watch ./src/css/bedrock-ui.scss css/bedrock-ui.css --style compressed"
@@ -38,11 +41,13 @@
     "babel-loader": "^8.2.5",
     "bytes": "^3.1.2",
     "concurrently": "^7.3.0",
+    "fs-extra": "^10.1.0",
     "gzip-size": "^7.0.0",
     "jest": "^28.1.3",
     "prettier": "^2.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "rimraf": "^3.0.2",
     "sass": "^1.54.2",
     "tsc-alias": "^1.7.0",
     "typescript": "^4.7.4"
