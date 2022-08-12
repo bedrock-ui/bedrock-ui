@@ -4,7 +4,7 @@ specifiers:
   '@bedrock-ui/core': ^0.4.11
   '@cypress/mount-utils': ^2.0.1
   '@vitejs/plugin-react': ^1.3.2
-  cypress: ^10.3.0
+  cypress: ^10.4.0
   prettier: ^2.7.1
   react: ^18.2.0
   react-dom: ^18.2.0
@@ -19,7 +19,7 @@ dependencies:
 devDependencies:
   '@cypress/mount-utils': 2.0.1
   '@vitejs/plugin-react': 1.3.2
-  cypress: 10.3.0
+  cypress: 10.4.0
   prettier: 2.7.1
   typescript: 4.7.4
   vite: 2.9.14
@@ -687,8 +687,8 @@ packages:
       which: 2.0.2
     dev: true
 
-  /cypress/10.3.0:
-    resolution: {integrity: sha512-txkQWKzvBVnWdCuKs5Xc08gjpO89W2Dom2wpZgT9zWZT5jXxqPIxqP/NC1YArtkpmp3fN5HW8aDjYBizHLUFvg==}
+  /cypress/10.4.0:
+    resolution: {integrity: sha512-OM7F8MRE01SHQRVVzunid1ZK1m90XTxYnl+7uZfIrB4CYqUDCrZEeSyCXzIbsS6qcaijVCAhqDL60SxG8N6hew==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     requiresBuild: true
