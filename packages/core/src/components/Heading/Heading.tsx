@@ -1,5 +1,6 @@
 import React, { createElement } from 'react';
 import clsx from 'clsx';
+import { breakpoints } from 'utils/breakpoints';
 
 import type { Props } from './Heading.types';
 
@@ -17,7 +18,7 @@ function Heading({ className, color, level = 1, ...props }: Props) {
     headings[level],
     {
       ...props,
-      className: clsx('heading', color, className),
+      className: clsx('heading', breakpoints(color), className),
     },
     props.children
   );

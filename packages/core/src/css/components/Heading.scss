@@ -8,12 +8,14 @@
   font-weight: var(--heading-font-weight);
   margin: 0;
 
-  &.primary {
-    color: var(--heading-color-primary);
-  }
+  @include responsive() using ($key) {
+    &.primary#{$key} {
+      color: var(--heading-color-primary);
+    }
 
-  &.white {
-    color: var(--color-white);
+    &.white#{$key} {
+      color: var(--color-white);
+    }
   }
 }
 

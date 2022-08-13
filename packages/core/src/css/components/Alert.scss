@@ -64,8 +64,7 @@
 
     &.outlined {
       background-color: var(--alert-background-color-success-outlined);
-      box-shadow: inset 0px 0px 0px 1px
-        var(--alert-border-color-success-outlined);
+      box-shadow: inset 0px 0px 0px 1px var(--alert-border-color-success-outlined);
     }
   }
 
@@ -80,8 +79,7 @@
 
     &.outlined {
       background-color: var(--alert-background-color-warning-outlined);
-      box-shadow: inset 0px 0px 0px 1px
-        var(--alert-border-color-warning-outlined);
+      box-shadow: inset 0px 0px 0px 1px var(--alert-border-color-warning-outlined);
     }
   }
 }

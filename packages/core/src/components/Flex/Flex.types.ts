@@ -1,3 +1,4 @@
+import type { MaybeBreakpointObject } from 'types/breakpoints';
 import type { Div } from 'types/elements';
 import type { Spacing } from 'types/spacing';
 

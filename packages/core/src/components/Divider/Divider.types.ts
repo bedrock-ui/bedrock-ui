@@ -1,5 +1,6 @@
+import type { MaybeBreakpointObject } from 'types/breakpoints';
 import type { Hr } from 'types/elements';
 
 export interface Props extends Hr {
-  variant?: 'dashed' | 'dotted';
+  variant?: MaybeBreakpointObject<'dashed' | 'dotted' | 'solid'>;
 }
