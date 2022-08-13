@@ -1,13 +1,14 @@
 import clsx from 'clsx';
 import React from 'react';
 import { useSpacing } from 'hooks/useSpacing';
+import { breakpoints } from 'utils/breakpoints';
 
 import type { Props } from './Flex.types';
 
 function Flex({
   className,
-  flexDirection,
-  justifyContent,
+  flexDirection = 'row',
+  justifyContent = 'normal',
   m,
   mx,
   my,
@@ -45,10 +46,12 @@ function Flex({
   return (
     <div
       {...props}
-      className={clsx('flex', className, {
-        [`flex-direction-${flexDirection}`]: flexDirection !== undefined,
-        [`justify-content-${justifyContent}`]: justifyContent !== undefined,
-      })}
+      className={clsx(
+        'flex',
+        className,
+        breakpoints(flexDirection, { prefix: 'flex-direction-' }),
+        breakpoints(justifyContent, { prefix: 'justify-content-' })
+      )}
       style={{ ...styles, ...style }}
     />
   );
