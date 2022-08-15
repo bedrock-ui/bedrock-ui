@@ -1,4 +1,4 @@
-$breakpoints: ();
+$breakpoints: () !default;
 
 @import 'mixins/responsive';
 @import 'theme/baseline';
