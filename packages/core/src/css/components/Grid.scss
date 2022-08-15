@@ -10,8 +10,10 @@
   display: block;
 }
 
-@for $i from 1 through 12 {
-  .grid-item.col-#{$i} {
-    grid-column: span #{$i} / auto;
+@include responsive() using ($key) {
+  @for $i from 1 through 12 {
+    .grid-item.col-#{$i}#{$key} {
+      grid-column: span #{$i} / auto;
+    }
   }
 }

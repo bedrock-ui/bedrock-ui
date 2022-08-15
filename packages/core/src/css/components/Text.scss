@@ -10,11 +10,13 @@
   font-size: var(--text-font-size);
   line-height: var(--text-line-height);
 
-  &.primary {
-    color: var(--text-color-primary);
-  }
+  @include responsive() using ($key) {
+    &.primary#{$key} {
+      color: var(--text-color-primary);
+    }
 
-  &.white {
-    color: var(--color-white);
+    &.white#{$key} {
+      color: var(--color-white);
+    }
   }
 }

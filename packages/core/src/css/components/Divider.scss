@@ -3,14 +3,21 @@
   --divider-size: 1px;
 
   border: 0;
-  border-bottom: var(--divider-size) solid var(--divider-color);
+  border-bottom-color: var(--divider-color);
+  border-bottom-width: var(--divider-size);
   width: 100%;
 
-  &.dashed {
-    border-style: dashed;
-  }
+  @include responsive() using ($key) {
+    &.dashed#{$key} {
+      border-style: dashed;
+    }
 
-  &.dotted {
-    border-style: dotted;
+    &.dotted#{$key} {
+      border-style: dotted;
+    }
+
+    &.solid#{$key} {
+      border-style: solid;
+    }
   }
 }

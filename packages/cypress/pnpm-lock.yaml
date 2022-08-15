@@ -1,10 +1,10 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@bedrock-ui/core': ^0.4.5
-  '@cypress/mount-utils': ^2.0.0
+  '@bedrock-ui/core': ^0.4.11
+  '@cypress/mount-utils': ^2.0.1
   '@vitejs/plugin-react': ^1.3.2
-  cypress: ^10.3.0
+  cypress: ^10.4.0
   prettier: ^2.7.1
   react: ^18.2.0
   react-dom: ^18.2.0
@@ -12,14 +12,14 @@ specifiers:
   vite: ^2.9.14
 
 dependencies:
-  '@bedrock-ui/core': 0.4.5_react@18.2.0
+  '@bedrock-ui/core': 0.4.11_react@18.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
 
 devDependencies:
-  '@cypress/mount-utils': 2.0.0
+  '@cypress/mount-utils': 2.0.1
   '@vitejs/plugin-react': 1.3.2
-  cypress: 10.3.0
+  cypress: 10.4.0
   prettier: 2.7.1
   typescript: 4.7.4
   vite: 2.9.14
@@ -285,8 +285,8 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@bedrock-ui/core/0.4.5_react@18.2.0:
-    resolution: {integrity: sha512-D9agbC12ckrSqb3z+OcwIiFf/EuEBIkOfef7mhiwV840tNzHlh7tV0vAIypVQudipzDDAQ/iRBUdciTg5/XYHg==}
+  /@bedrock-ui/core/0.4.11_react@18.2.0:
+    resolution: {integrity: sha512-E3sxm/qT75HLtqxoBzlUHaL7dBzcWyIosbUTz6fqQbu5yJLnq8PrFWae+Xef+WYdqB2m03jNnYlYGQUM6FT7Tw==}
     peerDependencies:
       react: ^17 || ^18
     dependencies:
@@ -301,8 +301,8 @@ packages:
     dev: true
     optional: true
 
-  /@cypress/mount-utils/2.0.0:
-    resolution: {integrity: sha512-lG7jKlzaKYuuh7NtBY834zZmbmxA5GYsqRJitCb1v5pdhwt0L91tBxmgHh401K26FKXMUzTfighjtwENSglyTQ==}
+  /@cypress/mount-utils/2.0.1:
+    resolution: {integrity: sha512-LatvDsqMWnM9ZmMll63YHNRvhAT4zh/VJ8OriYSiViZZG2BTOzpLiSWXHOqpdTxKWkSxXZeUq3aipx9UEv8O1g==}
     dev: true
 
   /@cypress/request/2.88.10:
@@ -687,8 +687,8 @@ packages:
       which: 2.0.2
     dev: true
 
-  /cypress/10.3.0:
-    resolution: {integrity: sha512-txkQWKzvBVnWdCuKs5Xc08gjpO89W2Dom2wpZgT9zWZT5jXxqPIxqP/NC1YArtkpmp3fN5HW8aDjYBizHLUFvg==}
+  /cypress/10.4.0:
+    resolution: {integrity: sha512-OM7F8MRE01SHQRVVzunid1ZK1m90XTxYnl+7uZfIrB4CYqUDCrZEeSyCXzIbsS6qcaijVCAhqDL60SxG8N6hew==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     requiresBuild: true

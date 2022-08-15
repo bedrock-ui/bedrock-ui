@@ -1,59 +1,69 @@
 .flex {
   display: flex;
 
-  &.flex-direction-column {
-    flex-direction: column;
-  }
+  @include responsive() using ($key) {
+    &.flex-direction-column#{$key} {
+      flex-direction: column;
+    }
 
-  &.flex-direction-column-reverse {
-    flex-direction: column-reverse;
-  }
+    &.flex-direction-column-reverse#{$key} {
+      flex-direction: column-reverse;
+    }
 
-  &.flex-direction-row-reverse {
-    flex-direction: row-reverse;
-  }
+    &.flex-direction-row#{$key} {
+      flex-direction: row;
+    }
 
-  &.justify-content-center {
-    justify-content: center;
-  }
+    &.flex-direction-row-reverse#{$key} {
+      flex-direction: row-reverse;
+    }
 
-  &.justify-content-end {
-    justify-content: end;
-  }
+    &.justify-content-center#{$key} {
+      justify-content: center;
+    }
 
-  &.justify-content-flex-end {
-    justify-content: flex-end;
-  }
+    &.justify-content-end#{$key} {
+      justify-content: end;
+    }
 
-  &.justify-content-left {
-    justify-content: left;
-  }
+    &.justify-content-flex-end#{$key} {
+      justify-content: flex-end;
+    }
 
-  &.justify-content-flex-start {
-    justify-content: flex-start;
-  }
+    &.justify-content-flex-start#{$key} {
+      justify-content: flex-start;
+    }
 
-  &.justify-content-right {
-    justify-content: right;
-  }
+    &.justify-content-left#{$key} {
+      justify-content: left;
+    }
 
-  &.justify-content-space-around {
-    justify-content: space-around;
-  }
+    &.justify-content-normal#{$key} {
+      justify-content: normal;
+    }
 
-  &.justify-content-space-between {
-    justify-content: space-between;
-  }
+    &.justify-content-right#{$key} {
+      justify-content: right;
+    }
 
-  &.justify-content-space-evenly {
-    justify-content: space-evenly;
-  }
+    &.justify-content-space-around#{$key} {
+      justify-content: space-around;
+    }
 
-  &.justify-content-start {
-    justify-content: start;
-  }
+    &.justify-content-space-between#{$key} {
+      justify-content: space-between;
+    }
 
-  &.justify-content-stretch {
-    justify-content: stretch;
+    &.justify-content-space-evenly#{$key} {
+      justify-content: space-evenly;
+    }
+
+    &.justify-content-start#{$key} {
+      justify-content: start;
+    }
+
+    &.justify-content-stretch#{$key} {
+      justify-content: stretch;
+    }
   }
 }

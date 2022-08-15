@@ -1,3 +1,6 @@
+$breakpoints: () !default;
+
+@import 'mixins/responsive';
 @import 'theme/baseline';
 @import 'theme/colors';
 @import 'theme/shadows';
