@@ -1,14 +1,16 @@
+import type { MaybeBreakpointObject } from 'types/breakpoints';
 import type { Div } from 'types/elements';
 import type { Spacing } from 'types/spacing';
 
-type FlexDirection = 'column' | 'column-reverse' | 'row-reverse';
+type FlexDirection = 'column' | 'column-reverse' | 'row' | 'row-reverse';
 
 type JustifyContent =
   | 'center'
   | 'end'
   | 'flex-end'
-  | 'left'
   | 'flex-start'
+  | 'left'
+  | 'normal'
   | 'right'
   | 'space-around'
   | 'space-between'
@@ -17,6 +19,6 @@ type JustifyContent =
   | 'stretch';
 
 export interface Props extends Div, Spacing {
-  flexDirection?: FlexDirection;
-  justifyContent?: JustifyContent;
+  flexDirection?: MaybeBreakpointObject<FlexDirection>;
+  justifyContent?: MaybeBreakpointObject<JustifyContent>;
 }

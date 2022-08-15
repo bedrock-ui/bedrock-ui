@@ -6,14 +6,7 @@ import type { Props } from './Flex.types';
 export default {
   title: 'Flex',
   component: BedrockFlex,
-  argTypes: {
-    flexDirection: {
-      control: { type: 'select' },
-    },
-    justifyContent: {
-      control: { type: 'select' },
-    },
-  },
+  argTypes: {},
 };
 
 export const Flex = (props: Props) => (
