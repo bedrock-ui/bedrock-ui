@@ -1,5 +1,11 @@
 $breakpoints: () !default;
 
+:root {
+  @each $property, $value in $breakpoints {
+    --breakpoint-#{$property}: #{$value};
+  }
+}
+
 @import 'mixins/responsive';
 @import 'theme/baseline';
 @import 'theme/colors';

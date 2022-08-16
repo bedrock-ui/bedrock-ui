@@ -4,6 +4,10 @@ export interface VariablePair {
 }
 
 function getRootVariables(): VariablePair[] {
+  if (typeof window === 'undefined') {
+    return [];
+  }
+
   return Array.from(document.styleSheets)
     .filter((sheet) => sheet.href === null || sheet.href.startsWith(window.location.origin))
     .reduce((variables: string[], sheet: CSSStyleSheet) => {
