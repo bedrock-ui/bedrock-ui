@@ -11,7 +11,7 @@ describe('Checkbox', () => {
         onChange={(checked) => {
           console.log(checked);
         }}
-      ></Checkbox>
+      />
     );
 
     getElement('.checkbox', ({ css }) => {
@@ -43,7 +43,7 @@ describe('Checkbox', () => {
         onChange={(checked) => {
           console.log(checked);
         }}
-      ></Checkbox>
+      />
     );
 
     getElement('.checkbox', ({ css }) => {
@@ -72,7 +72,7 @@ describe('Checkbox', () => {
         onChange={(checked) => {
           console.log(checked);
         }}
-      ></Checkbox>
+      />
     );
 
     getElement('.checkbox', ({ css }) => {
@@ -105,7 +105,7 @@ describe('Checkbox', () => {
         onChange={(checked) => {
           console.log(checked);
         }}
-      ></Checkbox>
+      />
     );
 
     getElement('.checkbox', ({ css }) => {
@@ -134,7 +134,7 @@ describe('Checkbox', () => {
         onChange={(checked) => {
           console.log(checked);
         }}
-      ></Checkbox>
+      />
     );
 
     getElement('.checkbox', ({ css }) => {
@@ -167,7 +167,7 @@ describe('Checkbox', () => {
         onChange={(checked) => {
           console.log(checked);
         }}
-      ></Checkbox>
+      />
     );
 
     getElement('.checkbox', ({ css }) => {
