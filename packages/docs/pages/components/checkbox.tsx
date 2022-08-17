@@ -16,14 +16,14 @@ const CHECKBOX_CODE = `
 
 const CHECKBOX_ERROR_CODE = `
 <Flex>
-  <Checkbox error />
+  <Checkbox error checked={checked} onChange={() => setChecked(!checked)}/>
   <Text>Lorem ipsum</Text>
 </Flex>
 `.trim();
 
 const CHECKBOX_SUCCESS_CODE = `
 <Flex>
-  <Checkbox success />
+  <Checkbox success checked={checked} onChange={() => setChecked(!checked)} />
   <Text>Lorem ipsum</Text>
 </Flex>
 `.trim();
