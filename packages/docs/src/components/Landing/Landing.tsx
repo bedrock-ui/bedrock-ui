@@ -61,6 +61,14 @@ function Landing() {
             </Flex>
           </Flex>
         </Grid.Col>
+
+        <Grid.Col span={{ mobile: 12, tablet: 12, desktop: 12 }}>
+          <Flex justifyContent="center" mt={16}>
+            <Button onClick={() => router.push('/blog')} variant="outlined">
+              Visit Blog
+            </Button>
+          </Flex>
+        </Grid.Col>
       </Grid>
     </Flex>
   );

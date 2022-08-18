@@ -1,5 +1,5 @@
 import { IconBrandGithub, IconMenu2 } from '@tabler/icons';
-import { Button, Flex, Header, Heading } from '@bedrock-ui/core';
+import { Button, Flex, Header, Heading, Link } from '@bedrock-ui/core';
 import { useBreakpoints } from '@bedrock-ui/breakpoints';
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
@@ -44,6 +44,12 @@ function Layout({ children }: Props) {
           </Flex>
 
           <Flex>
+            <Flex flexDirection="column" justifyContent="center" mx={6}>
+              <NextLink href="/blog" passHref>
+                <Link>Blog</Link>
+              </NextLink>
+            </Flex>
+
             <Button
               onClick={() => window.open('https://github.com/matthewwolfe/bedrock-ui', '_blank')}
               square
@@ -56,8 +62,14 @@ function Layout({ children }: Props) {
       </Header>
 
       <Flex pt={16}>
-        <LeftPanel open={open} onClose={() => setOpen(false)} />
-        <Flex className={styles.content}>{children}</Flex>
+        {pathname.startsWith('/blog') ? (
+          children
+        ) : (
+          <>
+            <LeftPanel open={open} onClose={() => setOpen(false)} />
+            <Flex className={styles.content}>{children}</Flex>
+          </>
+        )}
       </Flex>
     </>
   );
