@@ -11,7 +11,7 @@
   "dependencies": {
     "@bedrock-ui/breakpoints": "^0.3.3",
     "@bedrock-ui/core": "^0.5.2",
-    "@tabler/icons": "^1.82.0",
+    "@tabler/icons": "^1.83.1",
     "clsx": "^1.2.1",
     "next": "^12.2.5",
     "react": "^18.2.0",
@@ -19,7 +19,7 @@
     "react-syntax-highlighter": "^15.5.0"
   },
   "devDependencies": {
-    "@types/node": "^18.7.5",
+    "@types/node": "^18.7.6",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@types/react-syntax-highlighter": "^15.5.4",
