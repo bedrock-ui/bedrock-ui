@@ -8,8 +8,10 @@ const nextConfig = {
         basePath: '/bedrock-ui',
       }
     : {}),
-  images: {
-    unoptimized: true,
+  experimental: {
+    images: {
+      unoptimized: true,
+    },
   },
   reactStrictMode: false,
   swcMinify: true,
