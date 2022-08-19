@@ -1,6 +1,6 @@
 import type { Div } from 'types/elements';
 
 export interface Props extends Div {
-  children?: string;
+  text: string;
   highlight: Array<string> | string;
 }

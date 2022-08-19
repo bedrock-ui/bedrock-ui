@@ -17,7 +17,6 @@ describe('Highlight', () => {
     });
 
     getElement('mark', (a) => {
-      console.log(a.element);
       testCss(a.css, {
         'background-color': '#FFE082',
       });
