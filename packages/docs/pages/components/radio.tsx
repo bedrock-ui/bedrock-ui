@@ -16,14 +16,14 @@ const RADIO_CODE = `
 
 const RADIO_ERROR_CODE = `
 <Flex>
-  <Radio error />
+  <Radio error checked={checked} onChange={() => setChecked(!checked)} />
   <Text>Lorem ipsum</Text>
 </Flex>
 `.trim();
 
 const RADIO_SUCCESS_CODE = `
 <Flex>
-  <Radio success />
+  <Radio success checked={checked} onChange={() => setChecked(!checked)} />
   <Text>Lorem ipsum</Text>
 </Flex>
 `.trim();
