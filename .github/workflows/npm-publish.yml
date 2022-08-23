@@ -10,7 +10,7 @@ on:
       - "packages/core/**"
 
 jobs:
-  patch:
+  update-core-version:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -36,7 +36,7 @@ jobs:
       - run: npm install -g pnpm
       - run: pnpm install --frozen-lockfile
         working-directory: ./packages/core
-      - run: npm publish
+      - run: pnpm publish
         working-directory: ./packages/core
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
