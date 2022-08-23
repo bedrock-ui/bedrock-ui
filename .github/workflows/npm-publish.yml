@@ -28,7 +28,7 @@ jobs:
 
   minor:
     runs-on: ubuntu-latest
-    if: ${{ (contains(github.event.head_commit.message, 'minor') }}
+    if: ${{ contains(github.event.head_commit.message, 'minor') }}
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -44,7 +44,7 @@ jobs:
   
   major:
     runs-on: ubuntu-latest
-    if: ${{ (contains(github.event.head_commit.message, 'major') }}
+    if: ${{ contains(github.event.head_commit.message, 'major') }}
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
