@@ -66,6 +66,7 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/@bedrock-ui/core
+      - run: npm install -g pnpm
       - run: pnpm install --frozen-lockfile
       - run: npm publish
         env:
