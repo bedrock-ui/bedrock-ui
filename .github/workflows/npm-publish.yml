@@ -1,0 +1,72 @@
+# This workflow will run when a push occurs on main. More specifically, when the core package is modified.
+
+name: Node.js Package
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'pacakges/core/**'
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    if: ${{ !(contains(github.event.head_commit.message, 'minor') && !(contains(github.event.head_commit.message, 'major')}}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - run: git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+      - run: git config user.name "$GITHUB_ACTOR"
+      - run: npm version patch
+        working-directory: ./packages/core
+      - run: VERSION=$(node -p "require('./package.json').version")
+        working-directory: ./packages/core
+      - run: git tag ${VERSION}
+      - run: git push "https://$GITHUB_ACTOR:${{ secrets.ACCESS_TOKEN }}@github.com/$GITHUB_REPOSITORY.git" --follow-tags
+      - run: git push "https://$GITHUB_ACTOR:${{ secrets.ACCESS_TOKEN }}@github.com/$GITHUB_REPOSITORY.git" --tags
+
+  minor:
+    runs-on: ubuntu-latest
+    if: ${{ (contains(github.event.head_commit.message, 'minor') }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - run: git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+      - run: git config user.name "$GITHUB_ACTOR"
+      - run: npm version minor
+        working-directory: ./packages/core
+      - run: VERSION=$(node -p "require('./package.json').version")
+        working-directory: ./packages/core
+      - run: git tag ${VERSION}
+      - run: git push "https://$GITHUB_ACTOR:${{ secrets.ACCESS_TOKEN }}@github.com/$GITHUB_REPOSITORY.git" --follow-tags
+      - run: git push "https://$GITHUB_ACTOR:${{ secrets.ACCESS_TOKEN }}@github.com/$GITHUB_REPOSITORY.git" --tags
+  
+  major:
+    runs-on: ubuntu-latest
+    if: ${{ (contains(github.event.head_commit.message, 'major') }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - run: git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+      - run: git config user.name "$GITHUB_ACTOR"
+      - run: npm version major
+        working-directory: ./packages/core
+      - run: VERSION=$(node -p "require('./package.json').version")
+        working-directory: ./packages/core
+      - run: git tag ${VERSION}
+      - run: git push "https://$GITHUB_ACTOR:${{ secrets.ACCESS_TOKEN }}@github.com/$GITHUB_REPOSITORY.git" --follow-tags
+      - run: git push "https://$GITHUB_ACTOR:${{ secrets.ACCESS_TOKEN }}@github.com/$GITHUB_REPOSITORY.git" --tags
+
+  publish-npm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: https://registry.npmjs.org/@bedrock-ui/core
+      - run: npm ci
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
