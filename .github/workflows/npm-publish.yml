@@ -12,7 +12,6 @@ on:
 jobs:
   patch:
     runs-on: ubuntu-latest
-    if: ${{ !contains(github.event.head_commit.message, 'minor') && !contains(github.event.head_commit.message, 'major') }}
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -22,56 +21,13 @@ jobs:
       - run: git config user.name "$GITHUB_ACTOR"
       - run: npm version patch
         working-directory: ./packages/core
-      - run: VERSION=$(node -p "require('./package.json').version")
-        working-directory: ./packages/core
-      - run: git tag ${VERSION}
-      - run: git push "https://$GITHUB_ACTOR:${{ secrets.ACCESS_TOKEN }}@github.com/$GITHUB_REPOSITORY.git" --follow-tags
-      - run: git push "https://$GITHUB_ACTOR:${{ secrets.ACCESS_TOKEN }}@github.com/$GITHUB_REPOSITORY.git" --tags
-      - run: npm install -g pnpm
-      - run: pnpm install --frozen-lockfile
-        working-directory: ./packages/core
-      - run: npm publish
-        working-directory: ./packages/core
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
-
-  minor:
-    runs-on: ubuntu-latest
-    if: ${{ contains(github.event.head_commit.message, 'minor') }}
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - run: git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
-      - run: git config user.name "$GITHUB_ACTOR"
+        if: ${{ !contains(github.event.head_commit.message, 'minor') && !contains(github.event.head_commit.message, 'major') }}
       - run: npm version minor
         working-directory: ./packages/core
-      - run: VERSION=$(node -p "require('./package.json').version")
-        working-directory: ./packages/core
-      - run: git tag ${VERSION}
-      - run: git push "https://$GITHUB_ACTOR:${{ secrets.ACCESS_TOKEN }}@github.com/$GITHUB_REPOSITORY.git" --follow-tags
-      - run: git push "https://$GITHUB_ACTOR:${{ secrets.ACCESS_TOKEN }}@github.com/$GITHUB_REPOSITORY.git" --tags
-      - run: npm install -g pnpm
-      - run: pnpm install --frozen-lockfile
-        working-directory: ./packages/core
-      - run: npm publish
-        working-directory: ./packages/core
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
-
-  major:
-    runs-on: ubuntu-latest
-    if: ${{ contains(github.event.head_commit.message, 'major') }}
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - run: git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
-      - run: git config user.name "$GITHUB_ACTOR"
+        if: ${{ contains(github.event.head_commit.message, 'minor') }}
       - run: npm version major
         working-directory: ./packages/core
+        if: ${{ contains(github.event.head_commit.message, 'major') }}
       - run: VERSION=$(node -p "require('./package.json').version")
         working-directory: ./packages/core
       - run: git tag ${VERSION}
