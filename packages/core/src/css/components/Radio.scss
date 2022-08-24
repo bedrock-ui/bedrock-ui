@@ -26,7 +26,6 @@
     border-style: solid;
     border-width: var(--radio-border-size);
     box-sizing: border-box;
-    box-sizing: border-box;
     cursor: pointer;
     display: inline-flex;
     height: var(--radio-size);
@@ -35,7 +34,6 @@
     &:focus {
       box-shadow: var(--radio-box-shadow-focus);
       border-color: var(--radio-border-color-focus);
-      border-width: 1px;
       outline: none;
     }
 
@@ -49,18 +47,15 @@
 
       &.error {
         border-color: var(--radio-border-color-error);
-        border-width: calc(calc(var(--radio-size) / 4) + 2px);
       }
 
       &.success {
         border-color: var(--radio-border-color-success);
-        border-width: calc(calc(var(--radio-size) / 4) + 2px);
       }
     }
 
     &.error {
       border-color: var(--radio-border-color-error);
-      border-width: 1px;
 
       &:focus {
         box-shadow: var(--radio-box-shadow-focus-error);
@@ -69,7 +64,6 @@
 
     &.success {
       border-color: var(--radio-border-color-success);
-      border-width: 1px;
 
       &:focus {
         box-shadow: var(--radio-box-shadow-focus-success);
