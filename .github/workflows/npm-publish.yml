@@ -1,0 +1,47 @@
+# This workflow will run when a push occurs on main. More specifically, when the core package is modified.
+
+name: Node.js Package
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "packages/core/**"
+
+jobs:
+  update-core-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: 'https://registry.npmjs.org'
+      - run: git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+      - run: git config user.name "$GITHUB_ACTOR"
+      - run: npm version patch
+        working-directory: ./packages/core
+        if: ${{ !contains(github.event.head_commit.message, 'minor') && !contains(github.event.head_commit.message, 'major') }}
+      - run: npm version minor
+        working-directory: ./packages/core
+        if: ${{ contains(github.event.head_commit.message, 'minor') }}
+      - run: npm version major
+        working-directory: ./packages/core
+        if: ${{ contains(github.event.head_commit.message, 'major') }}
+      - run: VERSION=$(node -p "require('./package.json').version")
+        working-directory: ./packages/core
+      - run: git tag ${VERSION}
+      - run: git add .
+      - run: git commit -m "Updating Version"
+      - run: git push "https://$GITHUB_ACTOR:${{ secrets.ACCESS_TOKEN }}@github.com/$GITHUB_REPOSITORY.git" --follow-tags
+      - run: git push "https://$GITHUB_ACTOR:${{ secrets.ACCESS_TOKEN }}@github.com/$GITHUB_REPOSITORY.git" --tags
+      - run: npm install -g pnpm
+      - run: pnpm install --frozen-lockfile
+        working-directory: ./packages/core
+      - run: pnpm build
+        working-directory: ./packages/core
+      - run: npm publish --access public
+        working-directory: ./packages/core
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

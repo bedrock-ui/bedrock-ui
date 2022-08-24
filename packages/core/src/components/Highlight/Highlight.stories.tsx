@@ -8,7 +8,7 @@ export default {
   title: 'Highlight',
   component: BedrockHighlight,
   argTypes: {
-    children: {
+    text: {
       control: { type: 'text' },
     },
     highlight: {
@@ -16,7 +16,7 @@ export default {
     },
   },
   args: {
-    children: 'A walk in the park',
+    text: 'A walk in the park',
     highlight: 'walk',
   },
 };

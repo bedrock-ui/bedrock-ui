@@ -3,24 +3,24 @@ import clsx from 'clsx';
 
 import type { Props } from './Highlight.types';
 
-function Highlight({ className, children, highlight, ...props }: Props) {
+function Highlight({ className, text, highlight, ...props }: Props) {
   const fragments = useMemo(
     () =>
-      children.split(/(\s+)/).map((text) => ({
-        text,
-        match: Array.isArray(highlight) ? highlight.includes(text) : highlight === text,
+      text.split(/(\s+)/).map((word) => ({
+        word,
+        match: Array.isArray(highlight) ? highlight.includes(word) : highlight === word,
       })),
-    [children, highlight]
+    [text, highlight]
   );
 
   return (
     <div {...props} className={clsx('highlight', className)}>
-      {fragments.map(({ text, match }) => {
+      {fragments.map(({ word, match }) => {
         if (match) {
-          return <mark>{text}</mark>;
+          return <mark>{word}</mark>;
         }
 
-        return <span>{text}</span>;
+        return <span>{word}</span>;
       })}
     </div>
   );
