@@ -8,17 +8,15 @@ import { Highlight } from '@bedrock-ui/core';
 
 const HIGHLIGHT_CODE = `
 <Highlight 
-highlight="consectetur" 
-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua."
+  highlight="consectetur" 
+  text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 />
 `.trim();
 
 const HIGHLIGHT_MULTIPLE_CODE = `
 <Highlight 
-highlight={['consectetur', 'dolore']}
-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua."
+  highlight={['consectetur', 'dolore']}
+  text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 />
 `.trim();
 
@@ -39,8 +37,7 @@ function ComponentsHighlight() {
         <Grid.Col span={12}>
           <Highlight
             highlight="consectetur"
-            text="            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua."
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
           />
         </Grid.Col>
       </Grid>
@@ -57,8 +54,7 @@ function ComponentsHighlight() {
         <Grid.Col span={12}>
           <Highlight
             highlight={['consectetur', 'dolore']}
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua."
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
           />
         </Grid.Col>
       </Grid>
