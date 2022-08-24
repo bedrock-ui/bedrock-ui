@@ -7,17 +7,19 @@ import { Highlight } from '@bedrock-ui/core';
 `.trim();
 
 const HIGHLIGHT_CODE = `
-<Highlight highlight="consectetur">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-  incididunt ut labore et dolore magna aliqua.
-</Highlight>
+<Highlight 
+highlight="consectetur" 
+text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua."
+/>
 `.trim();
 
 const HIGHLIGHT_MULTIPLE_CODE = `
-<Highlight highlight={['consectetur', 'dolore']}>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-  incididunt ut labore et dolore magna aliqua.
-</Highlight>
+<Highlight 
+highlight={['consectetur', 'dolore']}
+text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua."
+/>
 `.trim();
 
 function ComponentsHighlight() {
@@ -35,10 +37,11 @@ function ComponentsHighlight() {
         </Grid.Col>
 
         <Grid.Col span={12}>
-          <Highlight highlight="consectetur">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua.
-          </Highlight>
+          <Highlight
+            highlight="consectetur"
+            text="            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua."
+          />
         </Grid.Col>
       </Grid>
 
@@ -52,10 +55,11 @@ function ComponentsHighlight() {
         </Grid.Col>
 
         <Grid.Col span={12}>
-          <Highlight highlight={['consectetur', 'dolore']}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua.
-          </Highlight>
+          <Highlight
+            highlight={['consectetur', 'dolore']}
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua."
+          />
         </Grid.Col>
       </Grid>
     </DocSection>

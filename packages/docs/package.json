@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@bedrock-ui/breakpoints": "^0.3.3",
-    "@bedrock-ui/core": "^0.5.2",
+    "@bedrock-ui/core": "^0.5.6",
     "@tabler/icons": "^1.83.1",
     "clsx": "^1.2.1",
     "next": "^12.2.5",
