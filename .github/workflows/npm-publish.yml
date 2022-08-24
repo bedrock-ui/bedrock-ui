@@ -31,7 +31,7 @@ jobs:
       - run: VERSION=$(node -p "require('./package.json').version")
         working-directory: ./packages/core
       - run: git tag ${VERSION}
-      - run: git git add .
+      - run: git add .
       - run: git commit -m "Updating Version"
       - run: git push "https://$GITHUB_ACTOR:${{ secrets.ACCESS_TOKEN }}@github.com/$GITHUB_REPOSITORY.git" --follow-tags
       - run: git push "https://$GITHUB_ACTOR:${{ secrets.ACCESS_TOKEN }}@github.com/$GITHUB_REPOSITORY.git" --tags
