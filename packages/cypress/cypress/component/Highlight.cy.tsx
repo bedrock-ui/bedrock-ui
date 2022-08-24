@@ -7,7 +7,11 @@ describe('Highlight', () => {
   it('default', () => {
     // TODO : Make sure the error on Highlight type disappear
     // We need to take off the children proprety.
-    cy.mount(<Highlight highlight={['test']}>This is just a test !</Highlight>);
+    cy.mount(
+      <Highlight highlight={'test'} text={'this is just a test !'}>
+        This is just a test !
+      </Highlight>
+    );
 
     getElement('.highlight', ({ css }) => {
       testCss(css, {

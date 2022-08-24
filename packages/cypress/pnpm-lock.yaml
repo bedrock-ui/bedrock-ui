@@ -1,8 +1,9 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
-  '@bedrock-ui/core': ^0.4.11
+  '@bedrock-ui/core': ^0.5.6
   '@cypress/mount-utils': ^2.0.1
+  '@types/react': ^18.0.17
   '@vitejs/plugin-react': ^1.3.2
   cypress: ^10.4.0
   prettier: ^2.7.1
@@ -12,12 +13,13 @@ specifiers:
   vite: ^2.9.14
 
 dependencies:
-  '@bedrock-ui/core': 0.4.11_react@18.2.0
+  '@bedrock-ui/core': 0.5.6_react@18.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
 
 devDependencies:
   '@cypress/mount-utils': 2.0.1
+  '@types/react': 18.0.17
   '@vitejs/plugin-react': 1.3.2
   cypress: 10.4.0
   prettier: 2.7.1
@@ -194,6 +196,8 @@ packages:
     resolution: {integrity: sha512-RSKRfYX20dyH+elbJK2uqAkVyucL+xXzhqlMD5/ZXx+dAAwpyB7HsvnHe/ZUGOF+xLr5Wx9/JoXVTj6BQE2/oA==}
     engines: {node: '>=6.0.0'}
     hasBin: true
+    dependencies:
+      '@babel/types': 7.18.8
     dev: true
 
   /@babel/plugin-syntax-jsx/7.18.6_@babel+core@7.18.6:
@@ -285,8 +289,8 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@bedrock-ui/core/0.4.11_react@18.2.0:
-    resolution: {integrity: sha512-E3sxm/qT75HLtqxoBzlUHaL7dBzcWyIosbUTz6fqQbu5yJLnq8PrFWae+Xef+WYdqB2m03jNnYlYGQUM6FT7Tw==}
+  /@bedrock-ui/core/0.5.6_react@18.2.0:
+    resolution: {integrity: sha512-O9URdkHdD20xOJOV361A2CR/Q0v7pvd5K9ghVnozjthpZHc4uNxq+gzCgptTwC4W+EpPGg1qvuj8SufcOmsuCg==}
     peerDependencies:
       react: ^17 || ^18
     dependencies:
@@ -329,11 +333,13 @@ packages:
       uuid: 8.3.2
     dev: true
 
-  /@cypress/xvfb/1.2.4:
+  /@cypress/xvfb/1.2.4_supports-color@8.1.1:
     resolution: {integrity: sha512-skbBzPggOVYCbnGgV+0dmBdW/s77ZkAOXIC1knS8NagwDjBrNC1LuXtQJeiN6l+m7lzmHtaoUw/ctJKdqkG57Q==}
     dependencies:
-      debug: 3.2.7
+      debug: 3.2.7_supports-color@8.1.1
       lodash.once: 4.1.1
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /@jridgewell/gen-mapping/0.1.1:
@@ -384,6 +390,22 @@ packages:
 
   /@types/node/14.18.21:
     resolution: {integrity: sha512-x5W9s+8P4XteaxT/jKF0PSb7XEvo5VmqEWgsMlyeY4ZlLK8I6aH6g5TPPyDlLAep+GYf4kefb7HFyc7PAO3m+Q==}
+    dev: true
+
+  /@types/prop-types/15.7.5:
+    resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
+    dev: true
+
+  /@types/react/18.0.17:
+    resolution: {integrity: sha512-38ETy4tL+rn4uQQi7mB81G7V1g0u2ryquNmsVIOKUAEIDK+3CUjZ6rSRpdvS99dNBnkLFL83qfmtLacGOTIhwQ==}
+    dependencies:
+      '@types/prop-types': 15.7.5
+      '@types/scheduler': 0.16.2
+      csstype: 3.1.0
+    dev: true
+
+  /@types/scheduler/0.16.2:
+    resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==}
     dev: true
 
   /@types/sinonjs__fake-timers/8.1.1:
@@ -687,6 +709,10 @@ packages:
       which: 2.0.2
     dev: true
 
+  /csstype/3.1.0:
+    resolution: {integrity: sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==}
+    dev: true
+
   /cypress/10.4.0:
     resolution: {integrity: sha512-OM7F8MRE01SHQRVVzunid1ZK1m90XTxYnl+7uZfIrB4CYqUDCrZEeSyCXzIbsS6qcaijVCAhqDL60SxG8N6hew==}
     engines: {node: '>=12.0.0'}
@@ -694,7 +720,7 @@ packages:
     requiresBuild: true
     dependencies:
       '@cypress/request': 2.88.10
-      '@cypress/xvfb': 1.2.4
+      '@cypress/xvfb': 1.2.4_supports-color@8.1.1
       '@types/node': 14.18.21
       '@types/sinonjs__fake-timers': 8.1.1
       '@types/sizzle': 2.3.3
@@ -748,10 +774,16 @@ packages:
     resolution: {integrity: sha512-xxwlswWOlGhzgQ4TKzASQkUhqERI3egRNqgV4ScR8wlANA/A9tZ7miXa44vTTKEq5l7vWoL5G57bG3zA+Kow0A==}
     dev: true
 
-  /debug/3.2.7:
+  /debug/3.2.7_supports-color@8.1.1:
     resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
     dependencies:
       ms: 2.1.3
+      supports-color: 8.1.1
     dev: true
 
   /debug/4.3.4:
