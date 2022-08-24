@@ -41,4 +41,4 @@ jobs:
       - run: pnpm publish --access public
         working-directory: ./packages/core
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
