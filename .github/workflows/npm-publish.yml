@@ -36,7 +36,7 @@ jobs:
       - run: npm install -g pnpm
       - run: pnpm install --frozen-lockfile
         working-directory: ./packages/core
-      - run: pnpm publish
+      - run: pnpm publish --access public
         working-directory: ./packages/core
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
