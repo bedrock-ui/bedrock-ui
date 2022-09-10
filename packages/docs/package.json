@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@bedrock-ui/breakpoints": "^0.3.3",
     "@bedrock-ui/core": "^0.5.7",
     "@tabler/icons": "^1.95.0",
     "clsx": "^1.2.1",

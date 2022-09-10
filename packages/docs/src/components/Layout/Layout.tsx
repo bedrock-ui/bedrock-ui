@@ -1,6 +1,5 @@
 import { IconBrandGithub, IconMenu2 } from '@tabler/icons';
-import { Button, Flex, Header, Heading, Link } from '@bedrock-ui/core';
-import { useBreakpoints } from '@bedrock-ui/breakpoints';
+import { Button, Flex, Header, Heading, Hidden, Link } from '@bedrock-ui/core';
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
@@ -15,7 +14,6 @@ interface Props {
 
 function Layout({ children }: Props) {
   const { pathname } = useRouter();
-  const { matches } = useBreakpoints();
 
   const [open, setOpen] = useState<boolean>(false);
 
@@ -27,13 +25,13 @@ function Layout({ children }: Props) {
     <>
       <Header position="fixed" style={{ zIndex: 1000 }}>
         <Flex justifyContent="space-between" style={{ width: '100%' }}>
-          {matches.mobile && (
+          <Hidden on={{ mobile: false, tablet: true, desktop: true }}>
             <Flex>
               <Button onClick={() => setOpen(!open)} variant="text">
                 <IconMenu2 size={24} />
               </Button>
             </Flex>
-          )}
+          </Hidden>
 
           <Flex flexDirection="column" justifyContent="center">
             <NextLink href="/">
