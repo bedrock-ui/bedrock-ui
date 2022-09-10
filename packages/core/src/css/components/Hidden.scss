@@ -1,0 +1,11 @@
+.hidden {
+  @include responsive() using ($key) {
+    &.true#{$key} {
+      display: none;
+    }
+
+    &.false#{$key} {
+      display: inherit;
+    }
+  }
+}
