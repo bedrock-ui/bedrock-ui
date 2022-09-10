@@ -1,5 +1,4 @@
-import { useBreakpoints } from '@bedrock-ui/breakpoints';
-import { Drawer, Flex } from '@bedrock-ui/core';
+import { Drawer, Flex, Hidden } from '@bedrock-ui/core';
 import { Link } from '../Link';
 import styles from './LeftPanel.module.css';
 
@@ -17,22 +16,22 @@ interface WrapperProps extends SharedProps {
 }
 
 function Wrapper({ children, open, onClose }: WrapperProps) {
-  const { matches } = useBreakpoints();
+  return (
+    <>
+      <Hidden on={{ mobile: false, tablet: true, desktop: true }}>
+        <Drawer open={open} onClose={onClose} style={{ zIndex: 1100 }}>
+          <Flex flexDirection="column" p={4}>
+            {children}
+          </Flex>
+        </Drawer>
+      </Hidden>
 
-  if (matches.mobile) {
-    return (
-      <Drawer open={open} onClose={onClose} style={{ zIndex: 1100 }}>
-        <Flex flexDirection="column" p={4}>
+      <Hidden on={{ mobile: true, tablet: false, desktop: false }}>
+        <Flex className={styles.leftPanel} flexDirection="column">
           {children}
         </Flex>
-      </Drawer>
-    );
-  }
-
-  return (
-    <Flex className={styles.leftPanel} flexDirection="column">
-      {children}
-    </Flex>
+      </Hidden>
+    </>
   );
 }
 
@@ -66,10 +65,6 @@ function LeftPanel({ open, onClose }: Props) {
       <Link href="/components/text">Text</Link>
       <Link href="/components/textarea">Textarea</Link>
       <Link href="/components/textinput">TextInput</Link>
-
-      <p>Breakpoints</p>
-
-      <Link href="/breakpoints/install">Install</Link>
 
       <p>Icons</p>
 
