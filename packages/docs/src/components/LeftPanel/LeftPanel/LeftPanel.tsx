@@ -66,10 +66,6 @@ function LeftPanel({ open, onClose }: Props) {
       <Link href="/components/textarea">Textarea</Link>
       <Link href="/components/textinput">TextInput</Link>
 
-      <p>Breakpoints</p>
-
-      <Link href="/breakpoints/install">Install</Link>
-
       <p>Icons</p>
 
       <Link href="/icons/libraries">Icon Libraries</Link>

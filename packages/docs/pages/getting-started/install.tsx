@@ -6,7 +6,7 @@ const INSTALL_CODE = `
 (npm|yarn|pnpm) install @bedrock-ui/core
 `.trim();
 
-function BreakpointsInstall() {
+function GettingStartedInstall() {
   return (
     <DocSection name="Core">
       <Flex my={8}>
@@ -18,4 +18,4 @@ function BreakpointsInstall() {
   );
 }
 
-export default BreakpointsInstall;
+export default GettingStartedInstall;
