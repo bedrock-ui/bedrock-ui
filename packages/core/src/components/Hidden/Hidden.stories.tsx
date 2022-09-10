@@ -9,8 +9,4 @@ export default {
   argTypes: {},
 };
 
-export const Hidden = (props: Props) => (
-  <BedrockHidden {...props} on={{ mobile: true, tablet: false, desktop: true }}>
-    Hidden content
-  </BedrockHidden>
-);
+export const Hidden = (props: Props) => <BedrockHidden {...props}>Hidden content</BedrockHidden>;

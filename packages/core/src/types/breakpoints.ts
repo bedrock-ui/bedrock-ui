@@ -1,1 +1,3 @@
-export type MaybeBreakpointObject<T> = Record<string, T> | T;
+export type MaybeBreakpointObject<T> = BreakpointObject<T> | T;
+
+export type BreakpointObject<T> = Record<string, T>;
