@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { Button, Flex, Grid, Heading, Text } from '@bedrock-ui/core';
+import { Button, Box, Flex, Grid, Heading, Text } from '@bedrock-ui/core';
 import { IconLicense, IconSettings, IconRocket } from '@tabler/icons';
 import styles from './Landing.module.css';
 
@@ -29,23 +29,13 @@ function Landing() {
         <Grid.Col span={{ mobile: 12, tablet: 4, desktop: 4 }}>
           <Flex flexDirection="column">
             <Flex justifyContent="center">
-              <IconRocket size={64} style={{ marginBottom: 16 }} />
+              <Box className={styles.iconContainer}>
+                <IconRocket size={32} stroke={1.5} />
+              </Box>
             </Flex>
 
             <Flex justifyContent="center">
-              <Text>Fast. 3kb gzipped + 5kb gzipped CSS</Text>
-            </Flex>
-          </Flex>
-        </Grid.Col>
-
-        <Grid.Col span={{ mobile: 12, tablet: 4, desktop: 4 }}>
-          <Flex flexDirection="column">
-            <Flex justifyContent="center">
-              <IconLicense size={64} style={{ marginBottom: 16 }} />
-            </Flex>
-
-            <Flex justifyContent="center">
-              <Text>Open source and MIT licensed</Text>
+              <Heading level={6}>Fast. 3kb gzipped + 5kb gzipped CSS</Heading>
             </Flex>
           </Flex>
         </Grid.Col>
@@ -53,11 +43,27 @@ function Landing() {
         <Grid.Col span={{ mobile: 12, tablet: 4, desktop: 4 }}>
           <Flex flexDirection="column">
             <Flex justifyContent="center">
-              <IconSettings size={64} style={{ marginBottom: 16 }} />
+              <Box className={styles.iconContainer}>
+                <IconLicense size={32} stroke={1.5} />
+              </Box>
             </Flex>
 
             <Flex justifyContent="center">
-              <Text>Written with Typescript and Sass. Works with SSR.</Text>
+              <Heading level={6}>Open source and MIT licensed</Heading>
+            </Flex>
+          </Flex>
+        </Grid.Col>
+
+        <Grid.Col span={{ mobile: 12, tablet: 4, desktop: 4 }}>
+          <Flex flexDirection="column">
+            <Flex justifyContent="center">
+              <Box className={styles.iconContainer}>
+                <IconSettings size={32} stroke={1.5} />
+              </Box>
+            </Flex>
+
+            <Flex justifyContent="center">
+              <Heading level={6}>Typescript and Sass. Works with SSR.</Heading>
             </Flex>
           </Flex>
         </Grid.Col>

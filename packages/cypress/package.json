@@ -7,17 +7,17 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@bedrock-ui/core": "^0.5.7",
+    "@bedrock-ui/core": "^0.5.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@cypress/mount-utils": "^2.1.0",
-    "@types/react": "^18.0.19",
+    "@types/react": "^18.0.20",
     "@vitejs/plugin-react": "^2.1.0",
-    "cypress": "^10.7.0",
+    "cypress": "^10.8.0",
     "prettier": "^2.7.1",
     "typescript": "^4.8.3",
-    "vite": "^3.1.0"
+    "vite": "^3.1.2"
   }
 }
