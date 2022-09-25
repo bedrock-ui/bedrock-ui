@@ -24,6 +24,7 @@ export type { TextInputProps } from 'components/TextInput';
 
 export { Alert } from 'components/Alert';
 export { Box } from 'components/Box';
+export { Badge } from 'components/Badge';
 export { Button } from 'components/Button';
 export { Card } from 'components/Card';
 export { Checkbox } from 'components/Checkbox';
