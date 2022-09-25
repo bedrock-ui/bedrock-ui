@@ -1,5 +1,6 @@
 export type { AlertProps } from 'components/Alert';
 export type { BoxProps } from 'components/Box';
+export type { BadgeProps } from 'components/Badge';
 export type { ButtonProps } from 'components/Button';
 export type { CardProps } from 'components/Card';
 export type { CheckboxProps } from 'components/Checkbox';
