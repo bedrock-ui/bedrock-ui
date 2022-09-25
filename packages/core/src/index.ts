@@ -1,5 +1,6 @@
 export type { AlertProps } from 'components/Alert';
 export type { BoxProps } from 'components/Box';
+export type { BadgeProps } from 'components/Badge';
 export type { ButtonProps } from 'components/Button';
 export type { CardProps } from 'components/Card';
 export type { CheckboxProps } from 'components/Checkbox';
@@ -23,6 +24,7 @@ export type { TextInputProps } from 'components/TextInput';
 
 export { Alert } from 'components/Alert';
 export { Box } from 'components/Box';
+export { Badge } from 'components/Badge';
 export { Button } from 'components/Button';
 export { Card } from 'components/Card';
 export { Checkbox } from 'components/Checkbox';
