@@ -46,6 +46,7 @@ function LeftPanel({ open, onClose }: Props) {
       <p>Core</p>
 
       <Link href="/components/alert">Alert</Link>
+      <Link href="/components/badge">Badge</Link>
       <Link href="/components/button">Button</Link>
       <Link href="/components/card">Card</Link>
       <Link href="/components/checkbox">Checkbox</Link>
