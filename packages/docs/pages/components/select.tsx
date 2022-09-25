@@ -1,5 +1,5 @@
 import { Grid, Heading, Select } from '@bedrock-ui/core';
-import { IconArrowsMoveVertical } from '@tabler/icons';
+import { IconSelector } from '@tabler/icons';
 import { CodeHighlight } from 'components/CodeHighlight';
 import { DocSection } from 'components/DocSection';
 
@@ -72,7 +72,10 @@ function ComponentsSelect() {
         </Grid.Col>
 
         <Grid.Col span={12}>
-          <Select rightIcon={<IconArrowsMoveVertical />} style={{ maxWidth: 320 }}>
+          <Select
+            rightIcon={<IconSelector color="var(--color-neutral-400)" size={24} />}
+            style={{ maxWidth: 320 }}
+          >
             <Select.Option>Lorem ipsum</Select.Option>
             <Select.Option>dolor sit amet</Select.Option>
             <Select.Option>consectetur adipiscing elit</Select.Option>
