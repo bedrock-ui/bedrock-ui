@@ -1,15 +1,8 @@
-import type {
-  AnchorHTMLAttributes,
-  DetailedHTMLProps,
-  ElementType,
-} from 'react';
+import type { AnchorHTMLAttributes, DetailedHTMLProps, ElementType } from 'react';
 
-type Anchor = DetailedHTMLProps<
-  AnchorHTMLAttributes<HTMLAnchorElement>,
-  HTMLAnchorElement
->;
+type Anchor = DetailedHTMLProps<AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>;
 
 export interface Props extends Anchor {
   component?: ElementType;
-  inline?: boolean;
+  underline?: boolean;
 }

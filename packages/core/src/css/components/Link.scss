@@ -6,8 +6,13 @@
   display: inline;
   font-size: 16px;
   line-height: 24px;
+  text-decoration: none;
 
   &:hover {
+    text-decoration: underline;
+  }
+
+  &.underline {
     text-decoration: underline;
   }
 }

@@ -3,8 +3,8 @@ import clsx from 'clsx';
 
 import type { Props } from './Link.types';
 
-function Link({ className, ...props }: Props) {
-  return <a {...props} className={clsx('link', className)} />;
+function Link({ className, underline = false, ...props }: Props) {
+  return <a {...props} className={clsx('link', className, { underline })} />;
 }
 
 export default Link;
