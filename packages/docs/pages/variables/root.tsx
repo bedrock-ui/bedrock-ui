@@ -26,7 +26,7 @@ function VariablesRoot() {
         </Text>
       </Flex>
 
-      <Table>
+      <Table fixed>
         <thead>
           <tr>
             <th>Name</th>

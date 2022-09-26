@@ -5,7 +5,7 @@ interface Options {
 function breakpoints<T>(value: T, options?: Options): string {
   const { prefix = '' } = options || {};
 
-  if (typeof value !== 'object') {
+  if (typeof value !== 'object' && value !== undefined && value !== null) {
     return `${prefix}${value}`;
   }
 
