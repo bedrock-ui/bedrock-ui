@@ -1,4 +1,4 @@
-import { Grid, Link } from '@bedrock-ui/core';
+import { Grid, Heading, Link } from '@bedrock-ui/core';
 import { CodeHighlight } from 'components/CodeHighlight';
 import { DocSection } from 'components/DocSection';
 
@@ -8,6 +8,10 @@ import { Link } from '@bedrock-ui/core';
 
 const LINK_CODE = `
 <Link href="#">Lorem ipsum</Link>
+`;
+
+const LINK_UNDERLINE_CODE = `
+<Link href="#" underline>Lorem ipsum</Link>
 `;
 
 function ComponentsLink() {
@@ -22,6 +26,22 @@ function ComponentsLink() {
 
         <Grid.Col span={12}>
           <Link href="#">Lorem ipsum</Link>
+        </Grid.Col>
+      </Grid>
+
+      <Grid style={{ marginBottom: 64 }}>
+        <Grid.Col span={12}>
+          <Heading level={3}>Underline</Heading>
+        </Grid.Col>
+
+        <Grid.Col span={12}>
+          <CodeHighlight>{LINK_UNDERLINE_CODE}</CodeHighlight>
+        </Grid.Col>
+
+        <Grid.Col span={12}>
+          <Link href="#" underline>
+            Lorem ipsum
+          </Link>
         </Grid.Col>
       </Grid>
     </DocSection>
