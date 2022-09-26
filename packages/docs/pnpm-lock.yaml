@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@bedrock-ui/core': ^0.6.1
+  '@bedrock-ui/core': ^0.6.2
   '@tabler/icons': ^1.100.0
   '@types/node': ^18.7.21
   '@types/react': ^18.0.21
@@ -22,7 +22,7 @@ specifiers:
   typescript: ^4.8.3
 
 dependencies:
-  '@bedrock-ui/core': 0.6.1_react@18.2.0
+  '@bedrock-ui/core': 0.6.2_react@18.2.0
   '@tabler/icons': 1.100.0_biqbaboplfbrettd7655fr4n2y
   clsx: 1.2.1
   next: 12.3.1_2mygebwfgdyopr3fy2qddu2eli
@@ -60,8 +60,8 @@ packages:
     dependencies:
       regenerator-runtime: 0.13.9
 
-  /@bedrock-ui/core/0.6.1_react@18.2.0:
-    resolution: {integrity: sha512-7EGcOBXtA8fM0F8U3Sg5E2QUAon+PCXxYW8s9lSHtGnhfevojnulfJgMz0Jzfv0WjX/k3KCSLKuTjeWn22NQrw==}
+  /@bedrock-ui/core/0.6.2_react@18.2.0:
+    resolution: {integrity: sha512-+Mh/D1DUY7Z2GGotfKxPrAb8LigjYQc0pxgYqF+b8NDqLgEaet1xixjbGLOtQmb3HgN0elMWOR9V9z9evjY/Lw==}
     peerDependencies:
       react: ^17 || ^18
     dependencies:

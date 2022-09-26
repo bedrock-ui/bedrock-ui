@@ -23,7 +23,7 @@ function Layout({ children }: Props) {
 
   return (
     <>
-      <Header position="fixed" style={{ zIndex: 1000 }}>
+      <Header position="fixed">
         <Flex justifyContent="space-between" style={{ width: '100%' }}>
           <Hidden on={{ mobile: false, tablet: true, desktop: true }}>
             <Flex>
