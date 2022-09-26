@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@bedrock-ui/core': ^0.6.0
+  '@bedrock-ui/core': ^0.6.1
   '@tabler/icons': ^1.100.0
   '@types/node': ^18.7.21
   '@types/react': ^18.0.21
@@ -22,7 +22,7 @@ specifiers:
   typescript: ^4.8.3
 
 dependencies:
-  '@bedrock-ui/core': 0.6.0_react@18.2.0
+  '@bedrock-ui/core': 0.6.1_react@18.2.0
   '@tabler/icons': 1.100.0_biqbaboplfbrettd7655fr4n2y
   clsx: 1.2.1
   next: 12.3.1_2mygebwfgdyopr3fy2qddu2eli
@@ -50,7 +50,7 @@ packages:
     resolution: {integrity: sha512-j2vJGnkopRzH+ykJ8h68wrHnEUmtK//E723jjixiAl/PPf6FhqY/vYRcMVlNydRKQjQsTsYEjpx+DZMIvnGk/g==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      core-js-pure: 3.25.2
+      core-js-pure: 3.25.3
       regenerator-runtime: 0.13.9
     dev: true
 
@@ -60,8 +60,8 @@ packages:
     dependencies:
       regenerator-runtime: 0.13.9
 
-  /@bedrock-ui/core/0.6.0_react@18.2.0:
-    resolution: {integrity: sha512-hCCpi5WVtdIXwHThBRLTwzHL4O5rZxDI2OXYLiHg9su3a+m9d7q2IXS+ZdqQalyiKC6bn/C2rGIQMtxNyW2FEw==}
+  /@bedrock-ui/core/0.6.1_react@18.2.0:
+    resolution: {integrity: sha512-7EGcOBXtA8fM0F8U3Sg5E2QUAon+PCXxYW8s9lSHtGnhfevojnulfJgMz0Jzfv0WjX/k3KCSLKuTjeWn22NQrw==}
     peerDependencies:
       react: ^17 || ^18
     dependencies:
@@ -593,8 +593,8 @@ packages:
     resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
     dev: true
 
-  /core-js-pure/3.25.2:
-    resolution: {integrity: sha512-ItD7YpW1cUB4jaqFLZXe1AXkyqIxz6GqPnsDV4uF4hVcWh/WAGIqSqw5p0/WdsILM0Xht9s3Koyw05R3K6RtiA==}
+  /core-js-pure/3.25.3:
+    resolution: {integrity: sha512-T/7qvgv70MEvRkZ8p6BasLZmOVYKzOaWNBEHAU8FmveCJkl4nko2quqPQOmy6AJIp5MBanhz9no3A94NoRb0XA==}
     requiresBuild: true
     dev: true
 
