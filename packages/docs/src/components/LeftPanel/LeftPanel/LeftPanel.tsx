@@ -54,6 +54,7 @@ function LeftPanel({ open, onClose }: Props) {
       <Link href="/components/drawer">Drawer</Link>
       <Link href="/components/flex">Flex</Link>
       <Link href="/components/grid">Grid</Link>
+      <Link href="/components/header">Header</Link>
       <Link href="/components/heading">Heading</Link>
       <Link href="/components/highlight">Highlight</Link>
       <Link href="/components/link">Link</Link>
