@@ -4,11 +4,18 @@ import { breakpoints } from 'utils/breakpoints';
 
 import type { Props } from './Button.types';
 
-function Button({ className, disabled, square = false, variant = 'contained', ...props }: Props) {
+function Button({
+  className,
+  color = 'primary',
+  disabled,
+  square = false,
+  variant = 'contained',
+  ...props
+}: Props) {
   return (
     <button
       {...props}
-      className={clsx('button', className, breakpoints(variant), { disabled, square })}
+      className={clsx('button', className, color, { disabled, square }, breakpoints(variant))}
       disabled={disabled}
     />
   );
