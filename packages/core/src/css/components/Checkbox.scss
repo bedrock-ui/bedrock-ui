@@ -26,6 +26,11 @@
   justify-content: center;
   height: calc(var(--checkbox-size) + var(--spacing) * 1px);
 
+  .checkbox-input {
+    appearance: none;
+    margin: 0;
+  }
+
   .checkbox {
     background-color: var(--checkbox-background-color);
     border-color: var(--checkbox-border-color);
@@ -89,9 +94,4 @@
       }
     }
   }
-}
-
-.checkbox-input {
-  appearance: none;
-  margin: 0;
 }

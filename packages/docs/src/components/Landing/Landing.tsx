@@ -20,7 +20,7 @@ function Landing() {
 
       <Flex className={styles.actions} justifyContent="center">
         <Button onClick={() => router.push('/getting-started/overview')}>Get Started</Button>
-        <Button onClick={() => router.push('/components/alert')} variant="outlined">
+        <Button color="neutral" onClick={() => router.push('/components/alert')}>
           Browse Components
         </Button>
       </Flex>
