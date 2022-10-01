@@ -1,9 +1,13 @@
 .switch {
   --switch-background-color: var(--color-neutral-200);
   --switch-background-color-checked: var(--color-primary-600);
+  --switch-background-color-error: var(--color-error-600);
+  --switch-background-color-success: var(--color-success-600);
 
   --switch-border-color: var(--color-neutral-300);
   --switch-border-color-checked: var(--color-primary-600);
+  --switch-border-color-error: var(--color-error-600);
+  --switch-border-color-success: var(--color-success-600);
 
   --switch-height: calc(var(--spacing) * 5px);
   --switch-width: calc(var(--spacing) * 10px);
@@ -55,6 +59,20 @@
       .thumb {
         transform: translateX(20px);
       }
+    }
+  }
+
+  &.error {
+    .track {
+      background-color: var(--switch-background-color-error);
+      border-color: var(--switch-border-color-error);
+    }
+  }
+
+  &.success {
+    .track {
+      background-color: var(--switch-background-color-success);
+      border-color: var(--switch-border-color-success);
     }
   }
 }
