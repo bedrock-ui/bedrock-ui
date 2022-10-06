@@ -1,6 +1,6 @@
 .page {
   padding: calc(var(--spacing) * 4px);
-  padding-top: calc(var(--spacing) * 40px);
+  padding-top: calc(var(--spacing) * 32px);
 }
 
 h1.heading {
@@ -50,9 +50,11 @@ h1.heading {
 }
 
 .highlights {
+  gap: calc(var(--spacing) * 8px);
   margin-left: auto;
   margin-right: auto;
-  width: 75%;
+  width: 70%;
+  text-align: center;
 }
 
 .iconContainer {

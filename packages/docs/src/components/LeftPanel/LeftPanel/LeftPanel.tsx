@@ -72,11 +72,15 @@ function LeftPanel({ open, onClose }: Props) {
       <Link href="/components/textarea">Textarea</Link>
       <Link href="/components/textinput">TextInput</Link>
 
-      <p>Icons</p>
+      <p>
+        <Text>Icons</Text>
+      </p>
 
       <Link href="/icons/libraries">Icon Libraries</Link>
 
-      <p>Variables</p>
+      <p>
+        <Text>Variables</Text>
+      </p>
 
       <Link href="/variables/root">Root Variables</Link>
     </Wrapper>
