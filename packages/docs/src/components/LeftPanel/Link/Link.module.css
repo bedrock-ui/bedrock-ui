@@ -1,6 +1,6 @@
 .link {
   border-radius: calc(var(--spacing) * 1px);
-  color: var(--color-neutral-800);
+  color: var(--font-color-default);
   font-weight: 300;
   margin-top: 2px;
   margin-bottom: 2px;
@@ -12,10 +12,20 @@
 }
 
 .link:hover {
-  background-color: var(--color-primary-50);
+  background-color: var(--color-neutral-50);
   text-decoration: none;
 }
 
 .linkActive {
-  background-color: var(--color-primary-50);
+  background-color: var(--color-neutral-50);
+}
+
+@media (prefers-color-scheme: dark) {
+  .link:hover {
+    background-color: var(--color-neutral-800);
+  }
+
+  .linkActive {
+    background-color: var(--color-neutral-800);
+  }
 }

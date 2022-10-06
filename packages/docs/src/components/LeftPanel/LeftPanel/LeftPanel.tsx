@@ -1,4 +1,4 @@
-import { Drawer, Flex, Hidden } from '@bedrock-ui/core';
+import { Drawer, Flex, Hidden, Text } from '@bedrock-ui/core';
 import { Link } from '../Link';
 import styles from './LeftPanel.module.css';
 
@@ -38,12 +38,16 @@ function Wrapper({ children, open, onClose }: WrapperProps) {
 function LeftPanel({ open, onClose }: Props) {
   return (
     <Wrapper open={open} onClose={onClose}>
-      <p>Getting Started</p>
+      <p>
+        <Text>Getting Started</Text>
+      </p>
 
       <Link href="/getting-started/overview">Getting Started</Link>
       <Link href="/getting-started/install">Installation</Link>
 
-      <p>Core</p>
+      <p>
+        <Text>Core</Text>
+      </p>
 
       <Link href="/components/alert">Alert</Link>
       <Link href="/components/badge">Badge</Link>
