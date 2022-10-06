@@ -2,4 +2,8 @@
   list-style-position: inside;
   margin: 0;
   padding: 0;
+
+  .list-item {
+    color: var(--font-color-default);
+  }
 }

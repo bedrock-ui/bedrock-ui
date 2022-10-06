@@ -26,7 +26,7 @@ function Landing() {
       </Flex>
 
       <Grid className={styles.highlights}>
-        <Grid.Col span={{ mobile: 12, tablet: 4, desktop: 4 }}>
+        <Grid.Col span={{ mobile: 12, tablet: 6, desktop: 3 }}>
           <Flex flexDirection="column">
             <Flex justifyContent="center">
               <Box className={styles.iconContainer}>
@@ -40,7 +40,7 @@ function Landing() {
           </Flex>
         </Grid.Col>
 
-        <Grid.Col span={{ mobile: 12, tablet: 4, desktop: 4 }}>
+        <Grid.Col span={{ mobile: 12, tablet: 6, desktop: 3 }}>
           <Flex flexDirection="column">
             <Flex justifyContent="center">
               <Box className={styles.iconContainer}>
@@ -54,7 +54,21 @@ function Landing() {
           </Flex>
         </Grid.Col>
 
-        <Grid.Col span={{ mobile: 12, tablet: 4, desktop: 4 }}>
+        <Grid.Col span={{ mobile: 12, tablet: 6, desktop: 3 }}>
+          <Flex flexDirection="column">
+            <Flex justifyContent="center">
+              <Box className={styles.iconContainer}>
+                <IconSettings size={32} stroke={1.5} />
+              </Box>
+            </Flex>
+
+            <Flex justifyContent="center">
+              <Heading level={6}>Dark Mode Support</Heading>
+            </Flex>
+          </Flex>
+        </Grid.Col>
+
+        <Grid.Col span={{ mobile: 12, tablet: 6, desktop: 3 }}>
           <Flex flexDirection="column">
             <Flex justifyContent="center">
               <Box className={styles.iconContainer}>
