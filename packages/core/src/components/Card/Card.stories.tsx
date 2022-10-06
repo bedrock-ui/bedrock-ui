@@ -1,5 +1,6 @@
 import React from 'react';
 import BedrockCard from './Card';
+import { Text } from '../Text';
 
 import type { Props } from './Card.types';
 
@@ -16,4 +17,8 @@ export default {
   },
 };
 
-export const Card = (props: Props) => <BedrockCard {...props}>Example card content</BedrockCard>;
+export const Card = (props: Props) => (
+  <BedrockCard {...props}>
+    <Text>Example card content</Text>
+  </BedrockCard>
+);
