@@ -13,11 +13,13 @@
   --text-input-box-shadow-focus-error: 0px 0px 0px 4px var(--color-error-50);
   --text-input-box-shadow-focus-success: 0px 0px 0px 4px var(--color-success-50);
 
+  background-color: var(--color-paper);
   border-color: var(--text-input-border-color);
   border-radius: var(--text-input-border-radius);
   border-style: solid;
   border-width: 1px;
   box-sizing: border-box;
+  color: var(--font-color-default);
   font-size: 16px;
   line-height: 24px;
   padding-top: calc(var(--spacing) * 2px - 1px);

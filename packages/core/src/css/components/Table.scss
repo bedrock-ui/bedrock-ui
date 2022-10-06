@@ -6,6 +6,7 @@
   --table-padding: calc(var(--spacing) * 2px);
 
   border-collapse: collapse;
+  color: var(--font-color-default);
   font-size: var(--table-font-size);
   line-height: var(--table-line-height);
   width: 100%;
@@ -20,6 +21,7 @@
     border-bottom-style: solid;
     border-bottom-width: var(--table-border-bottom-width);
     box-sizing: border-box;
+
     display: table-cell;
     height: 40px;
     padding: var(--table-padding);

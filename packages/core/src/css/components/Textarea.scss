@@ -9,11 +9,13 @@
 
   --textarea-border-radius: calc(var(--spacing) * 1px);
 
+  background-color: var(--color-paper);
   border-color: var(--textarea-border-color);
   border-radius: var(--textarea-border-radius);
   border-style: solid;
   border-width: 1px;
   box-sizing: border-box;
+  color: var(--font-color-default);
   font-size: 16px;
   line-height: 24px;
   padding-top: calc(var(--spacing) * 2px - 1px);
