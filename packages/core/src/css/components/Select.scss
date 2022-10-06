@@ -20,12 +20,14 @@
   --select-menu-option-background-color-selected: var(--color-primary-50);
 
   --select-menu-option-color: var(--font-color-default);
-  --select-menu-option-color-hover: var(--font-color-default);
+  --select-menu-option-color-hover: var(--color-neutral-900);
+  --select-menu-option-color-selected: var(--color-neutral-900);
 
   position: relative;
   width: 100%;
 
   .input {
+    background-color: var(--color-paper);
     border-color: var(--select-border-color);
     border-radius: var(--select-border-radius);
     border-style: solid;
@@ -119,6 +121,7 @@
 
       &.selected {
         background-color: var(--select-menu-option-background-color-selected);
+        color: var(--select-menu-option-color-selected);
       }
     }
   }
