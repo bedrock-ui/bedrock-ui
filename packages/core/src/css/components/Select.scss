@@ -5,7 +5,7 @@
   --select-border-color-hover: var(--color-neutral-600);
   --select-border-color-success: var(--color-success-600);
 
-  --select-color-selected-label: var(--color-neutral-900);
+  --select-color-selected-label: var(--font-color-default);
   --select-color-success: var(--color-success-600);
 
   --select-border-radius: calc(var(--spacing) * 1px);
@@ -19,8 +19,8 @@
   --select-menu-option-background-color-hover: var(--color-neutral-100);
   --select-menu-option-background-color-selected: var(--color-primary-50);
 
-  --select-menu-option-color: var(--color-neutral-900);
-  --select-menu-option-color-hover: var(--color-neutral-900);
+  --select-menu-option-color: var(--font-color-default);
+  --select-menu-option-color-hover: var(--font-color-default);
 
   position: relative;
   width: 100%;

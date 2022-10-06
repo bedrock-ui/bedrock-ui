@@ -2,8 +2,6 @@
   --color-white: #ffffff;
   --color-black: #000000;
 
-  --color-paper: var(--color-white);
-
   --color-error-50: #ffebee;
   --color-error-100: #ffcdd2;
   --color-error-200: #ef9a9a;
@@ -69,4 +67,20 @@
   --color-warning-700: #ffa000;
   --color-warning-800: #ff8f00;
   --color-warning-900: #ff6f00;
+
+  @media (prefers-color-scheme: light) {
+    --color-paper: var(--color-white);
+
+    --font-color-default: var(--color-neutral-900);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    --color-paper: var(--color-neutral-900);
+
+    --font-color-default: var(--color-white);
+  }
+}
+
+body {
+  background-color: var(--color-paper);
 }
