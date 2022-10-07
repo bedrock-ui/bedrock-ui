@@ -47,7 +47,7 @@ function ComponentsSwitch() {
         </Grid.Col>
 
         <Grid.Col span={12}>
-          <Flex>
+          <Flex alignItems="center">
             <Switch checked={defaultChecked} onChange={() => setDefaultChecked(!defaultChecked)} />
             <Flex ml={3}>
               <Text>Lorem ipsum</Text>
@@ -66,7 +66,7 @@ function ComponentsSwitch() {
         </Grid.Col>
 
         <Grid.Col span={12}>
-          <Flex>
+          <Flex alignItems="center">
             <Switch checked={errorChecked} error onChange={() => setErrorChecked(!errorChecked)} />
             <Flex ml={3}>
               <Text>Lorem ipsum</Text>
@@ -85,7 +85,7 @@ function ComponentsSwitch() {
         </Grid.Col>
 
         <Grid.Col span={12}>
-          <Flex>
+          <Flex alignItems="center">
             <Switch
               checked={successChecked}
               success
