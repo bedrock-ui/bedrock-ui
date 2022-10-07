@@ -7,6 +7,7 @@ import type { Props } from './Flex.types';
 
 function Flex({
   className,
+  alignItems = 'normal',
   flexDirection = 'row',
   justifyContent = 'normal',
   m,
@@ -49,6 +50,7 @@ function Flex({
       className={clsx(
         'flex',
         className,
+        breakpoints(alignItems, { prefix: 'align-items-' })
         breakpoints(flexDirection, { prefix: 'flex-direction-' }),
         breakpoints(justifyContent, { prefix: 'justify-content-' })
       )}
