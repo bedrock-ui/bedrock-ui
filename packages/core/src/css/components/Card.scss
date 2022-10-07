@@ -7,6 +7,10 @@
   box-shadow: var(--card-box-shadow);
   padding: calc(var(--spacing) * 5px);
 
+  &.flat {
+    box-shadow: none;
+  }
+
   &.no-padding {
     overflow: hidden;
     padding: 0;
