@@ -2,6 +2,34 @@
   display: flex;
 
   @include responsive() using ($key) {
+    &.align-items-center#{$key} {
+      align-items: center;
+    }
+
+    &.align-items-end#{$key} {
+      align-items: end;
+    }
+
+    &.align-items-flex-start#{$key} {
+      align-items: flex-start;
+    }
+
+    &.align-items-flex-end#{$key} {
+      align-items: flex-end;
+    }
+
+    &.align-items-normal#{$key} {
+      align-items: normal;
+    }
+
+    &.align-items-start#{$key} {
+      align-items: start;
+    }
+
+    &.align-items-stretch#{$key} {
+      align-items: stretch;
+    }
+
     &.flex-direction-column#{$key} {
       flex-direction: column;
     }

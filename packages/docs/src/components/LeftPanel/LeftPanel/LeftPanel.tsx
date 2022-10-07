@@ -38,16 +38,16 @@ function Wrapper({ children, open, onClose }: WrapperProps) {
 function LeftPanel({ open, onClose }: Props) {
   return (
     <Wrapper open={open} onClose={onClose}>
-      <p>
-        <Text>Getting Started</Text>
-      </p>
+      <Text>
+        <p>Getting Started</p>
+      </Text>
 
       <Link href="/getting-started/overview">Getting Started</Link>
       <Link href="/getting-started/install">Installation</Link>
 
-      <p>
-        <Text>Core</Text>
-      </p>
+      <Text>
+        <p>Core</p>
+      </Text>
 
       <Link href="/components/alert">Alert</Link>
       <Link href="/components/badge">Badge</Link>
@@ -72,15 +72,15 @@ function LeftPanel({ open, onClose }: Props) {
       <Link href="/components/textarea">Textarea</Link>
       <Link href="/components/textinput">TextInput</Link>
 
-      <p>
-        <Text>Icons</Text>
-      </p>
+      <Text>
+        <p>Icons</p>
+      </Text>
 
       <Link href="/icons/libraries">Icon Libraries</Link>
 
-      <p>
-        <Text>Variables</Text>
-      </p>
+      <Text>
+        <p>Variables</p>
+      </Text>
 
       <Link href="/variables/root">Root Variables</Link>
     </Wrapper>
