@@ -50,7 +50,7 @@ function Flex({
       className={clsx(
         'flex',
         className,
-        breakpoints(alignItems, { prefix: 'align-items-' })
+        breakpoints(alignItems, { prefix: 'align-items-' }),
         breakpoints(flexDirection, { prefix: 'flex-direction-' }),
         breakpoints(justifyContent, { prefix: 'justify-content-' })
       )}
