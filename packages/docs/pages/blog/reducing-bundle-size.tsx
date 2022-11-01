@@ -31,7 +31,7 @@ function BlogReducingBundleSize() {
         <p>Here is a screenshot of the UI. It is a pretty straightforward single page app.</p>
       </Text>
 
-      <NextImage src={localWeatherImage} />
+      <NextImage alt="local weather image" src={localWeatherImage} />
 
       <Text>
         <p>
