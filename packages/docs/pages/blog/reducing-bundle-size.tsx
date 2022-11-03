@@ -1,7 +1,6 @@
 import NextImage from 'next/image';
 import { Box, Button, Flex, Heading, Link, Table, Text } from '@bedrock-ui/core';
 import { BlogArticle } from 'components/BlogArticle';
-import localWeatherImage from '../../public/images/blog/local-weather.png';
 
 function BlogReducingBundleSize() {
   return (
@@ -31,7 +30,7 @@ function BlogReducingBundleSize() {
         <p>Here is a screenshot of the UI. It is a pretty straightforward single page app.</p>
       </Text>
 
-      <NextImage src={localWeatherImage} />
+      <img alt="local weather image" src="/images/blog/local-weather.png" />
 
       <Text>
         <p>
