@@ -1,7 +1,10 @@
 import { Box, Heading, Link, Table, Text } from '@bedrock-ui/core';
+import { useRouter } from 'next/router';
 import { BlogArticle } from 'components/BlogArticle';
 
 function BlogReducingBundleSize() {
+  const { basePath } = useRouter();
+
   return (
     <BlogArticle title="Reducing Bundle Size and Load Time With Bedrock UI">
       <Text>
@@ -29,7 +32,7 @@ function BlogReducingBundleSize() {
         <p>Here is a screenshot of the UI. It is a pretty straightforward single page app.</p>
       </Text>
 
-      <img alt="local weather image" src="/images/blog/local-weather.png" />
+      <img alt="local weather image" src={`${basePath}/images/blog/local-weather.png`} />
 
       <Text>
         <p>
