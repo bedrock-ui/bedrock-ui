@@ -1,4 +1,4 @@
-import { Flex, Link as BedrockLink } from '@bedrock-ui/core';
+import { Link as BedrockLink } from '@bedrock-ui/core';
 import clsx from 'clsx';
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
