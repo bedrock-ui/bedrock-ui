@@ -5,7 +5,7 @@ import { BlogArticle } from 'components/BlogArticle';
 function Blog() {
   return (
     <BlogArticle title="Blog">
-      <NextLink href="/blog/reducing-bundle-size" passHref>
+      <NextLink href="/blog/reducing-bundle-size" passHref legacyBehavior>
         <Link>Reducing Bundle Size and Load Time With Bedrock UI</Link>
       </NextLink>
 

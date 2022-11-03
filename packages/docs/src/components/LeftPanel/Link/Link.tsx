@@ -10,7 +10,7 @@ function Link({ children, href }: Props) {
   const { pathname } = useRouter();
 
   return (
-    <NextLink href={href} passHref>
+    <NextLink href={href} passHref legacyBehavior>
       <BedrockLink
         className={clsx(styles.link, {
           [styles.linkActive]: pathname === href,

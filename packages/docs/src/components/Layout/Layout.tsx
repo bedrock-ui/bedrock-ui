@@ -34,7 +34,7 @@ function Layout({ children }: Props) {
           </Hidden>
 
           <Flex flexDirection="column" justifyContent="center">
-            <NextLink href="/">
+            <NextLink href="/" legacyBehavior>
               <Heading level={4} style={{ cursor: 'pointer' }}>
                 Bedrock UI
               </Heading>
