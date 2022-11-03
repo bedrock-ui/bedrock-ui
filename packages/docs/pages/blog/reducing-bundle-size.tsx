@@ -1,5 +1,4 @@
-import NextImage from 'next/image';
-import { Box, Button, Flex, Heading, Link, Table, Text } from '@bedrock-ui/core';
+import { Box, Heading, Link, Table, Text } from '@bedrock-ui/core';
 import { BlogArticle } from 'components/BlogArticle';
 
 function BlogReducingBundleSize() {

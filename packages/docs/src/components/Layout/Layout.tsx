@@ -43,7 +43,7 @@ function Layout({ children }: Props) {
 
           <Flex>
             <Flex flexDirection="column" justifyContent="center" mx={6}>
-              <NextLink href="/blog" passHref>
+              <NextLink href="/blog" passHref legacyBehavior>
                 <Link>Blog</Link>
               </NextLink>
             </Flex>
