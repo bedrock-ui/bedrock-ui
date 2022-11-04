@@ -21,6 +21,10 @@
       background-color: var(--clickable-area-background-color-hover-neutral);
     }
 
+    &.none {
+      background-color: transparent;
+    }
+
     &.primary {
       background-color: var(--clickable-area-background-color-hover-primary);
     }
