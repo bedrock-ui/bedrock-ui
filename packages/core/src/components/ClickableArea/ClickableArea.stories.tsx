@@ -1,4 +1,5 @@
 import React from 'react';
+import { Flex } from '../Flex';
 import { Text } from '../Text';
 import BedrockClickableArea from './ClickableArea';
 
@@ -12,6 +13,8 @@ export default {
 
 export const ClickableArea = (props: Props) => (
   <BedrockClickableArea {...props}>
-    <Text>Clickable area</Text>
+    <Flex p={2}>
+      <Text>Clickable area</Text>
+    </Flex>
   </BedrockClickableArea>
 );

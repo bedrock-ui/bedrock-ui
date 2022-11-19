@@ -1,3 +1,40 @@
 .clickable-area {
+  --clickable-area-background-color-hover-error: var(--color-error-50);
+  --clickable-area-background-color-hover-info: var(--color-info-50);
+  --clickable-area-background-color-hover-neutral: var(--color-neutral-50);
+  --clickable-area-background-color-hover-primary: var(--color-primary-50);
+  --clickable-area-background-color-hover-success: var(--color-success-50);
+  --clickable-area-background-color-hover-warning: var(--color-warning-50);
+
   cursor: pointer;
+
+  &:hover {
+    &.error {
+      background-color: var(--clickable-area-background-color-hover-error);
+    }
+
+    &.info {
+      background-color: var(--clickable-area-background-color-hover-info);
+    }
+
+    &.neutral {
+      background-color: var(--clickable-area-background-color-hover-neutral);
+    }
+
+    &.none {
+      background-color: transparent;
+    }
+
+    &.primary {
+      background-color: var(--clickable-area-background-color-hover-primary);
+    }
+
+    &.success {
+      background-color: var(--clickable-area-background-color-hover-success);
+    }
+
+    &.warning {
+      background-color: var(--clickable-area-background-color-hover-warning);
+    }
+  }
 }
