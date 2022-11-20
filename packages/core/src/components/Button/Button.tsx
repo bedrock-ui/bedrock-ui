@@ -9,6 +9,7 @@ function Button({
   color = 'primary',
   disabled,
   square = false,
+  type = 'button',
   variant = 'contained',
   ...props
 }: Props) {
@@ -17,6 +18,7 @@ function Button({
       {...props}
       className={clsx('button', className, color, { disabled, square }, breakpoints(variant))}
       disabled={disabled}
+      type={type}
     />
   );
 }
