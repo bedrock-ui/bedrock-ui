@@ -1,0 +1,130 @@
+.autocomplete {
+  --autocomplete-border-color: var(--color-neutral-400);
+  --autocomplete-border-color-error: var(--color-error-600);
+  --autocomplete-border-color-focus: var(--color-primary-600);
+  --autocomplete-border-color-hover: var(--color-neutral-600);
+  --autocomplete-border-color-success: var(--color-success-600);
+
+  --autocomplete-input-color: var(--font-color-default);
+  --autocomplete-color-success: var(--color-success-600);
+
+  --autocomplete-border-radius: calc(var(--spacing) * 1px);
+
+  --autocomplete-box-shadow-focus: 0px 0px 0px 4px var(--color-primary-50);
+  --autocomplete-box-shadow-focus-error: 0px 0px 0px 4px var(--color-error-50);
+  --autocomplete-box-shadow-focus-success: 0px 0px 0px 4px var(--color-success-50);
+
+  --autocomplete-menu-background-color: var(--color-paper);
+
+  --autocomplete-menu-option-background-color-hover: var(--color-neutral-100);
+  --autocomplete-menu-option-background-color-selected: var(--color-primary-50);
+
+  --autocomplete-menu-option-color: var(--font-color-default);
+  --autocomplete-menu-option-color-hover: var(--color-neutral-900);
+  --autocomplete-menu-option-color-selected: var(--color-neutral-900);
+
+  position: relative;
+  width: 100%;
+
+  .input-container {
+    background-color: var(--color-paper);
+    border-color: var(--autocomplete-border-color);
+    border-radius: var(--autocomplete-border-radius);
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    outline: none;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+
+    input {
+      background-color: var(--color-paper);
+      border: none;
+      color: var(--autocomplete-input-color);
+      font-size: 16px;
+      line-height: 24px;
+      outline: none;
+      padding-top: calc(var(--spacing) * 2px - 1px);
+      padding-bottom: calc(var(--spacing) * 2px - 1px);
+      padding-left: calc(var(--spacing) * 4px);
+      padding-right: calc(var(--spacing) * 4px);
+      width: 100%;
+    }
+
+    .right-icon {
+      margin-left: auto;
+    }
+
+    &:focus-within {
+      box-shadow: var(--autocomplete-box-shadow-focus);
+      border-color: var(--autocomplete-border-color-focus);
+      border-width: 1px;
+    }
+
+    &:hover:not(:focus-within):not(.error):not(.success) {
+      border-color: var(--autocomplete-border-color-hover);
+    }
+
+    &.error {
+      border-color: var(--autocomplete-border-color-error);
+      border-width: 1px;
+
+      &:focus-within {
+        box-shadow: var(--autocomplete-box-shadow-focus-error);
+      }
+    }
+
+    &.success {
+      border-color: var(--autocomplete-border-color-success);
+      border-width: 1px;
+
+      &:focus-within {
+        box-shadow: var(--autocomplete-box-shadow-focus-success);
+      }
+    }
+  }
+
+  .menu {
+    border: 1px solid var(--color-neutral-400);
+    border-radius: calc(var(--spacing) * 1px);
+    box-sizing: border-box;
+    box-shadow: var(--shadow-1);
+    display: none;
+    background-color: var(--autocomplete-menu-background-color);
+    position: absolute;
+    padding: calc(var(--spacing) * 1px);
+    width: 100%;
+    z-index: 500;
+
+    &.open {
+      display: flex;
+      flex-direction: column;
+      margin-top: calc(var(--spacing) * 1px);
+    }
+
+    .option {
+      border-radius: calc(var(--spacing) * 1px);
+      color: var(--autocomplete-menu-option-color);
+      cursor: pointer;
+      position: relative;
+      padding-top: calc(var(--spacing) * 3px);
+      padding-bottom: calc(var(--spacing) * 3px);
+      padding-left: calc(var(--spacing) * 2px);
+      padding-right: calc(var(--spacing) * 2px);
+
+      &:hover {
+        background-color: var(--autocomplete-menu-option-background-color-hover);
+        color: var(--autocomplete-menu-option-color-hover);
+      }
+
+      &.selected {
+        background-color: var(--autocomplete-menu-option-background-color-selected);
+        color: var(--autocomplete-menu-option-color-selected);
+      }
+    }
+  }
+}

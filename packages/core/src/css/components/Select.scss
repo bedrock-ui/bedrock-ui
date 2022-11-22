@@ -55,8 +55,6 @@
       box-shadow: var(--select-box-shadow-focus);
       border-color: var(--select-border-color-focus);
       border-width: 1px;
-      padding-left: calc(var(--spacing) * 4px);
-      padding-right: calc(var(--spacing) * 4px);
     }
 
     &:hover:not(:focus):not(.error):not(.success) {
@@ -66,8 +64,6 @@
     &.error {
       border-color: var(--select-border-color-error);
       border-width: 1px;
-      padding-left: calc(var(--spacing) * 4px);
-      padding-right: calc(var(--spacing) * 4px);
 
       &:focus {
         box-shadow: var(--select-box-shadow-focus-error);
@@ -77,8 +73,6 @@
     &.success {
       border-color: var(--select-border-color-success);
       border-width: 1px;
-      padding-left: calc(var(--spacing) * 4px);
-      padding-right: calc(var(--spacing) * 4px);
 
       &:focus {
         box-shadow: var(--select-box-shadow-focus-success);

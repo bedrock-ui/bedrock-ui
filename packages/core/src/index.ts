@@ -1,4 +1,5 @@
 export type { AlertProps } from 'components/Alert';
+export type { AutocompleteProps, AutocompleteOptionProps } from 'components/Autocomplete';
 export type { BoxProps } from 'components/Box';
 export type { BadgeProps } from 'components/Badge';
 export type { ButtonProps } from 'components/Button';
@@ -16,7 +17,7 @@ export type { LinkProps } from 'components/Link';
 export type { ListProps, ListItemProps } from 'components/List';
 export type { ModalProps } from 'components/Modal';
 export type { RadioProps } from 'components/Radio';
-export type { SelectProps } from 'components/Select';
+export type { SelectProps, SelectOptionProps } from 'components/Select';
 export type { SwitchProps } from 'components/Switch';
 export type { TableProps } from 'components/Table';
 export type { TabProps, TabsProps } from 'components/Tabs';
@@ -25,6 +26,7 @@ export type { TextareaProps } from 'components/Textarea';
 export type { TextInputProps } from 'components/TextInput';
 
 export { Alert } from 'components/Alert';
+export { Autocomplete } from 'components/Autocomplete';
 export { Box } from 'components/Box';
 export { Badge } from 'components/Badge';
 export { Button } from 'components/Button';
