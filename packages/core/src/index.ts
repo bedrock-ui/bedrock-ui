@@ -7,6 +7,7 @@ export type { CardProps } from 'components/Card';
 export type { CheckboxProps } from 'components/Checkbox';
 export type { ClickableAreaProps } from 'components/ClickableArea';
 export type { DividerProps } from 'components/Divider';
+export type { DrawerProps } from 'components/Drawer';
 export type { FlexProps } from 'components/Flex';
 export type { GridProps, GridColProps } from 'components/Grid';
 export type { HeaderProps } from 'components/Header';
