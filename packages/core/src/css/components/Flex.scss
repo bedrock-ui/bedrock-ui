@@ -1,5 +1,8 @@
 .flex {
+  align-items: normal;
   display: flex;
+  flex-direction: row;
+  justify-content: normal;
 
   &.full-width {
     flex-grow: 1;

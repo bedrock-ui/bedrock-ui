@@ -7,10 +7,10 @@ import type { Props } from './Flex.types';
 
 function Flex({
   className,
-  alignItems = 'normal',
-  flexDirection = 'row',
+  alignItems,
+  flexDirection,
   fullWidth = false,
-  justifyContent = 'normal',
+  justifyContent,
   m,
   mx,
   my,
