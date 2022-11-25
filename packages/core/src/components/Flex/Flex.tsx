@@ -9,6 +9,7 @@ function Flex({
   className,
   alignItems = 'normal',
   flexDirection = 'row',
+  fullWidth = false,
   justifyContent = 'normal',
   m,
   mx,
@@ -50,6 +51,7 @@ function Flex({
       className={clsx(
         'flex',
         className,
+        { 'full-width': fullWidth },
         breakpoints(alignItems, { prefix: 'align-items-' }),
         breakpoints(flexDirection, { prefix: 'flex-direction-' }),
         breakpoints(justifyContent, { prefix: 'justify-content-' })
