@@ -9,8 +9,13 @@
 
   color: var(--text-color);
   display: inline-flex;
+  flex-direction: column;
   font-size: var(--text-font-size);
   line-height: var(--text-line-height);
+
+  * {
+    display: inline;
+  }
 
   @include responsive() using ($key) {
     &.error#{$key} {
