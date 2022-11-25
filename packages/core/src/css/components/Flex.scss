@@ -1,6 +1,5 @@
 .flex {
   display: flex;
-  width: 100%;
 
   @include responsive() using ($key) {
     &.align-items-center#{$key} {
