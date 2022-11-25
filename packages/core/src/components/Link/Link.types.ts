@@ -4,5 +4,5 @@ type Anchor = DetailedHTMLProps<AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnc
 
 export interface Props extends Anchor {
   component?: ElementType;
-  underline?: boolean;
+  underline?: 'hover' | 'none' | 'underline';
 }
