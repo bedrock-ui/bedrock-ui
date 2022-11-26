@@ -40,6 +40,18 @@ export const Select = ({ selectedLabel, ...props }: Props) => {
       <BedrockSelect.Option onClick={() => setValue(3)} selected={value === 3}>
         Example Option 3
       </BedrockSelect.Option>
+
+      <BedrockSelect.Option onClick={() => setValue(4)} selected={value === 4}>
+        Example Option 4
+      </BedrockSelect.Option>
+
+      <BedrockSelect.Option onClick={() => setValue(5)} selected={value === 5}>
+        Example Option 5
+      </BedrockSelect.Option>
+
+      <BedrockSelect.Option onClick={() => setValue(6)} selected={value === 6}>
+        Example Option 6
+      </BedrockSelect.Option>
     </BedrockSelect>
   );
 };

@@ -50,6 +50,22 @@ export const Autocomplete = (props: Props) => {
         },
         value: 3,
       },
+      {
+        label: 'Example Option 4',
+        onClick: () => {
+          setValue(4);
+          setInputValue('Example Option 4');
+        },
+        value: 4,
+      },
+      {
+        label: 'Example Option 5',
+        onClick: () => {
+          setValue(5);
+          setInputValue('Example Option 5');
+        },
+        value: 5,
+      },
     ],
     []
   );
