@@ -11,7 +11,7 @@ const LINK_CODE = `
 `;
 
 const LINK_UNDERLINE_CODE = `
-<Link href="#" underline>Lorem ipsum</Link>
+<Link href="#" underline="underline">Lorem ipsum</Link>
 `;
 
 function ComponentsLink() {
@@ -39,7 +39,7 @@ function ComponentsLink() {
         </Grid.Col>
 
         <Grid.Col span={12}>
-          <Link href="#" underline>
+          <Link href="#" underline="underline">
             Lorem ipsum
           </Link>
         </Grid.Col>
