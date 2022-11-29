@@ -34,11 +34,6 @@ function Overview() {
         like Emotion, Styled Components, or others. It sticks to the fundamentals of web
         programming: simple React components and CSS.
       </Text>
-
-      <Text>
-        Bedrock UI is split into a "core" library, but it also includes other libraries such as
-        "breakpoints", which provide common responsive functionality.
-      </Text>
     </DocSection>
   );
 }
