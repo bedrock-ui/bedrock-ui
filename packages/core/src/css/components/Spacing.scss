@@ -1,0 +1,15 @@
+.spacing {
+  @include responsive() using ($key) {
+    @for $i from 1 through 16 {
+      &.h-#{$i}#{$key} {
+        width: 0;
+        height: calc(var(--spacing) * #{$i}px);
+      }
+
+      &.w-#{$i}#{$key} {
+        width: calc(var(--spacing) * #{$i}px);
+        height: 0;
+      }
+    }
+  }
+}
