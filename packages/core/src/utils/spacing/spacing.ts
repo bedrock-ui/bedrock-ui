@@ -116,6 +116,7 @@ function spacing(spacing: Spacing): CSSProperties {
       const fn = functions[key as keyof Spacing];
 
       styles = {
+        ...styles,
         ...fn(value),
       };
     }

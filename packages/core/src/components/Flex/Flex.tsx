@@ -7,9 +7,10 @@ import type { Props } from './Flex.types';
 
 function Flex({
   className,
-  alignItems = 'normal',
-  flexDirection = 'row',
-  justifyContent = 'normal',
+  alignItems,
+  flexDirection,
+  fullWidth = false,
+  justifyContent,
   m,
   mx,
   my,
@@ -50,6 +51,7 @@ function Flex({
       className={clsx(
         'flex',
         className,
+        { 'full-width': fullWidth },
         breakpoints(alignItems, { prefix: 'align-items-' }),
         breakpoints(flexDirection, { prefix: 'flex-direction-' }),
         breakpoints(justifyContent, { prefix: 'justify-content-' })

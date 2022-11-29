@@ -1,5 +1,7 @@
 .text {
   --text-color: var(--font-color-default);
+  --text-color-error: var(--color-error-600);
+  --text-color-neutral: var(--color-neutral-600);
   --text-color-primary: var(--color-primary-600);
 
   --text-font-size: calc(var(--spacing) * 4px);
@@ -7,12 +9,25 @@
 
   color: var(--text-color);
   display: inline-flex;
+  flex-direction: column;
   font-size: var(--text-font-size);
   line-height: var(--text-line-height);
 
+  * {
+    display: inline;
+  }
+
   @include responsive() using ($key) {
+    &.error#{$key} {
+      color: var(--text-color-error);
+    }
+
     &.primary#{$key} {
       color: var(--text-color-primary);
+    }
+
+    &.neutral#{$key} {
+      color: var(--text-color-neutral);
     }
 
     &.white#{$key} {

@@ -14,7 +14,9 @@ $breakpoints: () !default;
 @import 'theme/typography';
 
 @import 'components/Alert';
+@import 'components/Autocomplete';
 @import 'components/Badge';
+@import 'components/Box';
 @import 'components/Button';
 @import 'components/Card';
 @import 'components/Checkbox';
@@ -32,6 +34,7 @@ $breakpoints: () !default;
 @import 'components/Modal';
 @import 'components/Radio';
 @import 'components/Select';
+@import 'components/Spacing';
 @import 'components/Switch';
 @import 'components/Table';
 @import 'components/Tabs';

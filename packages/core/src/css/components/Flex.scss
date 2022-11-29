@@ -1,5 +1,14 @@
 .flex {
+  align-items: normal;
   display: flex;
+  flex-direction: row;
+  justify-content: normal;
+
+  &.full-width {
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 100%;
+  }
 
   @include responsive() using ($key) {
     &.align-items-center#{$key} {

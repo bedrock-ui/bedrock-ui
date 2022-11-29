@@ -9,6 +9,10 @@
 
   --textarea-border-radius: calc(var(--spacing) * 1px);
 
+  --textarea-box-shadow-focus: 0px 0px 0px 4px var(--color-primary-50);
+  --textarea-box-shadow-focus-error: 0px 0px 0px 4px var(--color-error-50);
+  --textarea-shadow-focus-success: 0px 0px 0px 4px var(--color-success-50);
+
   background-color: var(--color-paper);
   border-color: var(--textarea-border-color);
   border-radius: var(--textarea-border-radius);
@@ -27,6 +31,7 @@
 
   &:focus {
     border-color: var(--textarea-border-color-focus);
+    box-shadow: var(--textarea-box-shadow-focus);
   }
 
   &:hover:not(:focus):not(.error):not(.success) {
@@ -35,9 +40,17 @@
 
   &.error {
     border-color: var(--textarea-border-color-error);
+
+    &:focus {
+      box-shadow: var(--textarea-box-shadow-focus-error);
+    }
   }
 
   &.success {
     border-color: var(--textarea-border-color-success);
+
+    &:focus {
+      box-shadow: var(--textarea-shadow-focus-success);
+    }
   }
 }

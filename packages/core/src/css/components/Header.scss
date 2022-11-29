@@ -21,4 +21,12 @@
     top: 0;
     z-index: 1000;
   }
+
+  &.sticky {
+    left: 0;
+    position: sticky;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+  }
 }

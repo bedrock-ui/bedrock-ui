@@ -9,10 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@bedrock-ui/core": "^0.6.20",
-    "@tabler/icons": "^1.112.0",
+    "@bedrock-ui/core": "^0.9.1",
+    "@tabler/icons": "^1.114.0",
     "clsx": "^1.2.1",
-    "next": "^13.0.4",
+    "next": "^13.0.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-syntax-highlighter": "^15.5.0"
@@ -23,9 +23,9 @@
     "@types/react-dom": "^18.0.9",
     "@types/react-syntax-highlighter": "^15.5.5",
     "eslint": "^8.28.0",
-    "eslint-config-next": "^13.0.4",
+    "eslint-config-next": "^13.0.5",
     "mv": "^2.1.1",
-    "prettier": "^2.7.1",
+    "prettier": "^2.8.0",
     "rimraf": "^3.0.2",
     "sass": "^1.56.1",
     "touch": "^3.1.0",

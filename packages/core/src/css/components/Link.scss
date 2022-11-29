@@ -8,7 +8,8 @@
   line-height: 24px;
   text-decoration: none;
 
-  &:hover {
+  &.underline:hover,
+  &.underline-hover:hover {
     text-decoration: underline;
   }
 

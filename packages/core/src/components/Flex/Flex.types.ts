@@ -23,5 +23,6 @@ type JustifyContent =
 export interface Props extends Div, Spacing {
   alignItems?: MaybeBreakpointObject<AlignItems>;
   flexDirection?: MaybeBreakpointObject<FlexDirection>;
+  fullWidth?: boolean;
   justifyContent?: MaybeBreakpointObject<JustifyContent>;
 }

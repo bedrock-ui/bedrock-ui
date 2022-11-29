@@ -22,6 +22,7 @@
 
   border-radius: calc(var(--spacing) * 1px);
   padding: calc(var(--spacing) * 4px);
+  width: 100%;
 
   &.error {
     &.filled {

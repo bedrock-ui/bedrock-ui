@@ -1,5 +1,6 @@
 .divider {
   --divider-color: var(--color-neutral-400);
+  --divider-color-light: var(--color-neutral-200);
   --divider-size: 1px;
 
   border: 0;
@@ -19,5 +20,9 @@
     &.solid#{$key} {
       border-style: solid;
     }
+  }
+
+  &.light {
+    border-bottom-color: var(--divider-color-light);
   }
 }
