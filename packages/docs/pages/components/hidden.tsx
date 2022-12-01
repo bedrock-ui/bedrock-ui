@@ -1,4 +1,4 @@
-import { Grid, Hidden, Text } from '@bedrock-ui/core';
+import { Grid, Hidden, Spacing, Text } from '@bedrock-ui/core';
 import { CodeHighlight } from 'components/CodeHighlight';
 import { DocSection } from 'components/DocSection';
 
@@ -23,16 +23,16 @@ $breakpoints: (
 function ComponentsLink() {
   return (
     <DocSection name="Hidden">
+      <Text>
+        Hides children at specific breakpoints. The object properties passed to this component must
+        match the naming of the Sass breakpoints.
+      </Text>
+
+      <Spacing h={8} />
+
       <CodeHighlight>{CODE}</CodeHighlight>
 
       <Grid style={{ marginTop: 64, marginBottom: 64 }}>
-        <Grid.Col span={12}>
-          <Text>
-            This website is set with the following breakpoints, which should match the naming of the
-            breakpoint values provided to the Hidden component:
-          </Text>
-        </Grid.Col>
-
         <Grid.Col span={12}>
           <CodeHighlight>{BREAKPOINTS_CODE}</CodeHighlight>
         </Grid.Col>
