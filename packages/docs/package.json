@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@bedrock-ui/core": "^0.9.1",
+    "@bedrock-ui/core": "^0.9.3",
     "@tabler/icons": "^1.114.0",
     "clsx": "^1.2.1",
     "next": "^13.0.5",
@@ -18,7 +18,7 @@
     "react-syntax-highlighter": "^15.5.0"
   },
   "devDependencies": {
-    "@types/node": "^18.11.9",
+    "@types/node": "^18.11.10",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.9",
     "@types/react-syntax-highlighter": "^15.5.5",

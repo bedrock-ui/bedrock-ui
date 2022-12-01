@@ -1,9 +1,9 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@bedrock-ui/core': ^0.9.1
+  '@bedrock-ui/core': ^0.9.3
   '@tabler/icons': ^1.114.0
-  '@types/node': ^18.11.9
+  '@types/node': ^18.11.10
   '@types/react': ^18.0.25
   '@types/react-dom': ^18.0.9
   '@types/react-syntax-highlighter': ^15.5.5
@@ -22,7 +22,7 @@ specifiers:
   typescript: ^4.9.3
 
 dependencies:
-  '@bedrock-ui/core': 0.9.1_react@18.2.0
+  '@bedrock-ui/core': 0.9.3_react@18.2.0
   '@tabler/icons': 1.114.0_biqbaboplfbrettd7655fr4n2y
   clsx: 1.2.1
   next: 13.0.5_m5sxuueb27gk6ddc5gums6vtgq
@@ -31,7 +31,7 @@ dependencies:
   react-syntax-highlighter: 15.5.0_react@18.2.0
 
 devDependencies:
-  '@types/node': 18.11.9
+  '@types/node': 18.11.10
   '@types/react': 18.0.25
   '@types/react-dom': 18.0.9
   '@types/react-syntax-highlighter': 15.5.5
@@ -60,8 +60,8 @@ packages:
     dependencies:
       regenerator-runtime: 0.13.11
 
-  /@bedrock-ui/core/0.9.1_react@18.2.0:
-    resolution: {integrity: sha512-lxxhi4cCtlXYtIFjF8zBzP8Lksbxk1dSHLG/oTDglQ/pTwdLHdNW6LKJhtwZYk4xxsSneqfwqDlzPTwA326/pw==}
+  /@bedrock-ui/core/0.9.3_react@18.2.0:
+    resolution: {integrity: sha512-DkOkPb9j18G9pydwUiHsXw4OF7VZdgBwgL5kMMyYjNFmuYWwA9Pu8wPrhiesbfifJK8829bRg6EyRVi44m8kOQ==}
     peerDependencies:
       react: ^17 || ^18
     dependencies:
@@ -301,8 +301,8 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
-  /@types/node/18.11.9:
-    resolution: {integrity: sha512-CRpX21/kGdzjOpFsZSkcrXMGIBWMGNIHXXBVFSH+ggkftxg+XYP20TESbh+zFvFj3EQOl5byk0HTRn1IL6hbqg==}
+  /@types/node/18.11.10:
+    resolution: {integrity: sha512-juG3RWMBOqcOuXC643OAdSA525V44cVgGV6dUDuiFtss+8Fk5x1hI93Rsld43VeJVIeqlP9I7Fn9/qaVqoEAuQ==}
     dev: true
 
   /@types/prop-types/15.7.5:
@@ -549,8 +549,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /caniuse-lite/1.0.30001434:
-    resolution: {integrity: sha512-aOBHrLmTQw//WFa2rcF1If9fa3ypkC1wzqqiKHgfdrXTWcU8C4gKVZT77eQAPWN1APys3+uQ0Df07rKauXGEYA==}
+  /caniuse-lite/1.0.30001435:
+    resolution: {integrity: sha512-kdCkUTjR+v4YAJelyiDTqiu82BDr4W4CP5sgTA0ZBmqn30XfS2ZghPLMowik9TPhS+psWJiUNxsqLyurDbmutA==}
     dev: false
 
   /chalk/4.1.2:
@@ -1667,7 +1667,7 @@ packages:
     dependencies:
       '@next/env': 13.0.5
       '@swc/helpers': 0.4.14
-      caniuse-lite: 1.0.30001434
+      caniuse-lite: 1.0.30001435
       postcss: 8.4.14
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
