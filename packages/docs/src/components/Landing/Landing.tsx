@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
-import { Button, Box, Flex, Grid, Heading, Text } from '@bedrock-ui/core';
-import { IconLicense, IconSettings, IconRocket } from '@tabler/icons';
+import { Button, Flex, Grid, Heading, Spacing, Text } from '@bedrock-ui/core';
+import { IconLicense, IconSettings, IconRocket, IconMoon } from '@tabler/icons';
 import styles from './Landing.module.css';
 
 function Landing() {
@@ -29,13 +29,13 @@ function Landing() {
         <Grid.Col span={{ mobile: 12, tablet: 6, desktop: 3 }}>
           <Flex flexDirection="column">
             <Flex justifyContent="center">
-              <Box className={styles.iconContainer}>
-                <IconRocket size={32} stroke={1.5} />
-              </Box>
+              <IconRocket size={80} stroke={1} />
             </Flex>
 
+            <Spacing h={4} />
+
             <Flex justifyContent="center">
-              <Heading level={6}>Fast. 3kb gzipped + 5kb gzipped CSS</Heading>
+              <Heading level={5}>Fast. 3kb gzipped + 5kb gzipped CSS</Heading>
             </Flex>
           </Flex>
         </Grid.Col>
@@ -43,13 +43,13 @@ function Landing() {
         <Grid.Col span={{ mobile: 12, tablet: 6, desktop: 3 }}>
           <Flex flexDirection="column">
             <Flex justifyContent="center">
-              <Box className={styles.iconContainer}>
-                <IconLicense size={32} stroke={1.5} />
-              </Box>
+              <IconLicense size={80} stroke={1} />
             </Flex>
 
+            <Spacing h={4} />
+
             <Flex justifyContent="center">
-              <Heading level={6}>Open source and MIT licensed</Heading>
+              <Heading level={5}>Open source and MIT licensed</Heading>
             </Flex>
           </Flex>
         </Grid.Col>
@@ -57,13 +57,13 @@ function Landing() {
         <Grid.Col span={{ mobile: 12, tablet: 6, desktop: 3 }}>
           <Flex flexDirection="column">
             <Flex justifyContent="center">
-              <Box className={styles.iconContainer}>
-                <IconSettings size={32} stroke={1.5} />
-              </Box>
+              <IconMoon size={80} stroke={1} />
             </Flex>
 
+            <Spacing h={4} />
+
             <Flex justifyContent="center">
-              <Heading level={6}>Dark Mode Support</Heading>
+              <Heading level={5}>Dark Mode Support</Heading>
             </Flex>
           </Flex>
         </Grid.Col>
@@ -71,22 +71,14 @@ function Landing() {
         <Grid.Col span={{ mobile: 12, tablet: 6, desktop: 3 }}>
           <Flex flexDirection="column">
             <Flex justifyContent="center">
-              <Box className={styles.iconContainer}>
-                <IconSettings size={32} stroke={1.5} />
-              </Box>
+              <IconSettings size={80} stroke={1} />
             </Flex>
+
+            <Spacing h={4} />
 
             <Flex justifyContent="center">
-              <Heading level={6}>Typescript and Sass. Works with SSR.</Heading>
+              <Heading level={5}>Typescript and Sass. Works with SSR.</Heading>
             </Flex>
-          </Flex>
-        </Grid.Col>
-
-        <Grid.Col span={{ mobile: 12, tablet: 12, desktop: 12 }}>
-          <Flex justifyContent="center" mt={16}>
-            <Button onClick={() => router.push('/blog')} variant="outlined">
-              Visit Blog
-            </Button>
           </Flex>
         </Grid.Col>
       </Grid>
