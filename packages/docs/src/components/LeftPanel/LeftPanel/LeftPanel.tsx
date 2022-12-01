@@ -61,6 +61,7 @@ function LeftPanel({ open, onClose }: Props) {
       <Link href="/components/grid">Grid</Link>
       <Link href="/components/header">Header</Link>
       <Link href="/components/heading">Heading</Link>
+      <Link href="/components/hidden">Hidden</Link>
       <Link href="/components/highlight">Highlight</Link>
       <Link href="/components/link">Link</Link>
       <Link href="/components/list">List</Link>
