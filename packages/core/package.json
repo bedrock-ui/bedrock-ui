@@ -1,6 +1,6 @@
 {
   "name": "@bedrock-ui/core",
-  "version": "0.9.1",
+  "version": "0.9.3",
   "description": "Bedrock UI Core",
   "files": [
     "css",
@@ -28,7 +28,7 @@
   "author": "Matthew Wolfe",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.20.2",
+    "@babel/core": "^7.20.5",
     "@storybook/addon-actions": "^6.5.13",
     "@storybook/addon-essentials": "^6.5.13",
     "@storybook/addon-interactions": "^6.5.13",
@@ -40,10 +40,10 @@
     "@types/react": "^18.0.25",
     "babel-loader": "^9.1.0",
     "bytes": "^3.1.2",
-    "concurrently": "^7.5.0",
-    "fs-extra": "^10.1.0",
+    "concurrently": "^7.6.0",
+    "fs-extra": "^11.1.0",
     "gzip-size": "^7.0.0",
-    "prettier": "^2.7.1",
+    "prettier": "^2.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rimraf": "^3.0.2",

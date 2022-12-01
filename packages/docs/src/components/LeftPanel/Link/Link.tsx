@@ -15,6 +15,7 @@ function Link({ children, href }: Props) {
         className={clsx(styles.link, {
           [styles.linkActive]: pathname === href,
         })}
+        underline="none"
       >
         {children}
       </BedrockLink>

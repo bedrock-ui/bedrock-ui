@@ -8,16 +8,16 @@
   padding-bottom: calc(var(--spacing) * 1px);
   padding-left: calc(var(--spacing) * 4px);
   padding-right: calc(var(--spacing) * 4px);
-  text-decoration: none;
 }
 
 .link:hover {
-  background-color: var(--color-neutral-50);
-  text-decoration: none;
+  background-color: var(--color-neutral-100);
+  font-weight: 500;
 }
 
 .linkActive {
-  background-color: var(--color-neutral-50);
+  background-color: var(--color-neutral-100);
+  font-weight: 500;
 }
 
 @media (prefers-color-scheme: dark) {

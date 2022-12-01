@@ -50,6 +50,7 @@ function LeftPanel({ open, onClose }: Props) {
       </Text>
 
       <Link href="/components/alert">Alert</Link>
+      <Link href="/components/autocomplete">Autocomplete</Link>
       <Link href="/components/badge">Badge</Link>
       <Link href="/components/button">Button</Link>
       <Link href="/components/card">Card</Link>
@@ -60,12 +61,14 @@ function LeftPanel({ open, onClose }: Props) {
       <Link href="/components/grid">Grid</Link>
       <Link href="/components/header">Header</Link>
       <Link href="/components/heading">Heading</Link>
+      <Link href="/components/hidden">Hidden</Link>
       <Link href="/components/highlight">Highlight</Link>
       <Link href="/components/link">Link</Link>
       <Link href="/components/list">List</Link>
       <Link href="/components/modal">Modal</Link>
       <Link href="/components/radio">Radio</Link>
       <Link href="/components/select">Select</Link>
+      <Link href="/components/spacing">Spacing</Link>
       <Link href="/components/table">Table</Link>
       <Link href="/components/tabs">Tabs</Link>
       <Link href="/components/text">Text</Link>
