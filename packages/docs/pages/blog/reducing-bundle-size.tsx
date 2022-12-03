@@ -1,4 +1,4 @@
-import { Box, Heading, Link, Table, Text } from '@bedrock-ui/core';
+import { Heading, Link, Spacing, Table, Text } from '@bedrock-ui/core';
 import { useRouter } from 'next/router';
 import { BlogArticle } from 'components/BlogArticle';
 
@@ -41,9 +41,11 @@ function BlogReducingBundleSize() {
         </p>
       </Text>
 
-      <Box my={6}>
-        <Heading level={3}>Material UI</Heading>
-      </Box>
+      <Spacing h={6} />
+
+      <Heading level={3}>Material UI</Heading>
+
+      <Spacing h={6} />
 
       <Table style={{ marginBottom: 32 }}>
         <thead>

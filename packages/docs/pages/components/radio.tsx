@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Flex, Grid, Heading, Radio, Text } from '@bedrock-ui/core';
+import { Flex, Grid, Heading, Radio, Spacing, Text } from '@bedrock-ui/core';
 import { CodeHighlight } from 'components/CodeHighlight';
 import { DocSection } from 'components/DocSection';
 
@@ -49,9 +49,8 @@ function ComponentsRadio() {
         <Grid.Col span={12}>
           <Flex>
             <Radio checked={defaultChecked} onChange={() => setDefaultChecked(!defaultChecked)} />
-            <Flex ml={3}>
-              <Text>Lorem ipsum</Text>
-            </Flex>
+            <Spacing w={3} />
+            <Text>Lorem ipsum</Text>
           </Flex>
         </Grid.Col>
       </Grid>
@@ -68,9 +67,8 @@ function ComponentsRadio() {
         <Grid.Col span={12}>
           <Flex>
             <Radio checked={errorChecked} error onChange={() => setErrorChecked(!errorChecked)} />
-            <Flex ml={3}>
-              <Text>Lorem ipsum</Text>
-            </Flex>
+            <Spacing w={3} />
+            <Text>Lorem ipsum</Text>
           </Flex>
         </Grid.Col>
       </Grid>
@@ -91,9 +89,8 @@ function ComponentsRadio() {
               success
               onChange={() => setSuccessChecked(!successChecked)}
             />
-            <Flex ml={3}>
-              <Text>Lorem ipsum</Text>
-            </Flex>
+            <Spacing w={3} />
+            <Text>Lorem ipsum</Text>
           </Flex>
         </Grid.Col>
       </Grid>

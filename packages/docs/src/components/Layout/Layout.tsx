@@ -1,5 +1,5 @@
 import { IconBrandGithub, IconMenu2 } from '@tabler/icons';
-import { Button, Flex, Header, Heading, Hidden, Link } from '@bedrock-ui/core';
+import { Button, Flex, Header, Heading, Hidden, Link, Spacing } from '@bedrock-ui/core';
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
@@ -40,11 +40,15 @@ function Layout({ children }: Props) {
           </Flex>
 
           <Flex>
-            <Flex flexDirection="column" justifyContent="center" mx={6}>
+            <Spacing w={6} />
+
+            <Flex flexDirection="column" justifyContent="center">
               <NextLink href="/blog" passHref legacyBehavior>
                 <Link>Blog</Link>
               </NextLink>
             </Flex>
+
+            <Spacing w={6} />
 
             <Button
               onClick={() => window.open('https://github.com/matthewwolfe/bedrock-ui', '_blank')}
@@ -57,7 +61,9 @@ function Layout({ children }: Props) {
         </Flex>
       </Header>
 
-      <Flex pt={16}>
+      <Spacing h={16} />
+
+      <Flex>
         {pathname.startsWith('/blog') ? (
           children
         ) : (

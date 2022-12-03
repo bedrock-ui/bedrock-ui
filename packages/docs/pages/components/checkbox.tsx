@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Checkbox, Grid, Flex, Heading, Text } from '@bedrock-ui/core';
+import { Checkbox, Grid, Flex, Heading, Spacing, Text } from '@bedrock-ui/core';
 import { CodeHighlight } from 'components/CodeHighlight';
 import { DocSection } from 'components/DocSection';
 
@@ -52,9 +52,8 @@ function ComponentsCheckbox() {
               checked={defaultChecked}
               onChange={() => setDefaultChecked(!defaultChecked)}
             />
-            <Flex ml={3}>
-              <Text>Lorem ipsum</Text>
-            </Flex>
+            <Spacing w={3} />
+            <Text>Lorem ipsum</Text>
           </Flex>
         </Grid.Col>
       </Grid>
@@ -75,9 +74,8 @@ function ComponentsCheckbox() {
               error
               onChange={() => setErrorChecked(!errorChecked)}
             />
-            <Flex ml={3}>
-              <Text>Lorem ipsum</Text>
-            </Flex>
+            <Spacing w={3} />
+            <Text>Lorem ipsum</Text>
           </Flex>
         </Grid.Col>
       </Grid>
@@ -98,9 +96,8 @@ function ComponentsCheckbox() {
               success
               onChange={() => setSuccessChecked(!successChecked)}
             />
-            <Flex ml={3}>
-              <Text>Lorem ipsum</Text>
-            </Flex>
+            <Spacing w={3} />
+            <Text>Lorem ipsum</Text>
           </Flex>
         </Grid.Col>
       </Grid>

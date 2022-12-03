@@ -6,7 +6,8 @@
     "build": "npm run rm-docs && next build && next export && node ./scripts/build.js",
     "rm-docs": "rimraf docs",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@bedrock-ui/core": "^1.1.1",
