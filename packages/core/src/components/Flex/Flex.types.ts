@@ -1,6 +1,5 @@
 import type { MaybeBreakpointObject } from 'types/breakpoints';
 import type { Div } from 'types/elements';
-import type { Spacing } from 'types/spacing';
 
 type AlignItems = 'center' | 'end' | 'flex-start' | 'flex-end' | 'normal' | 'start' | 'stretch';
 
@@ -20,7 +19,7 @@ type JustifyContent =
   | 'start'
   | 'stretch';
 
-export interface Props extends Div, Spacing {
+export interface Props extends Div {
   alignItems?: MaybeBreakpointObject<AlignItems>;
   flexDirection?: MaybeBreakpointObject<FlexDirection>;
   fullWidth?: boolean;

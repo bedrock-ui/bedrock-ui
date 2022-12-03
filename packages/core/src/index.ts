@@ -27,6 +27,7 @@ export type { TextProps } from 'components/Text';
 export type { TextareaProps } from 'components/Textarea';
 export type { TextInputProps } from 'components/TextInput';
 
+// components
 export { Alert } from 'components/Alert';
 export { Autocomplete } from 'components/Autocomplete';
 export { Box } from 'components/Box';
@@ -55,3 +56,6 @@ export { Tabs } from 'components/Tabs';
 export { Text } from 'components/Text';
 export { Textarea } from 'components/Textarea';
 export { TextInput } from 'components/TextInput';
+
+// hooks
+export { useClickOutside } from 'hooks/useClickOutside';
