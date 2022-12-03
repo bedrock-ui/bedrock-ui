@@ -1,0 +1,8 @@
+{
+	"devDependencies": {
+		"sass": "^1.56.1"
+	},
+	"dependencies": {
+		"@bedrock-ui/core": "^1.2.0"
+	}
+}

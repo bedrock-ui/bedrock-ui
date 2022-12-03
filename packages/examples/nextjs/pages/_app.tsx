@@ -1,0 +1,9 @@
+import 'assets/sass/bedrock-ui.scss';
+
+import type { AppProps } from 'next/app';
+
+function App({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />;
+}
+
+export default App;
