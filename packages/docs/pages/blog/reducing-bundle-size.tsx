@@ -70,8 +70,8 @@ function BlogReducingBundleSize() {
 
           <tr>
             <td>Bedrock UI</td>
-            <td>161 kB</td>
-            <td>473 kB</td>
+            <td>160 kB</td>
+            <td>458 kB</td>
             <td>337 ms</td>
             <td>180 ms</td>
             <td>181 ms</td>
