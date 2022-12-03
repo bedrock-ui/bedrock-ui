@@ -42,7 +42,7 @@ function LeftPanel({ open, onClose }: Props) {
         <p>Getting Started</p>
       </Text>
 
-      <Link href="/getting-started/overview">Getting Started</Link>
+      <Link href="/getting-started/overview">Overview</Link>
       <Link href="/getting-started/install">Installation</Link>
 
       <Text>

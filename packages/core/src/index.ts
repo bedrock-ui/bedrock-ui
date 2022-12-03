@@ -1,6 +1,5 @@
 export type { AlertProps } from 'components/Alert';
 export type { AutocompleteProps, AutocompleteOptionProps } from 'components/Autocomplete';
-export type { BoxProps } from 'components/Box';
 export type { BadgeProps } from 'components/Badge';
 export type { ButtonProps } from 'components/Button';
 export type { CardProps } from 'components/Card';
@@ -31,7 +30,6 @@ export type { TextInputProps } from 'components/TextInput';
 // components
 export { Alert } from 'components/Alert';
 export { Autocomplete } from 'components/Autocomplete';
-export { Box } from 'components/Box';
 export { Badge } from 'components/Badge';
 export { Button } from 'components/Button';
 export { Card } from 'components/Card';
