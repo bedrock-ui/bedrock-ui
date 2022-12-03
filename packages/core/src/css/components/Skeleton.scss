@@ -1,0 +1,32 @@
+@keyframes skeletonBackgroundColorAnimation {
+  0% {
+    background: $color-neutral-100;
+  }
+
+  100% {
+    background: $color-neutral-200;
+  }
+}
+
+.skeleton {
+  background-color: $color-neutral-200;
+
+  &.animated {
+    animation-name: skeletonBackgroundColorAnimation;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  &.circle {
+    border-radius: $spacing * 6px;
+    height: $spacing * 12px;
+    width: $spacing * 12px;
+  }
+
+  &.line {
+    border-radius: $spacing * 6px;
+    height: $spacing * 2px;
+    width: 100%;
+  }
+}
