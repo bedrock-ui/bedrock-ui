@@ -9,21 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@bedrock-ui/core": "^0.9.3",
+    "@bedrock-ui/core": "^1.1.1",
     "@tabler/icons": "^1.114.0",
     "clsx": "^1.2.1",
-    "next": "^13.0.5",
+    "next": "^13.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-syntax-highlighter": "^15.5.0"
   },
   "devDependencies": {
     "@types/node": "^18.11.10",
-    "@types/react": "^18.0.25",
+    "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
     "@types/react-syntax-highlighter": "^15.5.5",
-    "eslint": "^8.28.0",
-    "eslint-config-next": "^13.0.5",
+    "eslint": "^8.29.0",
+    "eslint-config-next": "^13.0.6",
     "mv": "^2.1.1",
     "prettier": "^2.8.0",
     "rimraf": "^3.0.2",
