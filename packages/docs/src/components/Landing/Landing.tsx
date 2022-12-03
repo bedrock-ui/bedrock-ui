@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { Button, Flex, Grid, Heading, Spacing, Text } from '@bedrock-ui/core';
+import { Button, Flex, Grid, Heading, Hidden, Spacing, Text } from '@bedrock-ui/core';
 import { IconLicense, IconSettings, IconRocket, IconMoon } from '@tabler/icons';
 import styles from './Landing.module.css';
 
@@ -21,7 +21,8 @@ function Landing() {
       <Flex className={styles.actions} justifyContent="center">
         <Button onClick={() => router.push('/getting-started/overview')}>Get Started</Button>
         <Button color="neutral" onClick={() => router.push('/components/alert')}>
-          Browse Components
+          <Hidden on={{ mobile: true, tablet: false, desktop: false }}>Browse Components</Hidden>
+          <Hidden on={{ mobile: false, tablet: true, desktop: true }}>Components</Hidden>
         </Button>
       </Flex>
 
@@ -35,7 +36,7 @@ function Landing() {
             <Spacing h={4} />
 
             <Flex justifyContent="center">
-              <Heading level={5}>Fast. 3kb gzipped + 5kb gzipped CSS</Heading>
+              <Heading level={6}>Fast. 3kb gzipped + 5kb gzipped CSS</Heading>
             </Flex>
           </Flex>
         </Grid.Col>
@@ -49,7 +50,7 @@ function Landing() {
             <Spacing h={4} />
 
             <Flex justifyContent="center">
-              <Heading level={5}>Open source and MIT licensed</Heading>
+              <Heading level={6}>Open source and MIT licensed</Heading>
             </Flex>
           </Flex>
         </Grid.Col>
@@ -63,7 +64,7 @@ function Landing() {
             <Spacing h={4} />
 
             <Flex justifyContent="center">
-              <Heading level={5}>Dark Mode Support</Heading>
+              <Heading level={6}>Dark Mode Support</Heading>
             </Flex>
           </Flex>
         </Grid.Col>
@@ -77,7 +78,7 @@ function Landing() {
             <Spacing h={4} />
 
             <Flex justifyContent="center">
-              <Heading level={5}>Typescript and Sass. Works with SSR.</Heading>
+              <Heading level={6}>Typescript and Sass. Works with SSR.</Heading>
             </Flex>
           </Flex>
         </Grid.Col>

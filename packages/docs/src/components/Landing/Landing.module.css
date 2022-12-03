@@ -9,28 +9,10 @@ h1.heading {
   line-height: calc(var(--spacing) * 33px);
 }
 
-@media (max-width: 600px) {
-  h1.heading {
-    font-size: calc(var(--spacing) * 16px);
-    line-height: calc(var(--spacing) * 17px);
-  }
-
-  .subheading {
-    font-size: calc(var(--spacing) * 8px);
-    line-height: calc(var(--spacing) * 9px);
-  }
-}
-
 .subheading {
   font-size: calc(var(--spacing) * 10px);
   font-weight: 700;
   line-height: calc(var(--spacing) * 11px);
-}
-
-@media (max-width: 600px) {
-  .subheading {
-    font-size: calc(var(--spacing) * 6px);
-  }
 }
 
 .actions {
@@ -59,4 +41,20 @@ h1.heading {
 
 .highlights svg {
   stroke: var(--color-neutral-900);
+}
+
+@media (max-width: 600px) {
+  h1.heading {
+    font-size: calc(var(--spacing) * 12px);
+    line-height: calc(var(--spacing) * 13px);
+  }
+
+  .subheading {
+    font-size: calc(var(--spacing) * 4px);
+    line-height: calc(var(--spacing) * 5px);
+  }
+
+  .highlights {
+    width: 100%;
+  }
 }
