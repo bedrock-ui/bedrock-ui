@@ -1,4 +1,4 @@
-import { Divider, Flex, Grid, Heading } from '@bedrock-ui/core';
+import { Divider, Flex, Grid, Heading, Spacing } from '@bedrock-ui/core';
 import { CodeHighlight } from 'components/CodeHighlight';
 import { DocSection } from 'components/DocSection';
 
@@ -30,12 +30,14 @@ function ComponentsDivider() {
 
         <Grid.Col span={12}>
           <Flex flexDirection="column">
-            <Flex mb={6} style={{ width: '100%' }}>
+            <Flex fullWidth>
               <Divider />
+              <Spacing h={6} />
             </Flex>
 
-            <Flex mb={6} style={{ width: '100%' }}>
+            <Flex fullWidth>
               <Divider variant="dashed" />
+              <Spacing h={6} />
             </Flex>
 
             <Flex style={{ width: '100%' }}>

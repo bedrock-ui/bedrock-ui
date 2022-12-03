@@ -1,4 +1,4 @@
-import { Flex, Heading } from '@bedrock-ui/core';
+import { Heading, Spacing } from '@bedrock-ui/core';
 import { CodeHighlight } from 'components/CodeHighlight';
 import { DocSection } from 'components/DocSection';
 
@@ -9,9 +9,11 @@ const INSTALL_CODE = `
 function GettingStartedInstall() {
   return (
     <DocSection name="Core">
-      <Flex my={8}>
-        <Heading level={5}>Install</Heading>
-      </Flex>
+      <Spacing h={8} />
+
+      <Heading level={5}>Install</Heading>
+
+      <Spacing h={8} />
 
       <CodeHighlight>{INSTALL_CODE}</CodeHighlight>
     </DocSection>

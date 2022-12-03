@@ -1,4 +1,4 @@
-import { Flex, Heading, Text } from '@bedrock-ui/core';
+import { Heading, Spacing, Text } from '@bedrock-ui/core';
 import { DocSection } from 'components/DocSection';
 
 function Overview() {
@@ -12,9 +12,11 @@ function Overview() {
         can dream of.
       </Text>
 
-      <Flex mt={16} mb={6}>
-        <Heading level={3}>Consistent Spacing</Heading>
-      </Flex>
+      <Spacing h={16} />
+
+      <Heading level={3}>Consistent Spacing</Heading>
+
+      <Spacing h={6} />
 
       <Text>
         Bedrock UI is built with consistent spacing in mind. The basis of this spacing is the global
@@ -23,9 +25,11 @@ function Overview() {
         of 4px.
       </Text>
 
-      <Flex mt={16} mb={6}>
-        <Heading level={3}>Size Matters</Heading>
-      </Flex>
+      <Spacing h={16} />
+
+      <Heading level={3}>Size Matters</Heading>
+
+      <Spacing h={6} />
 
       <Text style={{ marginBottom: 24 }}>
         Bedrock UI is intentionally slim, only providing the most fundamental components to build an

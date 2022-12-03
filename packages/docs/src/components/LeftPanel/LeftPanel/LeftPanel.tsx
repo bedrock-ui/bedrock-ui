@@ -20,7 +20,7 @@ function Wrapper({ children, open, onClose }: WrapperProps) {
     <>
       <Hidden on={{ mobile: false, tablet: true, desktop: true }}>
         <Drawer open={open} onClose={onClose} style={{ zIndex: 1100 }}>
-          <Flex flexDirection="column" p={4}>
+          <Flex flexDirection="column" style={{ padding: 16 }}>
             {children}
           </Flex>
         </Drawer>

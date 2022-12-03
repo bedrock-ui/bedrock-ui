@@ -113,13 +113,13 @@ function ComponentsAutocomplete() {
           >
             {Object.keys(STATE_OPTIONS).map((state, index) => (
               <Flex flexDirection="column" key={index}>
-                <Flex p={2}>
+                <Flex style={{ paddingLeft: 8, paddingRight: 8 }}>
                   <Text>{state}</Text>
                 </Flex>
 
                 {STATE_OPTIONS[state as keyof typeof STATE_OPTIONS].map((option, optionIndex) => (
                   <Autocomplete.Option key={`${index}-${optionIndex}`}>
-                    <Flex px={2}>{option}</Flex>
+                    <Flex style={{ paddingLeft: 8, paddingRight: 8 }}>{option}</Flex>
                   </Autocomplete.Option>
                 ))}
               </Flex>

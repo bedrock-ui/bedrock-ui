@@ -20,6 +20,7 @@ export type { ModalProps } from 'components/Modal';
 export type { RadioProps } from 'components/Radio';
 export type { SelectProps, SelectOptionProps } from 'components/Select';
 export type { SpacingProps } from 'components/Spacing';
+export type { SkeletonProps } from 'components/Skeleton';
 export type { SwitchProps } from 'components/Switch';
 export type { TableProps } from 'components/Table';
 export type { TabProps, TabsProps } from 'components/Tabs';
@@ -27,6 +28,7 @@ export type { TextProps } from 'components/Text';
 export type { TextareaProps } from 'components/Textarea';
 export type { TextInputProps } from 'components/TextInput';
 
+// components
 export { Alert } from 'components/Alert';
 export { Autocomplete } from 'components/Autocomplete';
 export { Box } from 'components/Box';
@@ -48,6 +50,7 @@ export { List } from 'components/List';
 export { Modal } from 'components/Modal';
 export { Radio } from 'components/Radio';
 export { Select } from 'components/Select';
+export { Skeleton } from 'components/Skeleton';
 export { Spacing } from 'components/Spacing';
 export { Switch } from 'components/Switch';
 export { Table } from 'components/Table';
@@ -55,3 +58,6 @@ export { Tabs } from 'components/Tabs';
 export { Text } from 'components/Text';
 export { Textarea } from 'components/Textarea';
 export { TextInput } from 'components/TextInput';
+
+// hooks
+export { useClickOutside } from 'hooks/useClickOutside';

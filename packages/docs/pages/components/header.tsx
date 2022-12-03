@@ -1,4 +1,4 @@
-import { Flex, Header, Heading, Grid } from '@bedrock-ui/core';
+import { Flex, Header, Heading, Grid, Spacing } from '@bedrock-ui/core';
 import { CodeHighlight } from 'components/CodeHighlight';
 import { DocSection } from 'components/DocSection';
 
@@ -30,18 +30,21 @@ function ComponentsHeader() {
 
         <Grid.Col span={12}>
           <Flex
+            fullWidth
             justifyContent="center"
-            py={16}
             style={{
               backgroundColor: 'var(--color-neutral-100)',
-              width: '100%',
             }}
           >
+            <Spacing h={16} />
+
             <Header>
               <Flex flexDirection="column" justifyContent="center">
                 <Heading level={4}>Header</Heading>
               </Flex>
             </Header>
+
+            <Spacing h={16} />
           </Flex>
         </Grid.Col>
       </Grid>

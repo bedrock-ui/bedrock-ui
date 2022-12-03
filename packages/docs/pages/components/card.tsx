@@ -45,9 +45,10 @@ function ComponentsCard() {
         <Grid.Col span={12}>
           <Flex
             justifyContent="center"
-            py={16}
             style={{
               backgroundColor: 'var(--color-neutral-100)',
+              paddingTop: 64,
+              paddingBottom: 64,
               width: '100%',
             }}
           >
@@ -73,9 +74,10 @@ function ComponentsCard() {
         <Grid.Col span={12}>
           <Flex
             justifyContent="center"
-            py={16}
             style={{
               backgroundColor: 'var(--color-neutral-100)',
+              paddingTop: 64,
+              paddingBottom: 64,
               width: '100%',
             }}
           >
@@ -84,7 +86,7 @@ function ComponentsCard() {
                 width="100%"
                 src="https://images.unsplash.com/photo-1650198147183-4a802821f1ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
               />
-              <Flex p={3}>
+              <Flex style={{ padding: 12 }}>
                 <Text>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                   incididunt ut labore et dolore magna aliqua.
