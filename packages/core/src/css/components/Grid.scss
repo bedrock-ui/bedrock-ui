@@ -8,7 +8,7 @@
 }
 
 .grid-item {
-  display: block;
+  display: grid;
 }
 
 @include responsive() using ($key) {
