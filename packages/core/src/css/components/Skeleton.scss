@@ -25,8 +25,14 @@
   }
 
   &.line {
-    border-radius: $spacing * 6px;
-    height: $spacing * 2px;
+    border-radius: $spacing * 2px;
     width: 100%;
+
+    @for $i from 1 through 16 {
+      &.h-#{$i} {
+        min-height: calc(var(--spacing) * #{$i}px);
+        height: calc(var(--spacing) * #{$i}px);
+      }
+    }
   }
 }
