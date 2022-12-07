@@ -1,20 +1,33 @@
 .grid {
-  --grid-gap: 16px;
-
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: var(--grid-gap);
   width: 100%;
+
+  @include responsive() using ($key) {
+    @for $i from 1 through 16 {
+      &.gap-#{$i}#{$key} {
+        gap: calc(var(--spacing) * #{$i}px);
+      }
+
+      &.column-gap-#{$i}#{$key} {
+        column-gap: calc(var(--spacing) * #{$i}px);
+      }
+
+      &.row-gap-#{$i}#{$key} {
+        row-gap: calc(var(--spacing) * #{$i}px);
+      }
+    }
+  }
 }
 
 .grid-item {
   display: grid;
-}
 
-@include responsive() using ($key) {
-  @for $i from 1 through 12 {
-    .grid-item.col-#{$i}#{$key} {
-      grid-column: span #{$i} / auto;
+  @include responsive() using ($key) {
+    @for $i from 1 through 12 {
+      &.col-#{$i}#{$key} {
+        grid-column: span #{$i} / auto;
+      }
     }
   }
 }

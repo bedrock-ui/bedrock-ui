@@ -1,18 +1,45 @@
 import React from 'react';
 import BedrockGrid from './Grid';
 
-import type { Props } from './Grid.types';
-
 export default {
   title: 'Grid',
   component: BedrockGrid,
   argTypes: {},
 };
 
-export const Grid = (props: Props) => (
-  <BedrockGrid {...props}>
-    <BedrockGrid.Col span={{ mobile: 12, tablet: 12, desktop: 4 }}>1</BedrockGrid.Col>
-    <BedrockGrid.Col span={{ mobile: 12, tablet: 12, desktop: 4 }}>2</BedrockGrid.Col>
-    <BedrockGrid.Col span={{ mobile: 12, tablet: 12, desktop: 4 }}>3</BedrockGrid.Col>
+export const Grid = () => (
+  <BedrockGrid columnGap={4} rowGap={8}>
+    <BedrockGrid.Col span={6}>
+      <div
+        style={{
+          backgroundColor: '#eee',
+          width: '100%',
+        }}
+      >
+        1
+      </div>
+    </BedrockGrid.Col>
+
+    <BedrockGrid.Col span={6}>
+      <div
+        style={{
+          backgroundColor: '#eee',
+          width: '100%',
+        }}
+      >
+        1
+      </div>
+    </BedrockGrid.Col>
+
+    <BedrockGrid.Col span={6}>
+      <div
+        style={{
+          backgroundColor: '#eee',
+          width: '100%',
+        }}
+      >
+        1
+      </div>
+    </BedrockGrid.Col>
   </BedrockGrid>
 );
