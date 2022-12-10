@@ -1,0 +1,30 @@
+@import 'theme/colors.scss';
+@import 'theme/typography.scss';
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: $color-paper;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+table,
+textarea {
+  font-family: $font-family-default;
+}

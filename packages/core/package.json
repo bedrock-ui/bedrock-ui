@@ -1,9 +1,8 @@
 {
   "name": "@bedrock-ui/core",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "Bedrock UI Core",
   "files": [
-    "css",
     "lib",
     "sass"
   ],
@@ -12,8 +11,7 @@
   "types": "lib/cjs/index.d.ts",
   "sideEffects": false,
   "scripts": {
-    "build": "pnpm rm:build && pnpm build:css && pnpm build:sass && pnpm build:cjs && pnpm build:esm",
-    "build:css": "sass ./src/css/bedrock-ui.scss css/bedrock-ui.css --style compressed --no-source-map",
+    "build": "pnpm rm:build && pnpm build:sass && pnpm build:cjs && pnpm build:esm",
     "build:cjs": "tsc --project tsconfig.build-cjs.json && tsc-alias -p tsconfig.build-cjs.json",
     "build:esm": "tsc --project tsconfig.build-esm.json && tsc-alias -p tsconfig.build-esm.json",
     "build:sass": "node ./scripts/copy-sass.mjs",
@@ -23,7 +21,7 @@
     "rm:build": "rimraf css lib sass",
     "storybook": "start-storybook -p 6006",
     "typecheck": "tsc --noEmit",
-    "sass:watch": "sass --watch ./src/css/bedrock-ui.scss css/bedrock-ui.css --style compressed"
+    "sass:watch": "sass --watch ./src/sass/bedrock-ui.scss css/bedrock-ui.css --style compressed"
   },
   "author": "Matthew Wolfe",
   "license": "MIT",

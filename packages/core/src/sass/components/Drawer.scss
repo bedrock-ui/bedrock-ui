@@ -1,0 +1,48 @@
+$drawer-background-color: $color-paper !default;
+$drawer-box-shadow: $shadow-1 !default;
+$drawer-width: 320px !default;
+
+.drawer {
+  background-color: $drawer-background-color;
+  bottom: 0;
+  box-shadow: $drawer-box-shadow;
+  display: none;
+  height: 100vh;
+  max-height: 100vh;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  width: $drawer-width;
+  z-index: 1100;
+
+  &.open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &.left {
+    left: 0;
+  }
+
+  &.right {
+    right: 0;
+  }
+}
+
+.drawer-overlay {
+  background-color: $color-black;
+  display: none;
+  opacity: 0.75;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+
+  &.open {
+    display: block;
+  }
+}

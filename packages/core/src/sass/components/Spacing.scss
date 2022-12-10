@@ -1,0 +1,17 @@
+.spacing {
+  @include responsive() using ($key) {
+    @for $i from 1 through 16 {
+      &.h-#{$i}#{$key} {
+        height: $spacing * $i + px;
+        min-height: $spacing * $i + px;
+        width: 0;
+      }
+
+      &.w-#{$i}#{$key} {
+        height: 0;
+        min-width: $spacing * $i + px;
+        width: $spacing * $i + px;
+      }
+    }
+  }
+}

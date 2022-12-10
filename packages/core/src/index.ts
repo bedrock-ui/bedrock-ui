@@ -19,7 +19,7 @@ export type { ModalProps } from 'components/Modal';
 export type { RadioProps } from 'components/Radio';
 export type { SelectProps, SelectOptionProps } from 'components/Select';
 export type { SpacingProps } from 'components/Spacing';
-export type { SkeletonProps } from 'components/Skeleton';
+export type { SkeletonCircleProps, SkeletonLineProps } from 'components/Skeleton';
 export type { SwitchProps } from 'components/Switch';
 export type { TableProps } from 'components/Table';
 export type { TabProps, TabsProps } from 'components/Tabs';

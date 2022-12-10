@@ -1,0 +1,85 @@
+$button-border-color: $color-primary-600 !default;
+$button-background-color-disabled: $color-neutral-200 !default;
+$button-color-disabled: $color-neutral-400 !default;
+
+$button-background-color-contained: $color-primary-600 !default;
+$button-background-color-contained-neutral: $color-neutral-200 !default;
+$button-background-color-contained-hover: $color-primary-800 !default;
+$button-background-color-contained-hover-neutral: $color-neutral-300 !default;
+
+$button-background-color-outlined: $color-paper !default;
+$button-background-color-text: transparent !default;
+
+$button-color-contained: $color-white !default;
+$button-color-contained-neutral: $color-neutral-900 !default;
+$button-color-outlined: $color-primary-600 !default;
+$button-color-text: $color-primary-600 !default;
+
+.button {
+  border: none;
+  border-radius: $spacing * 1px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: $font-size-default;
+  font-weight: 500;
+  height: $spacing * 10px;
+  line-height: $spacing * 6px;
+  outline: none;
+  padding-top: $spacing * 2px;
+  padding-bottom: $spacing * 2px;
+  padding-left: $spacing * 4px;
+  padding-right: $spacing * 4px;
+
+  @include responsive() using ($key) {
+    &.contained#{$key} {
+      background-color: $button-background-color-contained;
+      color: $button-color-contained;
+
+      &.neutral {
+        background-color: $button-background-color-contained-neutral;
+        color: $button-color-contained-neutral;
+      }
+
+      &:hover {
+        background-color: $button-background-color-contained-hover;
+
+        &.neutral {
+          background-color: $button-background-color-contained-hover-neutral;
+        }
+      }
+    }
+
+    &.outlined#{$key} {
+      background-color: $button-background-color-outlined;
+      border-color: $button-border-color;
+      color: $button-color-outlined;
+      border-style: solid;
+      border-width: 1px;
+
+      &:hover {
+        background-color: $color-primary-50;
+      }
+    }
+
+    &.text#{$key} {
+      background-color: transparent;
+      color: $button-color-text;
+
+      &:hover {
+        background-color: $color-primary-50;
+      }
+    }
+  }
+
+  &.disabled {
+    background-color: $button-background-color-disabled;
+    color: $button-color-disabled;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  &.square {
+    padding: $spacing * 2px;
+  }
+}

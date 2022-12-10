@@ -1,0 +1,78 @@
+$radio-border-color: $color-neutral-400 !default;
+$radio-border-color-checked: $color-primary-600 !default;
+$radio-border-color-error: $color-error-600 !default;
+$radio-border-color-focus: $color-primary-600 !default;
+$radio-border-color-hover: $color-primary-600 !default;
+$radio-border-color-success: $color-success-600 !default;
+
+$radio-border-radius: $spacing * 4px !default;
+$radio-border-size: 1px !default;
+
+$radio-box-shadow-focus: 0px 0px 0px 4px $color-primary-50 !default;
+$radio-box-shadow-focus-error: 0px 0px 0px 4px $color-error-50 !default;
+$radio-box-shadow-focus-success: 0px 0px 0px 4px $color-success-50 !default;
+
+$radio-size: 20px !default;
+
+.radio-container {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  height: $radio-size + ($spacing * 1px);
+
+  .radio {
+    border-color: $radio-border-color;
+    border-radius: $radio-border-radius;
+    border-style: solid;
+    border-width: $radio-border-size;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    height: $radio-size;
+    width: $radio-size;
+
+    &:focus {
+      box-shadow: $radio-box-shadow-focus;
+      border-color: $radio-border-color-focus;
+      outline: none;
+    }
+
+    &:hover:not(:focus):not(.error):not(.success) {
+      border-color: $radio-border-color-hover;
+    }
+
+    &.checked {
+      border-color: $radio-border-color-checked;
+      border-width: calc(calc($radio-size) / 4) + 2px;
+
+      &.error {
+        border-color: $radio-border-color-error;
+      }
+
+      &.success {
+        border-color: $radio-border-color-success;
+      }
+    }
+
+    &.error {
+      border-color: $radio-border-color-error;
+
+      &:focus {
+        box-shadow: $radio-box-shadow-focus-error;
+      }
+    }
+
+    &.success {
+      border-color: $radio-border-color-success;
+
+      &:focus {
+        box-shadow: $radio-box-shadow-focus-success;
+      }
+    }
+  }
+}
+
+.radio-input {
+  appearance: none;
+  margin: 0;
+}

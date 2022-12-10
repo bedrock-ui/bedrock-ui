@@ -1,0 +1,55 @@
+$badge-color-error: $color-error-600 !default;
+$badge-color-info: $color-info-600 !default;
+$badge-color-neutral: $color-neutral-600 !default;
+$badge-color-primary: $color-primary-600 !default;
+$badge-color-success: $color-success-600 !default;
+$badge-color-warning: $color-warning-600 !default;
+
+$badge-background-color-error: $color-error-50 !default;
+$badge-background-color-info: $color-info-50 !default;
+$badge-background-color-neutral: $color-neutral-50 !default;
+$badge-background-color-primary: $color-primary-50 !default;
+$badge-background-color-success: $color-success-50 !default;
+$badge-background-color-warning: $color-warning-50 !default;
+
+.badge {
+  border-radius: $spacing * 6px;
+  display: inline-flex;
+  height: $spacing * 6px;
+  font-size: $spacing * 3px;
+  font-weight: 700;
+  line-height: $spacing * 6px;
+  padding-left: $spacing * 3px;
+  padding-right: $spacing * 3px;
+  text-transform: uppercase;
+
+  &.error {
+    color: $badge-color-error;
+    background-color: $badge-background-color-error;
+  }
+
+  &.info {
+    color: $badge-color-info;
+    background-color: $badge-background-color-info;
+  }
+
+  &.neutral {
+    color: $badge-color-neutral;
+    background-color: $badge-background-color-neutral;
+  }
+
+  &.primary {
+    color: $badge-color-primary;
+    background-color: $badge-background-color-primary;
+  }
+
+  &.success {
+    color: $badge-color-success;
+    background-color: $badge-background-color-success;
+  }
+
+  &.warning {
+    color: $badge-color-warning;
+    background-color: $badge-background-color-warning;
+  }
+}

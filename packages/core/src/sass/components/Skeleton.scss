@@ -1,0 +1,40 @@
+$skeleton-background-color: $color-neutral-200 !default;
+
+@keyframes skeletonBackgroundColorAnimation {
+  0% {
+    background: $color-neutral-100;
+  }
+
+  100% {
+    background: $skeleton-background-color;
+  }
+}
+
+.skeleton {
+  background-color: $skeleton-background-color;
+
+  &.animated {
+    animation-name: skeletonBackgroundColorAnimation;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  &.circle {
+    border-radius: $spacing * 6px;
+    height: $spacing * 12px;
+    width: $spacing * 12px;
+  }
+
+  &.line {
+    border-radius: $spacing * 2px;
+    width: 100%;
+
+    @for $i from 1 through 16 {
+      &.h-#{$i} {
+        min-height: $spacing * $i + px;
+        height: $spacing * $i + px;
+      }
+    }
+  }
+}

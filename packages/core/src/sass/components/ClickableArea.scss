@@ -1,0 +1,40 @@
+$clickable-area-background-color-hover-error: $color-error-50 !default;
+$clickable-area-background-color-hover-info: $color-info-50 !default;
+$clickable-area-background-color-hover-neutral: $color-neutral-50 !default;
+$clickable-area-background-color-hover-primary: $color-primary-50 !default;
+$clickable-area-background-color-hover-success: $color-success-50 !default;
+$clickable-area-background-color-hover-warning: $color-warning-50 !default;
+
+.clickable-area {
+  cursor: pointer;
+
+  &:hover {
+    &.error {
+      background-color: $clickable-area-background-color-hover-error;
+    }
+
+    &.info {
+      background-color: $clickable-area-background-color-hover-info;
+    }
+
+    &.neutral {
+      background-color: $clickable-area-background-color-hover-neutral;
+    }
+
+    &.none {
+      background-color: transparent;
+    }
+
+    &.primary {
+      background-color: $clickable-area-background-color-hover-primary;
+    }
+
+    &.success {
+      background-color: $clickable-area-background-color-hover-success;
+    }
+
+    &.warning {
+      background-color: $clickable-area-background-color-hover-warning;
+    }
+  }
+}

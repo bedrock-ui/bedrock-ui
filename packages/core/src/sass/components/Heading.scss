@@ -1,0 +1,50 @@
+$heading-color: $font-color-default !default;
+$heading-color-primary: $color-primary-600 !default;
+$heading-font-size-multiplier: 10 !default;
+$heading-font-weight: 500 !default;
+
+.heading {
+  color: $heading-color;
+  font-weight: $heading-font-weight;
+  margin: 0;
+
+  @include responsive() using ($key) {
+    &.primary#{$key} {
+      color: $heading-color-primary;
+    }
+
+    &.white#{$key} {
+      color: $color-white;
+    }
+  }
+}
+
+h1.heading {
+  font-size: $heading-font-size-multiplier * $spacing * 1px;
+  line-height: ($heading-font-size-multiplier * $spacing * 1px) + ($spacing * 1px);
+}
+
+h2.heading {
+  font-size: ($heading-font-size-multiplier - 1) * $spacing * 1px;
+  line-height: ($heading-font-size-multiplier - 1) * $spacing * 1px + $spacing * 1px;
+}
+
+h3.heading {
+  font-size: ($heading-font-size-multiplier - 2) * $spacing * 1px;
+  line-height: ($heading-font-size-multiplier - 2) * $spacing * 1px + $spacing * 1px;
+}
+
+h4.heading {
+  font-size: ($heading-font-size-multiplier - 3) * $spacing * 1px;
+  line-height: ($heading-font-size-multiplier - 3) * $spacing * 1px + $spacing * 1px;
+}
+
+h5.heading {
+  font-size: ($heading-font-size-multiplier - 4) * $spacing * 1px;
+  line-height: ($heading-font-size-multiplier - 4) * $spacing * 1px + $spacing * 1px;
+}
+
+h6.heading {
+  font-size: ($heading-font-size-multiplier - 5) * $spacing * 1px;
+  line-height: ($heading-font-size-multiplier - 5) * $spacing * 1px + $spacing * 1px;
+}
