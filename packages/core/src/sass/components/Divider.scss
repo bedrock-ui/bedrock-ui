@@ -1,0 +1,28 @@
+$divider-color: $color-neutral-400 !default;
+$divider-color-light: $color-neutral-200 !default;
+$divider-size: 1px !default;
+
+.divider {
+  border: 0;
+  border-bottom-color: $divider-color;
+  border-bottom-width: $divider-size;
+  width: 100%;
+
+  @include responsive() using ($key) {
+    &.dashed#{$key} {
+      border-style: dashed;
+    }
+
+    &.dotted#{$key} {
+      border-style: dotted;
+    }
+
+    &.solid#{$key} {
+      border-style: solid;
+    }
+  }
+
+  &.light {
+    border-bottom-color: $divider-color-light;
+  }
+}

@@ -1,0 +1,37 @@
+$text-color: $font-color-default !default;
+$text-color-error: $color-error-600 !default;
+$text-color-neutral: $color-neutral-600 !default;
+$text-color-primary: $color-primary-600 !default;
+
+$text-font-size: $spacing * 4px !default;
+$text-line-height: $spacing * 6px !default;
+
+.text {
+  color: $text-color;
+  display: inline-flex;
+  flex-direction: column;
+  font-size: $text-font-size;
+  line-height: $text-line-height;
+
+  * {
+    display: inline;
+  }
+
+  @include responsive() using ($key) {
+    &.error#{$key} {
+      color: $text-color-error;
+    }
+
+    &.primary#{$key} {
+      color: $text-color-primary;
+    }
+
+    &.neutral#{$key} {
+      color: $text-color-neutral;
+    }
+
+    &.white#{$key} {
+      color: $color-white;
+    }
+  }
+}

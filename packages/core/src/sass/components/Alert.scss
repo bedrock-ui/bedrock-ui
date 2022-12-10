@@ -1,0 +1,86 @@
+$alert-background-color-error-light: $color-error-50 !default;
+$alert-background-color-error-filled: $color-error-600 !default;
+$alert-background-color-error-outlined: $color-paper !default;
+
+$alert-background-color-info-light: $color-info-50 !default;
+$alert-background-color-info-filled: $color-info-600 !default;
+$alert-background-color-info-outlined: $color-paper !default;
+
+$alert-background-color-success-light: $color-success-50 !default;
+$alert-background-color-success-filled: $color-success-600 !default;
+$alert-background-color-success-outlined: $color-paper !default;
+
+$alert-background-color-warning-light: $color-warning-50 !default;
+$alert-background-color-warning-filled: $color-warning-600 !default;
+$alert-background-color-warning-outlined: $color-paper !default;
+
+$alert-border-color-error-outlined: $color-error-600 !default;
+$alert-border-color-info-outlined: $color-info-600 !default;
+$alert-border-color-success-outlined: $color-success-600 !default;
+$alert-border-color-warning-outlined: $color-warning-600 !default;
+
+.alert {
+  border-radius: $spacing * 1px;
+  padding: $spacing * 4px;
+  width: 100%;
+
+  &.error {
+    &.filled {
+      background-color: $alert-background-color-error-filled;
+    }
+
+    &.light {
+      background-color: $alert-background-color-error-light;
+    }
+
+    &.outlined {
+      background-color: $alert-background-color-error-outlined;
+      box-shadow: inset 0px 0px 0px 1px $alert-border-color-error-outlined;
+    }
+  }
+
+  &.info {
+    &.filled {
+      background-color: $alert-background-color-info-filled;
+    }
+
+    &.light {
+      background-color: $alert-background-color-info-light;
+    }
+
+    &.outlined {
+      background-color: $alert-background-color-info-outlined;
+      box-shadow: inset 0px 0px 0px 1px $alert-border-color-info-outlined;
+    }
+  }
+
+  &.success {
+    &.filled {
+      background-color: $alert-background-color-success-filled;
+    }
+
+    &.light {
+      background-color: $alert-background-color-success-light;
+    }
+
+    &.outlined {
+      background-color: $alert-background-color-success-outlined;
+      box-shadow: inset 0px 0px 0px 1px $alert-border-color-success-outlined;
+    }
+  }
+
+  &.warning {
+    &.filled {
+      background-color: $alert-background-color-warning-filled;
+    }
+
+    &.light {
+      background-color: $alert-background-color-warning-light;
+    }
+
+    &.outlined {
+      background-color: $alert-background-color-warning-outlined;
+      box-shadow: inset 0px 0px 0px 1px $alert-border-color-warning-outlined;
+    }
+  }
+}

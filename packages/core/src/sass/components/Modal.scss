@@ -1,0 +1,50 @@
+$modal-background-color: $color-paper !default;
+$modal-border-radius: $spacing * 1px !default;
+$modal-max-height: calc(100vh - 128px) !default;
+$modal-padding: $spacing * 4px !default;
+$modal-width: 400px !default;
+
+.modal {
+  background-color: $modal-background-color;
+  border-radius: $modal-border-radius;
+  display: none;
+  left: 0;
+  margin: auto;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  padding: $modal-padding;
+  position: fixed;
+  right: 0;
+  top: 0;
+  max-height: $modal-max-height;
+  overflow-y: auto;
+  width: $modal-width;
+  z-index: 1100;
+
+  &.open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &.no-padding {
+    padding: 0;
+  }
+}
+
+.modal-overlay {
+  background-color: $color-black;
+  display: none;
+  opacity: 0.75;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+
+  &.open {
+    display: block;
+  }
+}

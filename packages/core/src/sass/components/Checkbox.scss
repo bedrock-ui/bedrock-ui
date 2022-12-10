@@ -1,0 +1,97 @@
+$checkbox-border-color: $color-neutral-400 !default;
+$checkbox-border-color-checked: $color-primary-600 !default;
+$checkbox-border-color-error: $color-error-600 !default;
+$checkbox-border-color-focus: $color-primary-600 !default;
+$checkbox-border-color-hover: $color-primary-600 !default;
+$checkbox-border-color-success: $color-success-600 !default;
+
+$checkbox-border-radius: $spacing * 1px !default;
+$checkbox-border-size: 1px !default;
+
+$checkbox-box-shadow-focus: 0px 0px 0px 4px $color-primary-50 !default;
+$checkbox-box-shadow-focus-error: 0px 0px 0px 4px $color-error-50 !default;
+$checkbox-box-shadow-focus-success: 0px 0px 0px 4px $color-success-50 !default;
+
+$checkbox-background-color: $color-paper !default;
+$checkbox-color: $color-primary-600 !default;
+$checkbox-check-color: $color-white !default;
+$checkbox-color-error: $color-error-600 !default;
+$checkbox-color-success: $color-success-600 !default;
+
+$checkbox-size: $spacing * 5px !default;
+
+.checkbox-container {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  height: $checkbox-size + $spacing * 1px;
+
+  .checkbox-input {
+    appearance: none;
+    margin: 0;
+  }
+
+  .checkbox {
+    background-color: $checkbox-background-color;
+    border-color: $checkbox-border-color;
+    border-radius: $checkbox-border-radius;
+    border-style: solid;
+    border-width: $checkbox-border-size;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    height: $checkbox-size;
+    width: $checkbox-size;
+
+    &:focus {
+      box-shadow: $checkbox-box-shadow-focus;
+      border-color: $checkbox-border-color-focus;
+      border-width: 1px;
+      outline: none;
+    }
+
+    &:hover:not(:focus):not(.error):not(.success) {
+      border-color: $checkbox-border-color-hover;
+    }
+
+    &.checked {
+      border-color: $checkbox-border-color-checked;
+    }
+
+    &.error {
+      border-color: $checkbox-border-color-error;
+      border-width: 1px;
+
+      &:focus {
+        box-shadow: $checkbox-box-shadow-focus-error;
+      }
+    }
+
+    &.success {
+      border-color: $checkbox-border-color-success;
+      border-width: 1px;
+
+      &:focus {
+        box-shadow: $checkbox-box-shadow-focus-success;
+      }
+    }
+
+    .check-icon {
+      background-color: $checkbox-color;
+      opacity: 1;
+      fill: none;
+      stroke-width: 2;
+      stroke: $checkbox-check-color;
+      stroke-dasharray: 16;
+      stroke-dashoffset: 0;
+
+      &.error {
+        background-color: $checkbox-color-error;
+      }
+
+      &.success {
+        background-color: $checkbox-color-success;
+      }
+    }
+  }
+}

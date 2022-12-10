@@ -1,4 +1,4 @@
 /css/
-lib/
-sass/
-node_modules/
+/lib/
+/sass/
+/node_modules/

@@ -1,0 +1,32 @@
+$header-background-color: $color-paper !default;
+$header-box-shadow: $shadow-1 !default;
+$header-height: $spacing * 16px !default;
+
+.header {
+  background-color: $header-background-color;
+  box-shadow: $header-box-shadow;
+  box-sizing: border-box;
+  display: flex;
+  height: $header-height;
+  padding-top: $spacing * 3px;
+  padding-bottom: $spacing * 3px;
+  padding-left: $spacing * 4px;
+  padding-right: $spacing * 4px;
+  width: 100%;
+
+  &.fixed {
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+  }
+
+  &.sticky {
+    left: 0;
+    position: sticky;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+  }
+}

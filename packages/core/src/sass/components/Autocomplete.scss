@@ -1,0 +1,132 @@
+$autocomplete-border-color: $color-neutral-400 !default;
+$autocomplete-border-color-error: $color-error-600 !default;
+$autocomplete-border-color-focus: $color-primary-600 !default;
+$autocomplete-border-color-hover: $color-neutral-600 !default;
+$autocomplete-border-color-success: $color-success-600 !default;
+
+$autocomplete-input-color: $font-color-default !default;
+$autocomplete-color-success: $color-success-600 !default;
+
+$autocomplete-border-radius: $spacing * 1px !default;
+
+$autocomplete-box-shadow-focus: 0px 0px 0px 4px $color-primary-50 !default;
+$autocomplete-box-shadow-focus-error: 0px 0px 0px 4px $color-error-50 !default;
+$autocomplete-box-shadow-focus-success: 0px 0px 0px 4px $color-success-50 !default;
+
+$autocomplete-menu-background-color: $color-paper !default;
+
+$autocomplete-menu-option-background-color-hover: $color-neutral-100 !default;
+$autocomplete-menu-option-background-color-selected: $color-primary-50 !default;
+
+$autocomplete-menu-option-color: $font-color-default !default;
+$autocomplete-menu-option-color-hover: $color-neutral-900 !default;
+$autocomplete-menu-option-color-selected: $color-neutral-900 !default;
+
+.autocomplete {
+  position: relative;
+  width: 100%;
+
+  .input-container {
+    background-color: $color-paper;
+    border-color: $autocomplete-border-color;
+    border-radius: $autocomplete-border-radius;
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    outline: none;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+
+    input {
+      background-color: $color-paper;
+      border: none;
+      color: $autocomplete-input-color;
+      font-size: 16px;
+      line-height: 24px;
+      outline: none;
+      padding-top: $spacing * 2px - 1px;
+      padding-bottom: $spacing * 2px - 1px;
+      padding-left: $spacing * 4px;
+      padding-right: $spacing * 4px;
+      width: 100%;
+    }
+
+    .right-icon {
+      margin-left: auto;
+    }
+
+    &:focus-within {
+      box-shadow: $autocomplete-box-shadow-focus;
+      border-color: $autocomplete-border-color-focus;
+      border-width: 1px;
+    }
+
+    &:hover:not(:focus-within):not(.error):not(.success) {
+      border-color: $autocomplete-border-color-hover;
+    }
+
+    &.error {
+      border-color: $autocomplete-border-color-error;
+      border-width: 1px;
+
+      &:focus-within {
+        box-shadow: $autocomplete-box-shadow-focus-error;
+      }
+    }
+
+    &.success {
+      border-color: $autocomplete-border-color-success;
+      border-width: 1px;
+
+      &:focus-within {
+        box-shadow: $autocomplete-box-shadow-focus-success;
+      }
+    }
+  }
+
+  .menu {
+    background-color: $autocomplete-menu-background-color;
+    border: 1px solid $color-neutral-400;
+    border-radius: $spacing * 1px;
+    box-sizing: border-box;
+    box-shadow: $shadow-1;
+    display: none;
+    max-height: $spacing * 50px;
+    overflow-y: auto;
+    position: absolute;
+    padding: $spacing * 1px;
+    width: 100%;
+    z-index: 500;
+
+    &.open {
+      display: flex;
+      flex-direction: column;
+      margin-top: $spacing * 1px;
+    }
+
+    .option {
+      border-radius: $spacing * 1px;
+      color: $autocomplete-menu-option-color;
+      cursor: pointer;
+      position: relative;
+      padding-top: $spacing * 3px;
+      padding-bottom: $spacing * 3px;
+      padding-left: $spacing * 2px;
+      padding-right: $spacing * 2px;
+
+      &:hover {
+        background-color: $autocomplete-menu-option-background-color-hover;
+        color: $autocomplete-menu-option-color-hover;
+      }
+
+      &.selected {
+        background-color: $autocomplete-menu-option-background-color-selected;
+        color: $autocomplete-menu-option-color-selected;
+      }
+    }
+  }
+}

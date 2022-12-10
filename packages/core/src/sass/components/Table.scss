@@ -1,0 +1,30 @@
+$table-border-bottom-color: $color-neutral-300 !default;
+$table-border-bottom-width: 1px !default;
+$table-font-size: $font-size-default !default;
+$table-line-height: 24px !default;
+$table-padding: $spacing * 2px !default;
+
+.table {
+  border-collapse: collapse;
+  color: $font-color-default;
+  font-size: $table-font-size;
+  line-height: $table-line-height;
+  width: 100%;
+
+  &.fixed {
+    table-layout: fixed;
+  }
+
+  thead tr th,
+  tbody tr td {
+    border-bottom-color: $table-border-bottom-color;
+    border-bottom-style: solid;
+    border-bottom-width: $table-border-bottom-width;
+    box-sizing: border-box;
+
+    display: table-cell;
+    height: 40px;
+    padding: $table-padding;
+    text-align: left;
+  }
+}
