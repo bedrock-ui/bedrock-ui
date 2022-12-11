@@ -1,6 +1,6 @@
 import React from 'react';
 import BedrockCard from './Card';
-import { Text } from '../Text';
+import { Text } from 'components/Text';
 
 import type { Props } from './Card.types';
 

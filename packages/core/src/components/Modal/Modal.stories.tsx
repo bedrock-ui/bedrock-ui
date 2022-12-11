@@ -1,6 +1,6 @@
 import React from 'react';
 import { useArgs } from '@storybook/client-api';
-import { Text } from '../Text';
+import { Text } from 'components/Text';
 import BedrockModal from './Modal';
 
 import type { Props } from './Modal.types';

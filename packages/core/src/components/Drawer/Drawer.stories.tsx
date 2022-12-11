@@ -1,6 +1,6 @@
 import React from 'react';
 import { useArgs } from '@storybook/client-api';
-import { Heading } from '../Heading';
+import { Heading } from 'components/Heading';
 import BedrockDrawer from './Drawer';
 
 import type { Props } from './Drawer.types';

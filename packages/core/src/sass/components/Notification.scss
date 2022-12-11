@@ -1,0 +1,59 @@
+$notification-background-color: $color-paper;
+$notification-border-color: $color-neutral-200;
+$notification-box-shadow: $shadow-4;
+
+$notification-color-error: $color-error-600;
+$notification-color-info: $color-info-600;
+$notification-color-primary: $color-primary-600;
+$notification-color-neutral: $color-neutral-600;
+$notification-color-success: $color-success-600;
+$notification-color-warning: $color-warning-600;
+
+.notification {
+  background-color: $notification-background-color;
+  border-radius: $spacing * 1px;
+  border: 1px solid $notification-border-color;
+  box-shadow: $notification-box-shadow;
+  max-width: $spacing * 100px;
+  padding-top: $spacing * 1px;
+  padding-bottom: $spacing * 1px;
+  padding-left: $spacing * 1px;
+  padding-right: $spacing * 3px;
+  z-index: 1200;
+
+  .line {
+    border-radius: $spacing * 1px;
+    min-width: $spacing * 1px;
+    width: $spacing * 1px;
+
+    &.error {
+      background-color: $notification-color-error;
+    }
+
+    &.info {
+      background-color: $notification-color-info;
+    }
+
+    &.primary {
+      background-color: $notification-color-primary;
+    }
+
+    &.neutral {
+      background-color: $notification-color-neutral;
+    }
+
+    &.success {
+      background-color: $notification-color-success;
+    }
+
+    &.warning {
+      background-color: $notification-color-warning;
+    }
+  }
+
+  .content {
+    padding-top: $spacing * 1px;
+    padding-bottom: $spacing * 1px;
+    padding-left: $spacing * 3px;
+  }
+}

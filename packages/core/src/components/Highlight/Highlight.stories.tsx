@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text } from '../Text';
+import { Text } from 'components/Text';
 import BedrockHighlight from './Highlight';
 
 import type { Props } from './Highlight.types';
