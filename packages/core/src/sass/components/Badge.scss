@@ -1,16 +1,25 @@
-$badge-color-error: $color-error-600 !default;
-$badge-color-info: $color-info-600 !default;
-$badge-color-neutral: $color-neutral-600 !default;
-$badge-color-primary: $color-primary-600 !default;
-$badge-color-success: $color-success-600 !default;
-$badge-color-warning: $color-warning-600 !default;
+$badge-color-filled: $color-white !default;
 
-$badge-background-color-error: $color-error-50 !default;
-$badge-background-color-info: $color-info-50 !default;
-$badge-background-color-neutral: $color-neutral-50 !default;
-$badge-background-color-primary: $color-primary-50 !default;
-$badge-background-color-success: $color-success-50 !default;
-$badge-background-color-warning: $color-warning-50 !default;
+$badge-background-color-error-filled: $color-error-600 !default;
+$badge-background-color-info-filled: $color-info-600 !default;
+$badge-background-color-neutral-filled: $color-neutral-600 !default;
+$badge-background-color-primary-filled: $color-primary-600 !default;
+$badge-background-color-success-filled: $color-success-600 !default;
+$badge-background-color-warning-filled: $color-warning-600 !default;
+
+$badge-color-error-light: $color-error-600 !default;
+$badge-color-info-light: $color-info-600 !default;
+$badge-color-neutral-light: $color-neutral-600 !default;
+$badge-color-primary-light: $color-primary-600 !default;
+$badge-color-success-light: $color-success-600 !default;
+$badge-color-warning-light: $color-warning-600 !default;
+
+$badge-background-color-error-light: $color-error-50 !default;
+$badge-background-color-info-light: $color-info-50 !default;
+$badge-background-color-neutral-light: $color-neutral-50 !default;
+$badge-background-color-primary-light: $color-primary-50 !default;
+$badge-background-color-success-light: $color-success-50 !default;
+$badge-background-color-warning-light: $color-warning-50 !default;
 
 .badge {
   border-radius: $spacing * 6px;
@@ -23,33 +32,73 @@ $badge-background-color-warning: $color-warning-50 !default;
   padding-right: $spacing * 3px;
   text-transform: uppercase;
 
+  &.filled {
+    color: $badge-color-filled;
+  }
+
   &.error {
-    color: $badge-color-error;
-    background-color: $badge-background-color-error;
+    &.filled {
+      background-color: $badge-background-color-error-filled;
+    }
+
+    &.light {
+      color: $badge-color-error-light;
+      background-color: $badge-background-color-error-light;
+    }
   }
 
   &.info {
-    color: $badge-color-info;
-    background-color: $badge-background-color-info;
+    &.filled {
+      background-color: $badge-background-color-info-filled;
+    }
+
+    &.light {
+      color: $badge-color-info-light;
+      background-color: $badge-background-color-info-light;
+    }
   }
 
   &.neutral {
-    color: $badge-color-neutral;
-    background-color: $badge-background-color-neutral;
+    &.filled {
+      background-color: $badge-background-color-neutral-filled;
+    }
+
+    &.light {
+      color: $badge-color-neutral-light;
+      background-color: $badge-background-color-neutral-light;
+    }
   }
 
   &.primary {
-    color: $badge-color-primary;
-    background-color: $badge-background-color-primary;
+    &.filled {
+      background-color: $badge-background-color-primary-filled;
+    }
+
+    &.light {
+      color: $badge-color-primary-light;
+      background-color: $badge-background-color-primary-light;
+    }
   }
 
   &.success {
-    color: $badge-color-success;
-    background-color: $badge-background-color-success;
+    &.filled {
+      background-color: $badge-background-color-success-filled;
+    }
+
+    &.light {
+      color: $badge-color-success-light;
+      background-color: $badge-background-color-success-light;
+    }
   }
 
   &.warning {
-    color: $badge-color-warning;
-    background-color: $badge-background-color-warning;
+    &.filled {
+      background-color: $badge-background-color-warning-filled;
+    }
+
+    &.light {
+      color: $badge-color-warning-light;
+      background-color: $badge-background-color-warning-light;
+    }
   }
 }
