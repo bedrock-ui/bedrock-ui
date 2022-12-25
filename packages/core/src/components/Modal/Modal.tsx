@@ -15,6 +15,10 @@ function Modal({ className, onClose, noPadding = false, open = false, ...props }
 
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : 'scroll';
+
+    return () => {
+      document.body.style.overflow = 'scroll';
+    };
   }, [open]);
 
   return (
