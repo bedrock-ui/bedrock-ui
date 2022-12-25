@@ -4,7 +4,7 @@
   width: 100%;
 
   @include responsive() using ($key) {
-    @for $i from 1 through 16 {
+    @for $i from 0 through 16 {
       &.gap-#{$i}#{$key} {
         gap: $spacing * $i + px;
       }
