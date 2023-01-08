@@ -8,6 +8,10 @@ $clickable-area-background-color-hover-warning: $color-warning-50 !default;
 .clickable-area {
   cursor: pointer;
 
+  &.disabled {
+    cursor: default;
+  }
+
   &:hover {
     &.error {
       background-color: $clickable-area-background-color-hover-error;

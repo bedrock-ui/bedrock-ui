@@ -1,6 +1,6 @@
 import React from 'react';
-import { Flex } from '../Flex';
-import { Text } from '../Text';
+import { Flex } from 'components/Flex';
+import { Text } from 'components/Text';
 import BedrockClickableArea from './ClickableArea';
 
 import type { Props } from './ClickableArea.types';

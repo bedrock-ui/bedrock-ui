@@ -17,6 +17,10 @@ $text-line-height: $spacing * 6px !default;
     display: inline;
   }
 
+  &.bold {
+    font-weight: 700;
+  }
+
   @include responsive() using ($key) {
     &.error#{$key} {
       color: $text-color-error;
