@@ -19,7 +19,7 @@ const VARIANT_OUTLINED_CODE = `
 `.trim();
 
 const VARIANT_TEXT_CODE = `
-<Button variant="outlined">
+<Button variant="text">
   Button
 </Button>
 `.trim();
@@ -83,7 +83,7 @@ function ComponentsButton() {
         </Grid.Col>
 
         <Grid.Col span={12}>
-          <CodeHighlight>{VARIANT_TEXT_CODE}</CodeHighlight>
+          <CodeHighlight>{SQUARE_CODE}</CodeHighlight>
         </Grid.Col>
 
         <Grid.Col span={12}>
