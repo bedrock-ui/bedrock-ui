@@ -1,0 +1,25 @@
+@import '@bedrock-ui/core/sass/theme/colors.scss';
+@import '@bedrock-ui/core/sass/theme/spacing.scss';
+
+.leftPanel {
+  background-color: $color-paper;
+  border-right: 1px solid;
+  border-color: $color-neutral-200;
+  box-sizing: border-box;
+  height: calc(100vh - 64px);
+  overflow-y: scroll;
+  padding: 16px;
+  position: fixed;
+  width: 260px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .leftPanel {
+    border-color: $color-neutral-800;
+  }
+}
+
+.leftPanelDivider {
+  margin-top: $spacing * 4px;
+  margin-bottom: $spacing * 4px;
+}

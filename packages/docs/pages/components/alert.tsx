@@ -38,7 +38,7 @@ function ComponentsAlert() {
     <DocSection name="Alert">
       <CodeHighlight>{CODE}</CodeHighlight>
 
-      <Grid style={{ marginTop: 64, marginBottom: 64 }}>
+      <Grid gap={4} style={{ marginTop: 64, marginBottom: 64 }}>
         <Grid.Col span={12}>
           <Heading level={3}>Severity</Heading>
         </Grid.Col>
@@ -84,7 +84,7 @@ function ComponentsAlert() {
         </Grid.Col>
       </Grid>
 
-      <Grid style={{ marginBottom: 64 }}>
+      <Grid gap={4} style={{ marginBottom: 64 }}>
         <Grid.Col span={12}>
           <Heading level={3}>Filled</Heading>
         </Grid.Col>
@@ -130,7 +130,7 @@ function ComponentsAlert() {
         </Grid.Col>
       </Grid>
 
-      <Grid style={{ marginBottom: 64 }}>
+      <Grid gap={4} style={{ marginBottom: 64 }}>
         <Grid.Col span={12}>
           <Heading level={3}>Outlined</Heading>
         </Grid.Col>

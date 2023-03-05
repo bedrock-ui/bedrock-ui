@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Button, Modal, Grid, Heading, Text } from '@bedrock-ui/core';
+import { Button, Flex, Grid, Heading, Modal, Text } from '@bedrock-ui/core';
 import { CodeHighlight } from 'components/CodeHighlight';
 import { DocSection } from 'components/DocSection';
 
@@ -27,7 +27,7 @@ function ComponentsModal() {
     <DocSection name="Modal">
       <CodeHighlight>{CODE}</CodeHighlight>
 
-      <Grid style={{ marginTop: 64, marginBottom: 64 }}>
+      <Grid gap={4} style={{ marginTop: 64, marginBottom: 64 }}>
         <Grid.Col span={12}>
           <Heading level={3}>Default</Heading>
         </Grid.Col>
@@ -37,7 +37,9 @@ function ComponentsModal() {
         </Grid.Col>
 
         <Grid.Col span={12}>
-          <Button onClick={() => setOpen(!open)}>Open/Close Modal</Button>
+          <Flex>
+            <Button onClick={() => setOpen(!open)}>Open/Close Modal</Button>
+          </Flex>
 
           <Modal open={open} onClose={() => setOpen(!open)}>
             <Text>
@@ -52,7 +54,7 @@ function ComponentsModal() {
         </Grid.Col>
       </Grid>
 
-      <Grid style={{ marginTop: 64, marginBottom: 64 }}>
+      <Grid gap={4} style={{ marginTop: 64, marginBottom: 64 }}>
         <Grid.Col span={12}>
           <Heading level={3}>No Padding</Heading>
         </Grid.Col>
@@ -62,7 +64,9 @@ function ComponentsModal() {
         </Grid.Col>
 
         <Grid.Col span={12}>
-          <Button onClick={() => setNoPaddingOpen(!noPaddingOpen)}>Open/Close Modal</Button>
+          <Flex>
+            <Button onClick={() => setNoPaddingOpen(!noPaddingOpen)}>Open/Close Modal</Button>
+          </Flex>
 
           <Modal noPadding open={noPaddingOpen} onClose={() => setNoPaddingOpen(!noPaddingOpen)}>
             <Text>

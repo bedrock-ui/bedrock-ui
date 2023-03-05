@@ -27,7 +27,7 @@ function ComponentsDrawer() {
     <DocSection name="Drawer">
       <CodeHighlight>{CODE}</CodeHighlight>
 
-      <Grid style={{ marginTop: 64, marginBottom: 64 }}>
+      <Grid gap={4} style={{ marginTop: 64, marginBottom: 64 }}>
         <Grid.Col span={12}>
           <Heading level={3}>Default</Heading>
         </Grid.Col>
@@ -37,7 +37,9 @@ function ComponentsDrawer() {
         </Grid.Col>
 
         <Grid.Col span={12}>
-          <Button onClick={() => setLeftOpen(!leftOpen)}>Open/Close Drawer</Button>
+          <Flex>
+            <Button onClick={() => setLeftOpen(!leftOpen)}>Open/Close Drawer</Button>
+          </Flex>
 
           <Drawer open={leftOpen} onClose={() => setLeftOpen(false)}>
             <Flex style={{ padding: 16 }}>
@@ -54,7 +56,7 @@ function ComponentsDrawer() {
         </Grid.Col>
       </Grid>
 
-      <Grid style={{ marginTop: 64, marginBottom: 64 }}>
+      <Grid gap={4} style={{ marginTop: 64, marginBottom: 64 }}>
         <Grid.Col span={12}>
           <Heading level={3}>Right</Heading>
         </Grid.Col>
@@ -64,7 +66,9 @@ function ComponentsDrawer() {
         </Grid.Col>
 
         <Grid.Col span={12}>
-          <Button onClick={() => setRightOpen(!rightOpen)}>Open/Close Drawer</Button>
+          <Flex>
+            <Button onClick={() => setRightOpen(!rightOpen)}>Open/Close Drawer</Button>
+          </Flex>
 
           <Drawer position="right" open={rightOpen} onClose={() => setRightOpen(false)}>
             <Flex style={{ padding: 16 }}>

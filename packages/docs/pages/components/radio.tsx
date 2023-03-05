@@ -37,7 +37,7 @@ function ComponentsRadio() {
     <DocSection name="Checkbox">
       <CodeHighlight>{CODE}</CodeHighlight>
 
-      <Grid style={{ marginTop: 64, marginBottom: 64 }}>
+      <Grid gap={4} style={{ marginTop: 64, marginBottom: 64 }}>
         <Grid.Col span={12}>
           <Heading level={3}>Default</Heading>
         </Grid.Col>
@@ -55,7 +55,7 @@ function ComponentsRadio() {
         </Grid.Col>
       </Grid>
 
-      <Grid style={{ marginTop: 64, marginBottom: 64 }}>
+      <Grid gap={4} style={{ marginTop: 64, marginBottom: 64 }}>
         <Grid.Col span={12}>
           <Heading level={3}>Error</Heading>
         </Grid.Col>
@@ -73,7 +73,7 @@ function ComponentsRadio() {
         </Grid.Col>
       </Grid>
 
-      <Grid style={{ marginTop: 64, marginBottom: 64 }}>
+      <Grid gap={4} style={{ marginTop: 64, marginBottom: 64 }}>
         <Grid.Col span={12}>
           <Heading level={3}>Success</Heading>
         </Grid.Col>

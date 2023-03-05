@@ -4,7 +4,7 @@ import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { LeftPanel } from 'components/LeftPanel';
-import styles from './Layout.module.css';
+import styles from './Layout.module.scss';
 
 import type { ReactNode } from 'react';
 
