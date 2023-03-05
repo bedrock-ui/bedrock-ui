@@ -1,6 +1,6 @@
 import { Drawer, Flex, Hidden, Text } from '@bedrock-ui/core';
 import { Link } from '../Link';
-import styles from './LeftPanel.module.css';
+import styles from './LeftPanel.module.scss';
 
 import type { ReactNode } from 'react';
 

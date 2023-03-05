@@ -1,0 +1,62 @@
+@import '@bedrock-ui/core/sass/theme/colors.scss';
+@import '@bedrock-ui/core/sass/theme/spacing.scss';
+
+.page {
+  padding: $spacing * 4px;
+  padding-top: $spacing * 32px;
+}
+
+h1.heading {
+  font-size: $spacing * 32px;
+  font-weight: 900;
+  line-height: $spacing * 33px;
+}
+
+.subheading {
+  font-size: $spacing * 10px;
+  font-weight: 700;
+  line-height: $spacing * 11px;
+}
+
+.actions {
+  margin-top: $spacing * 28px;
+  margin-bottom: $spacing * 40px;
+}
+
+.actions button {
+  margin-left: $spacing * 1px;
+  margin-right: $spacing * 1px;
+  height: $spacing * 16px;
+  line-height: $spacing * 12px;
+  font-size: $spacing * 5px;
+  font-weight: 700;
+  padding-left: $spacing * 8px;
+  padding-right: $spacing * 8px;
+}
+
+.highlights {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  text-align: center;
+}
+
+.highlights svg {
+  stroke: $color-neutral-900;
+}
+
+@media (max-width: 600px) {
+  h1.heading {
+    font-size: $spacing * 12px;
+    line-height: $spacing * 13px;
+  }
+
+  .subheading {
+    font-size: $spacing * 4px;
+    line-height: $spacing * 5px;
+  }
+
+  .highlights {
+    width: 100%;
+  }
+}

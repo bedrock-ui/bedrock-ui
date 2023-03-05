@@ -33,7 +33,7 @@ function ComponentsCard() {
     <DocSection name="Card">
       <CodeHighlight>{CODE}</CodeHighlight>
 
-      <Grid style={{ marginTop: 64, marginBottom: 64 }}>
+      <Grid gap={4} style={{ marginTop: 64, marginBottom: 64 }}>
         <Grid.Col span={12}>
           <Heading level={3}>Default</Heading>
         </Grid.Col>
@@ -62,7 +62,7 @@ function ComponentsCard() {
         </Grid.Col>
       </Grid>
 
-      <Grid style={{ paddingTop: 64, paddingBottom: 64 }}>
+      <Grid gap={4} style={{ paddingTop: 64, paddingBottom: 64 }}>
         <Grid.Col span={12}>
           <Heading level={3}>No Padding</Heading>
         </Grid.Col>

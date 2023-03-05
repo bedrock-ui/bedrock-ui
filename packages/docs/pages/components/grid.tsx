@@ -28,13 +28,13 @@ function ComponentsGrid() {
     <DocSection name="Grid">
       <CodeHighlight>{CODE}</CodeHighlight>
 
-      <Grid style={{ marginTop: 64, marginBottom: 64 }}>
+      <Grid gap={4} style={{ marginTop: 64, marginBottom: 64 }}>
         <Grid.Col span={12}>
           <CodeHighlight>{GRID_CODE}</CodeHighlight>
         </Grid.Col>
 
         <Grid.Col span={12}>
-          <Grid>
+          <Grid gap={4}>
             <Grid.Col span={4}>
               <Flex style={{ backgroundColor: 'var(--color-neutral-200)', padding: 16 }}>
                 Grid Item 1

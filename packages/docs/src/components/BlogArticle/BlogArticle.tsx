@@ -1,5 +1,5 @@
 import { Flex, Heading } from '@bedrock-ui/core';
-import styles from './BlogArticle.module.css';
+import styles from './BlogArticle.module.scss';
 
 import type { ReactNode } from 'react';
 

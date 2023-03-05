@@ -1,8 +1,10 @@
+@import '@bedrock-ui/core/sass/theme/spacing.scss';
+
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-top: calc(var(--spacing) * 8px);
-  padding-bottom: calc(var(--spacing) * 8px);
+  padding-top: $spacing * 8px;
+  padding-bottom: $spacing * 8px;
   padding-left: 16px;
   padding-right: 16px;
   max-width: 1024px;

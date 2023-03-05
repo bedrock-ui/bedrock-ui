@@ -15,7 +15,7 @@ function ComponentsHeading() {
     <DocSection name="Heading">
       <CodeHighlight>{CODE}</CodeHighlight>
 
-      <Grid style={{ marginTop: 64, marginBottom: 64 }}>
+      <Grid gap={4} style={{ marginTop: 64, marginBottom: 64 }}>
         <Grid.Col span={12}>
           <CodeHighlight>{HEADING_CODE}</CodeHighlight>
         </Grid.Col>

@@ -1,4 +1,4 @@
-import { Button, Grid, Heading, Text } from '@bedrock-ui/core';
+import { Button, Flex, Grid, Heading } from '@bedrock-ui/core';
 import { CodeHighlight } from 'components/CodeHighlight';
 import { DocSection } from 'components/DocSection';
 
@@ -19,7 +19,7 @@ const VARIANT_OUTLINED_CODE = `
 `.trim();
 
 const VARIANT_TEXT_CODE = `
-<Button variant="outlined">
+<Button variant="text">
   Button
 </Button>
 `.trim();
@@ -35,7 +35,7 @@ function ComponentsButton() {
     <DocSection name="Button">
       <CodeHighlight>{CODE}</CodeHighlight>
 
-      <Grid style={{ marginTop: 64, marginBottom: 64 }}>
+      <Grid gap={4} style={{ marginTop: 64, marginBottom: 64 }}>
         <Grid.Col span={12}>
           <Heading level={3}>Contained</Heading>
         </Grid.Col>
@@ -45,11 +45,13 @@ function ComponentsButton() {
         </Grid.Col>
 
         <Grid.Col span={12}>
-          <Button>Button</Button>
+          <Flex>
+            <Button>Button</Button>
+          </Flex>
         </Grid.Col>
       </Grid>
 
-      <Grid style={{ marginBottom: 64 }}>
+      <Grid gap={4} style={{ marginBottom: 64 }}>
         <Grid.Col span={12}>
           <Heading level={3}>Outlined</Heading>
         </Grid.Col>
@@ -59,11 +61,13 @@ function ComponentsButton() {
         </Grid.Col>
 
         <Grid.Col span={12}>
-          <Button variant="outlined">Button</Button>
+          <Flex>
+            <Button variant="outlined">Button</Button>
+          </Flex>
         </Grid.Col>
       </Grid>
 
-      <Grid style={{ marginBottom: 64 }}>
+      <Grid gap={4} style={{ marginBottom: 64 }}>
         <Grid.Col span={12}>
           <Heading level={3}>Text</Heading>
         </Grid.Col>
@@ -73,21 +77,25 @@ function ComponentsButton() {
         </Grid.Col>
 
         <Grid.Col span={12}>
-          <Button variant="text">Button</Button>
+          <Flex>
+            <Button variant="text">Button</Button>
+          </Flex>
         </Grid.Col>
       </Grid>
 
-      <Grid style={{ marginBottom: 64 }}>
+      <Grid gap={4} style={{ marginBottom: 64 }}>
         <Grid.Col span={12}>
           <Heading level={3}>Square</Heading>
         </Grid.Col>
 
         <Grid.Col span={12}>
-          <CodeHighlight>{VARIANT_TEXT_CODE}</CodeHighlight>
+          <CodeHighlight>{SQUARE_CODE}</CodeHighlight>
         </Grid.Col>
 
         <Grid.Col span={12}>
-          <Button square>Button</Button>
+          <Flex>
+            <Button square>Button</Button>
+          </Flex>
         </Grid.Col>
       </Grid>
     </DocSection>

@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import { Button, Flex, Grid, Heading, Hidden, Spacing, Text } from '@bedrock-ui/core';
 import { IconLicense, IconSettings, IconRocket, IconMoon } from '@tabler/icons';
-import styles from './Landing.module.css';
+import styles from './Landing.module.scss';
 
 function Landing() {
   const router = useRouter();
@@ -26,7 +26,7 @@ function Landing() {
         </Button>
       </Flex>
 
-      <Grid className={styles.highlights}>
+      <Grid gap={8} className={styles.highlights}>
         <Grid.Col span={{ mobile: 12, tablet: 6, desktop: 3 }}>
           <Flex flexDirection="column">
             <Flex justifyContent="center">

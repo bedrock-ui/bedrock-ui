@@ -1,5 +1,5 @@
 import { Flex, Heading } from '@bedrock-ui/core';
-import styles from './Banner.module.css';
+import styles from './Banner.module.scss';
 
 import type { Props } from './Banner.types';
 
