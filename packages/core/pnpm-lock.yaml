@@ -12,7 +12,6 @@ specifiers:
   '@storybook/client-api': ^7.0.0-rc.1
   '@storybook/react': ^7.0.0-rc.1
   '@storybook/react-webpack5': ^7.0.0-rc.1
-  '@tabler/icons': ^2.9.0
   '@tabler/icons-react': ^2.9.0
   '@types/react': ^18.0.28
   babel-loader: ^9.1.2
@@ -45,7 +44,6 @@ devDependencies:
   '@storybook/client-api': 7.0.0-rc.1
   '@storybook/react': 7.0.0-rc.1_ygqkwb4gg3aean7xjfdauovyqq
   '@storybook/react-webpack5': 7.0.0-rc.1_6mbplxbx6s7x4hmdmervij2kcu
-  '@tabler/icons': 2.9.0
   '@tabler/icons-react': 2.9.0_react@18.2.0
   '@types/react': 18.0.28
   babel-loader: 9.1.2_@babel+core@7.21.0
