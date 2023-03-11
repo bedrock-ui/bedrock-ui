@@ -90,10 +90,10 @@ $autocomplete-menu-option-color-selected: $color-neutral-900 !default;
 
   .menu {
     background-color: $autocomplete-menu-background-color;
-    border: 1px solid $color-neutral-400;
+    border: 1px solid $color-neutral-300;
     border-radius: $spacing * 1px;
     box-sizing: border-box;
-    box-shadow: $shadow-1;
+    box-shadow: $shadow-2;
     display: none;
     max-height: $spacing * 50px;
     overflow-y: auto;
@@ -105,7 +105,7 @@ $autocomplete-menu-option-color-selected: $color-neutral-900 !default;
     &.open {
       display: flex;
       flex-direction: column;
-      margin-top: $spacing * 1px;
+      margin-top: $spacing * 2px;
     }
 
     .option {
