@@ -59,5 +59,8 @@ export { Text } from 'components/Text';
 export { Textarea } from 'components/Textarea';
 export { TextInput } from 'components/TextInput';
 
+// constants
+export { theme } from 'constants/theme';
+
 // hooks
 export { useClickOutside } from 'hooks/useClickOutside';

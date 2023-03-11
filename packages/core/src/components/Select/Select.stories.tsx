@@ -1,5 +1,6 @@
 import { IconSelector } from '@tabler/icons-react';
 import React, { useState } from 'react';
+import { theme } from 'constants/theme';
 import BedrockSelect from './Select';
 
 import type { Props } from './Select.types';
@@ -37,11 +38,7 @@ export const Select = ({ selectedLabel, ...props }: Props) => {
   const [value, setValue] = useState<number>(0);
 
   return (
-    <BedrockSelect
-      {...props}
-      rightIcon={<IconSelector color="#757575" stroke={1.5} size={20} />}
-      selectedLabel={`${selectedLabel}: ${value}`}
-    >
+    <BedrockSelect {...props} selectedLabel={`${selectedLabel}: ${value}`}>
       {OPTIONS.map((option, key) => (
         <BedrockSelect.Option
           key={key}
@@ -59,7 +56,11 @@ export const SelectWithIcon = ({ selectedLabel, ...props }: Props) => {
   const [value, setValue] = useState<number>(0);
 
   return (
-    <BedrockSelect {...props} selectedLabel={`${selectedLabel}: ${value}`}>
+    <BedrockSelect
+      {...props}
+      rightIcon={<IconSelector color={theme.colors.neutral[600]} stroke={1.5} size={20} />}
+      selectedLabel={`${selectedLabel}: ${value}`}
+    >
       {OPTIONS.map((option, key) => (
         <BedrockSelect.Option
           key={key}
