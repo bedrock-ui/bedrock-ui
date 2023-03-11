@@ -12,6 +12,8 @@ specifiers:
   '@storybook/client-api': ^7.0.0-rc.1
   '@storybook/react': ^7.0.0-rc.1
   '@storybook/react-webpack5': ^7.0.0-rc.1
+  '@tabler/icons': ^2.9.0
+  '@tabler/icons-react': ^2.9.0
   '@types/react': ^18.0.28
   babel-loader: ^9.1.2
   bytes: ^3.1.2
@@ -43,6 +45,8 @@ devDependencies:
   '@storybook/client-api': 7.0.0-rc.1
   '@storybook/react': 7.0.0-rc.1_ygqkwb4gg3aean7xjfdauovyqq
   '@storybook/react-webpack5': 7.0.0-rc.1_6mbplxbx6s7x4hmdmervij2kcu
+  '@tabler/icons': 2.9.0
+  '@tabler/icons-react': 2.9.0_react@18.2.0
   '@types/react': 18.0.28
   babel-loader: 9.1.2_@babel+core@7.21.0
   bytes: 3.1.2
@@ -2832,6 +2836,20 @@ packages:
       '@types/babel__core': 7.20.0
       '@types/express': 4.17.17
       file-system-cache: 2.0.2
+    dev: true
+
+  /@tabler/icons-react/2.9.0_react@18.2.0:
+    resolution: {integrity: sha512-V3v2yTK72UMSRXfBD/1IQB7fmcI0MoJk253nzcjhMdwTIIltOWuotCiiyqNv7lX7iKAeL7/ApCMNC03CDuQQ1g==}
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@tabler/icons': 2.9.0
+      prop-types: 15.8.1
+      react: 18.2.0
+    dev: true
+
+  /@tabler/icons/2.9.0:
+    resolution: {integrity: sha512-x0Vafi2m0jP+fgWxgOu/wI6/o7r+uVWr0NtpsNiboYn4KIDOPyxtJ6T156ZQ3XfDU51WZDaMUIxY35AF5QoowQ==}
     dev: true
 
   /@types/babel__core/7.20.0:

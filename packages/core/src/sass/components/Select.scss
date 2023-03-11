@@ -47,7 +47,13 @@ $select-menu-option-color-selected: $color-neutral-900 !default;
     outline: none;
     width: 100%;
 
+    &:has(.right-icon) {
+      padding-right: $spacing * 2px;
+    }
+
     .right-icon {
+      display: flex;
+      align-items: center;
       margin-left: auto;
     }
 

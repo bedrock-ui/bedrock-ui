@@ -1,3 +1,4 @@
+import { IconSelector } from '@tabler/icons-react';
 import React, { useState } from 'react';
 import BedrockSelect from './Select';
 
@@ -24,34 +25,50 @@ export default {
   },
 };
 
+const OPTIONS = [
+  { label: 'Example Option 1', value: 1 },
+  { label: 'Example Option 2', value: 2 },
+  { label: 'Example Option 3', value: 3 },
+  { label: 'Example Option 4', value: 4 },
+  { label: 'Example Option 5', value: 5 },
+];
+
 export const Select = ({ selectedLabel, ...props }: Props) => {
   const [value, setValue] = useState<number>(0);
 
   return (
+    <BedrockSelect
+      {...props}
+      rightIcon={<IconSelector color="#757575" stroke={1.5} size={20} />}
+      selectedLabel={`${selectedLabel}: ${value}`}
+    >
+      {OPTIONS.map((option, key) => (
+        <BedrockSelect.Option
+          key={key}
+          onClick={() => setValue(option.value)}
+          selected={value === option.value}
+        >
+          {option.label}
+        </BedrockSelect.Option>
+      ))}
+    </BedrockSelect>
+  );
+};
+
+export const SelectWithIcon = ({ selectedLabel, ...props }: Props) => {
+  const [value, setValue] = useState<number>(0);
+
+  return (
     <BedrockSelect {...props} selectedLabel={`${selectedLabel}: ${value}`}>
-      <BedrockSelect.Option onClick={() => setValue(1)} selected={value === 1}>
-        Example Option 1
-      </BedrockSelect.Option>
-
-      <BedrockSelect.Option onClick={() => setValue(2)} selected={value === 2}>
-        Example Option 2
-      </BedrockSelect.Option>
-
-      <BedrockSelect.Option onClick={() => setValue(3)} selected={value === 3}>
-        Example Option 3
-      </BedrockSelect.Option>
-
-      <BedrockSelect.Option onClick={() => setValue(4)} selected={value === 4}>
-        Example Option 4
-      </BedrockSelect.Option>
-
-      <BedrockSelect.Option onClick={() => setValue(5)} selected={value === 5}>
-        Example Option 5
-      </BedrockSelect.Option>
-
-      <BedrockSelect.Option onClick={() => setValue(6)} selected={value === 6}>
-        Example Option 6
-      </BedrockSelect.Option>
+      {OPTIONS.map((option, key) => (
+        <BedrockSelect.Option
+          key={key}
+          onClick={() => setValue(option.value)}
+          selected={value === option.value}
+        >
+          {option.label}
+        </BedrockSelect.Option>
+      ))}
     </BedrockSelect>
   );
 };
