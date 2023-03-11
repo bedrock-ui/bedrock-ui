@@ -77,7 +77,11 @@ export const Autocomplete = (props: Props) => {
       onInputChange={(e) => setInputValue(e.currentTarget.value)}
     >
       {options.map((option, key) => (
-        <BedrockAutocomplete.Option onClick={option.onClick} selected={value === option.value}>
+        <BedrockAutocomplete.Option
+          key={key}
+          onClick={option.onClick}
+          selected={value === option.value}
+        >
           {option.label}
         </BedrockAutocomplete.Option>
       ))}
