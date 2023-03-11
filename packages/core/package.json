@@ -1,6 +1,6 @@
 {
   "name": "@bedrock-ui/core",
-  "version": "2.2.13",
+  "version": "2.2.14",
   "description": "Bedrock UI Core",
   "files": [
     "lib",
