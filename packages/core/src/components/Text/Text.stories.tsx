@@ -9,3 +9,9 @@ export default {
 };
 
 export const Text = (props: Props) => <BedrockText {...props}>Example Text</BedrockText>;
+
+export const TextBold = (props: Props) => (
+  <BedrockText {...props} bold>
+    Example Text
+  </BedrockText>
+);

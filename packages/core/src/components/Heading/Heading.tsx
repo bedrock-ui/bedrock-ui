@@ -13,12 +13,20 @@ const headings = {
   6: 'h6',
 };
 
-function Heading({ className, color, fontSize, lineHeight, level = 1, ...props }: Props) {
+function Heading({
+  bold = false,
+  className,
+  color,
+  fontSize,
+  lineHeight,
+  level = 1,
+  ...props
+}: Props) {
   return createElement(
     headings[level],
     {
       ...props,
-      className: clsx('heading', breakpoints(color), className),
+      className: clsx('heading', breakpoints(color), className, { bold }),
       style: {
         fontSize,
         lineHeight: typeof lineHeight === 'number' ? `${lineHeight}px` : lineHeight,
