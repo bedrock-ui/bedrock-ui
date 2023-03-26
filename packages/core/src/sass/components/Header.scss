@@ -1,5 +1,7 @@
 $header-background-color: $color-paper !default;
 $header-box-shadow: $shadow-1 !default;
+$header-box-shadow-flat: $shadow-0 !default;
+$header-border-color-flat: $color-neutral-300 !default;
 $header-height: $spacing * 16px !default;
 
 .header {
@@ -28,5 +30,10 @@ $header-height: $spacing * 16px !default;
     right: 0;
     top: 0;
     z-index: 1000;
+  }
+
+  &.flat {
+    border-bottom: 1px solid $header-border-color-flat;
+    box-shadow: $header-box-shadow-flat;
   }
 }
