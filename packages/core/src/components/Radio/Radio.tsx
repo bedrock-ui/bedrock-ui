@@ -23,7 +23,7 @@ function Radio({
       />
 
       <span
-        className={clsx('radio', className, { checked, error, success })}
+        className={clsx('radio', { checked, error, success }, className)}
         onClick={() => onChange(!checked)}
         tabIndex={0}
       />

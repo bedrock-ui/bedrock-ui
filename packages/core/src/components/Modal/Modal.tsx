@@ -25,7 +25,7 @@ function Modal({ className, onClose, noPadding = false, open = false, ...props }
     <>
       <div
         {...props}
-        className={clsx('modal', className, { ['no-padding']: noPadding, open })}
+        className={clsx('modal', { ['no-padding']: noPadding, open }, className)}
         ref={ref}
       />
       <div className={clsx('modal-overlay', { open })} />

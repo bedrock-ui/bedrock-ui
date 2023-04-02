@@ -21,7 +21,7 @@ function Select({
   return (
     <div {...props} className="select" ref={ref}>
       <div
-        className={clsx('input', className, { error, success })}
+        className={clsx('input', { error, success }, className)}
         onClick={() => setOpen(!open)}
         tabIndex={0}
       >
@@ -38,7 +38,7 @@ function Select({
 }
 
 function Option({ className, selected = false, ...props }: OptionProps) {
-  return <div {...props} className={clsx('option', className, { selected })} tabIndex={0} />;
+  return <div {...props} className={clsx('option', { selected }, className)} tabIndex={0} />;
 }
 
 Select.Option = Option;

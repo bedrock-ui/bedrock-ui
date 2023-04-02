@@ -22,7 +22,7 @@ function Autocomplete({
   return (
     <div {...props} className="autocomplete" ref={ref}>
       <div
-        className={clsx('input-container', className, { error, success })}
+        className={clsx('input-container', { error, success }, className)}
         onClick={() => setOpen(!open)}
       >
         <input type="text" onChange={onInputChange} tabIndex={0} value={inputValue} />
@@ -38,7 +38,7 @@ function Autocomplete({
 }
 
 function Option({ className, selected = false, ...props }: OptionProps) {
-  return <div {...props} className={clsx('option', className, { selected })} tabIndex={0} />;
+  return <div {...props} className={clsx('option', { selected }, className)} tabIndex={0} />;
 }
 
 Autocomplete.Option = Option;

@@ -10,17 +10,22 @@ function Grid({ className, gap, columnGap, rowGap, ...props }: Props) {
       {...props}
       className={clsx(
         'grid',
-        className,
         breakpoints(gap, { prefix: 'gap-' }),
         breakpoints(columnGap, { prefix: 'column-gap-' }),
-        breakpoints(rowGap, { prefix: 'row-gap-' })
+        breakpoints(rowGap, { prefix: 'row-gap-' }),
+        className
       )}
     />
   );
 }
 
 function GridCol({ className, span, ...props }: ColProps) {
-  return <div {...props} className={clsx('grid-item', breakpoints(span, { prefix: 'col-' }))} />;
+  return (
+    <div
+      {...props}
+      className={clsx('grid-item', breakpoints(span, { prefix: 'col-' }), className)}
+    />
+  );
 }
 
 Grid.Col = GridCol;

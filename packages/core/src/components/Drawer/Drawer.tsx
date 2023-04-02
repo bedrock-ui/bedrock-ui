@@ -19,7 +19,7 @@ function Drawer({ className, onClose, open = false, position = 'left', ...props 
 
   return (
     <>
-      <div {...props} className={clsx('drawer', className, position, { open })} ref={ref} />
+      <div {...props} className={clsx('drawer', position, { open }, className)} ref={ref} />
       <div className={clsx('drawer-overlay', { open })} />
     </>
   );

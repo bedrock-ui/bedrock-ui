@@ -5,7 +5,7 @@ import type { Props } from './CircularProgress.types';
 
 function CircularProgress({ className, color, size = 'md' }: Props) {
   return (
-    <div className={clsx(className, 'circular-progress', color, size)}>
+    <div className={clsx('circular-progress', color, size, className)}>
       <div></div>
       <div></div>
       <div></div>

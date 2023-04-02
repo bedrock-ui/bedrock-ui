@@ -7,7 +7,7 @@ function ClickableArea({ className, color = 'primary', disabled = false, ...prop
   return (
     <div
       {...props}
-      className={clsx('clickable-area', className, color, { disabled })}
+      className={clsx('clickable-area', color, { disabled }, className)}
       tabIndex={0}
     />
   );

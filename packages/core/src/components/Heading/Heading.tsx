@@ -26,7 +26,7 @@ function Heading({
     headings[level],
     {
       ...props,
-      className: clsx('heading', breakpoints(color), className, { bold }),
+      className: clsx('heading', breakpoints(color), { bold }, className),
       style: {
         fontSize,
         lineHeight: typeof lineHeight === 'number' ? `${lineHeight}px` : lineHeight,

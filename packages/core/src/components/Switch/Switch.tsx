@@ -5,7 +5,7 @@ import type { Props } from './Switch.types';
 
 function Switch({ checked, className, error, onChange, success, ...props }: Props) {
   return (
-    <div className={clsx('switch', className, { checked, error, success })}>
+    <div className={clsx('switch', { checked, error, success }, className)}>
       <input
         {...props}
         checked={checked}
