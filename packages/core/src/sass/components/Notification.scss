@@ -15,10 +15,10 @@ $notification-color-warning: $color-warning-600;
   border: 1px solid $notification-border-color;
   box-shadow: $notification-box-shadow;
   max-width: $spacing * 100px;
-  padding-top: $spacing * 1px;
-  padding-bottom: $spacing * 1px;
-  padding-left: $spacing * 1px;
-  padding-right: $spacing * 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  padding-right: 11px;
   z-index: 1200;
 
   .line {
