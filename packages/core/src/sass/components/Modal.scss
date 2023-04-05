@@ -29,6 +29,16 @@ $modal-width: 400px !default;
   &.no-padding {
     padding: 0;
   }
+
+  @include responsive() using ($key) {
+    &.full-screen#{$key} {
+      border-radius: 0px;
+      margin: 0;
+      height: 100vh;
+      max-height: 100vh;
+      width: 100%;
+    }
+  }
 }
 
 .modal-overlay {
