@@ -38,6 +38,16 @@ $modal-width: 400px !default;
       max-height: 100vh;
       width: 100%;
     }
+
+    &.full-screen-false#{$key} {
+      border-radius: $modal-border-radius;
+      margin: auto;
+      margin-top: 64px;
+      margin-bottom: 64px;
+      height: inherit;
+      max-height: $modal-max-height;
+      width: $modal-width;
+    }
   }
 }
 
