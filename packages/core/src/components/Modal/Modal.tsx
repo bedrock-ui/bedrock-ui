@@ -35,8 +35,8 @@ function Modal({
         {...props}
         className={clsx(
           'modal',
+          breakpoints(fullScreen, { prefix: 'full-screen-' }),
           {
-            'full-screen': breakpoints(fullScreen),
             'no-padding': noPadding,
             open,
           },

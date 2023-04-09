@@ -31,7 +31,7 @@ $modal-width: 400px !default;
   }
 
   @include responsive() using ($key) {
-    &.full-screen#{$key} {
+    &.full-screen-true#{$key} {
       border-radius: 0px;
       margin: 0;
       height: 100vh;
