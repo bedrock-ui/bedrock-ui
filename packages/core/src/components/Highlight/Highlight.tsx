@@ -10,7 +10,7 @@ function Highlight({ className, text, highlight, ...props }: Props) {
         word,
         match: Array.isArray(highlight) ? highlight.includes(word) : highlight === word,
       })),
-    [text, highlight]
+    [text, highlight],
   );
 
   return (

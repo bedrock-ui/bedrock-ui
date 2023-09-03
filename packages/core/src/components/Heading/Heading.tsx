@@ -32,7 +32,7 @@ function Heading({
         lineHeight: typeof lineHeight === 'number' ? `${lineHeight}px` : lineHeight,
       },
     },
-    props.children
+    props.children,
   );
 }
 

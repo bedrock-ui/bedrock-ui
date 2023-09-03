@@ -40,7 +40,7 @@ function Modal({
             'no-padding': noPadding,
             open,
           },
-          className
+          className,
         )}
         ref={ref}
       />

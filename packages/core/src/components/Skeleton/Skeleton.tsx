@@ -17,7 +17,7 @@ function Line({ animated = false, className, h, ...props }: LineProps) {
           animated,
           [`h-${h}`]: h !== undefined,
         },
-        className
+        className,
       )}
     />
   );

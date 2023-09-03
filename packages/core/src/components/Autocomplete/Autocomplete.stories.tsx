@@ -67,7 +67,7 @@ export const Autocomplete = (props: Props) => {
         value: 5,
       },
     ],
-    []
+    [],
   );
 
   return (

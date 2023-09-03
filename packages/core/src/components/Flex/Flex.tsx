@@ -21,7 +21,7 @@ function Flex({
         breakpoints(alignItems, { prefix: 'align-items-' }),
         breakpoints(flexDirection, { prefix: 'flex-direction-' }),
         breakpoints(justifyContent, { prefix: 'justify-content-' }),
-        className
+        className,
       )}
     />
   );

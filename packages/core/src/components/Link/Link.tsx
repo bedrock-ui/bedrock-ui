@@ -13,7 +13,7 @@ function Link({ className, underline = 'none', ...props }: Props) {
           'underline-hover': underline === 'hover',
           underline: underline === 'underline',
         },
-        className
+        className,
       )}
     />
   );

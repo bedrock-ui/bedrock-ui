@@ -13,7 +13,7 @@ function Grid({ className, gap, columnGap, rowGap, ...props }: Props) {
         breakpoints(gap, { prefix: 'gap-' }),
         breakpoints(columnGap, { prefix: 'column-gap-' }),
         breakpoints(rowGap, { prefix: 'row-gap-' }),
-        className
+        className,
       )}
     />
   );

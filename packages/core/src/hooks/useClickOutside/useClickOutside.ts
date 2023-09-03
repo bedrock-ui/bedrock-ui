@@ -5,7 +5,7 @@ import type { MutableRefObject } from 'react';
 function useClickOutside<T extends HTMLElement | null>(
   ref: MutableRefObject<T>,
   visible: boolean,
-  onClickOutside: () => void
+  onClickOutside: () => void,
 ) {
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {

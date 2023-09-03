@@ -13,7 +13,7 @@ function Spacing({ className, h, w, ...props }: Props) {
           [`h-${h}`]: h !== undefined,
           [`w-${w}`]: w !== undefined,
         },
-        className
+        className,
       )}
     />
   );
