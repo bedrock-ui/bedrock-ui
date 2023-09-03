@@ -13,8 +13,6 @@ export default {
 
 export const ClickableArea = (props: Props) => (
   <BedrockClickableArea {...props}>
-    <Flex p={2}>
-      <Text>Clickable area</Text>
-    </Flex>
+    <Text>Clickable area</Text>
   </BedrockClickableArea>
 );

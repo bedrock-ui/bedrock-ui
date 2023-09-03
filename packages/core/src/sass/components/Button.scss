@@ -16,6 +16,7 @@ $button-color-outlined: $color-primary-600 !default;
 $button-color-text: $color-primary-600 !default;
 
 .button {
+  align-items: center;
   border: none;
   border-radius: $spacing * 1px;
   box-sizing: border-box;

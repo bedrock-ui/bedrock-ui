@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import { Button, Flex, Grid, Heading, Hidden, Spacing, Text } from '@bedrock-ui/core';
-import { IconLicense, IconSettings, IconRocket, IconMoon } from '@tabler/icons';
+import { IconLicense, IconSettings, IconRocket, IconMoon } from '@tabler/icons-react';
 import styles from './Landing.module.scss';
 
 function Landing() {

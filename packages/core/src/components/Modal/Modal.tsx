@@ -1,10 +1,18 @@
 import React, { useEffect, useRef } from 'react';
 import clsx from 'clsx';
 import { useClickOutside } from 'hooks/useClickOutside';
+import { breakpoints } from 'utils/breakpoints';
 
 import type { Props } from './Modal.types';
 
-function Modal({ className, onClose, noPadding = false, open = false, ...props }: Props) {
+function Modal({
+  className,
+  fullScreen,
+  noPadding = false,
+  onClose,
+  open = false,
+  ...props
+}: Props) {
   const ref = useRef<HTMLDivElement | null>(null);
 
   useClickOutside(ref, open, () => {
@@ -25,7 +33,15 @@ function Modal({ className, onClose, noPadding = false, open = false, ...props }
     <>
       <div
         {...props}
-        className={clsx('modal', className, { ['no-padding']: noPadding, open })}
+        className={clsx(
+          'modal',
+          breakpoints(fullScreen, { prefix: 'full-screen-' }),
+          {
+            'no-padding': noPadding,
+            open,
+          },
+          className,
+        )}
         ref={ref}
       />
       <div className={clsx('modal-overlay', { open })} />

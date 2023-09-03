@@ -1,5 +1,5 @@
 import { Grid, Heading, Select } from '@bedrock-ui/core';
-import { IconSelector } from '@tabler/icons';
+import { IconSelector } from '@tabler/icons-react';
 import { CodeHighlight } from 'components/CodeHighlight';
 import { DocSection } from 'components/DocSection';
 

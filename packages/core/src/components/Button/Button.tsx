@@ -16,7 +16,7 @@ function Button({
   return (
     <button
       {...props}
-      className={clsx('button', className, color, { disabled, square }, breakpoints(variant))}
+      className={clsx('button', color, { disabled, square }, breakpoints(variant), className)}
       disabled={disabled}
       type={type}
     />

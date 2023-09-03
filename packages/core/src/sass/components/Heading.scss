@@ -8,6 +8,10 @@ $heading-font-weight: 500 !default;
   font-weight: $heading-font-weight;
   margin: 0;
 
+  &.bold {
+    font-weight: 700;
+  }
+
   @include responsive() using ($key) {
     &.primary#{$key} {
       color: $heading-color-primary;

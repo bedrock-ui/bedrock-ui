@@ -8,7 +8,7 @@ function Tabs({ className, ...props }: Props) {
 }
 
 function Tab({ className, active = false, ...props }: TabProps) {
-  return <div {...props} className={clsx('tab', className, { active })} />;
+  return <div {...props} className={clsx('tab', { active }, className)} />;
 }
 
 Tabs.Tab = Tab;

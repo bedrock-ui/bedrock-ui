@@ -1,4 +1,5 @@
 $card-background-color: $color-paper !default;
+$card-border-color-flat: $color-neutral-300 !default;
 $card-box-shadow: $shadow-1 !default;
 
 .card {
@@ -9,6 +10,7 @@ $card-box-shadow: $shadow-1 !default;
 
   &.flat {
     box-shadow: none;
+    border: 1px solid $card-border-color-flat;
   }
 
   &.no-padding {

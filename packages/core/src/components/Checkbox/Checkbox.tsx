@@ -23,7 +23,7 @@ function Checkbox({
       />
 
       <span
-        className={clsx('checkbox', className, { checked, error, success })}
+        className={clsx('checkbox', { checked, error, success }, className)}
         onClick={() => onChange(!checked)}
         tabIndex={0}
       >

@@ -41,6 +41,8 @@ $checkbox-size: $spacing * 5px !default;
     cursor: pointer;
     display: inline-flex;
     height: $checkbox-size;
+    min-height: $checkbox-size;
+    max-height: $checkbox-size;
     width: $checkbox-size;
 
     &:focus {

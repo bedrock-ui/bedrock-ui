@@ -7,10 +7,14 @@ function Link({ className, underline = 'none', ...props }: Props) {
   return (
     <a
       {...props}
-      className={clsx('link', className, {
-        'underline-hover': underline === 'hover',
-        underline: underline === 'underline',
-      })}
+      className={clsx(
+        'link',
+        {
+          'underline-hover': underline === 'hover',
+          underline: underline === 'underline',
+        },
+        className,
+      )}
     />
   );
 }

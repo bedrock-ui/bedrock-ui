@@ -1,0 +1,87 @@
+$circular-progress-color: $color-primary-600 !default;
+$circular-progress-height: $spacing * 20px !default;
+$circular-progress-width: $spacing * 20px !default;
+
+$circular-progress-height-sm: $spacing * 6px !default;
+$circular-progress-width-sm: $spacing * 6px !default;
+
+$circular-progress-height-md: $spacing * 12px !default;
+$circular-progress-width-md: $spacing * 12px !default;
+
+$circular-progress-height-lg: $spacing * 20px !default;
+$circular-progress-width-lg: $spacing * 20px !default;
+
+.circular-progress {
+  display: inline-block;
+  position: relative;
+  width: $circular-progress-width;
+  height: $circular-progress-height;
+
+  &.sm {
+    width: $circular-progress-width-sm;
+    height: $circular-progress-height-sm;
+
+    div {
+      border-width: 4px;
+    }
+  }
+
+  &.md {
+    width: $circular-progress-width-md;
+    height: $circular-progress-height-md;
+
+    div {
+      border-width: 6px;
+    }
+  }
+
+  &.lg {
+    width: $circular-progress-width-lg;
+    height: $circular-progress-height-lg;
+
+    div {
+      border-width: $spacing * 2px;
+    }
+  }
+
+  @keyframes loader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  div {
+    animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: $circular-progress-color;
+    border-color: $circular-progress-color transparent transparent transparent;
+    box-sizing: border-box;
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+
+  div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+
+  div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+
+  div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+
+  &.white {
+    div {
+      border-color: $color-white;
+      border-color: $color-white transparent transparent transparent;
+    }
+  }
+}

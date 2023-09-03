@@ -5,7 +5,7 @@ import type { Props } from './Card.types';
 
 function Card({ className, flat = false, noPadding = false, ...props }: Props) {
   return (
-    <div {...props} className={clsx('card', className, { flat, ['no-padding']: noPadding })} />
+    <div {...props} className={clsx('card', { flat, ['no-padding']: noPadding }, className)} />
   );
 }
 

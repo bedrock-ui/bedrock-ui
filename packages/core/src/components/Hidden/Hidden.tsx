@@ -5,7 +5,7 @@ import { breakpoints } from 'utils/breakpoints';
 import type { Props } from './Hidden.types';
 
 function Hidden({ className, on, ...props }: Props) {
-  return <div {...props} className={clsx('hidden', className, breakpoints(on))} />;
+  return <div {...props} className={clsx('hidden', breakpoints(on), className)} />;
 }
 
 export default Hidden;

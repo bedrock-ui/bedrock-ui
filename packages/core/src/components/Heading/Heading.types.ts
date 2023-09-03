@@ -4,6 +4,7 @@ import type { MaybeBreakpointObject } from 'types/breakpoints';
 type HtmlHeading = DetailedHTMLProps<HTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement>;
 
 export interface Props extends Omit<HtmlHeading, 'color'> {
+  bold?: boolean;
   color?: MaybeBreakpointObject<'default' | 'primary' | 'white'>;
   /**
    * Specify a custom font size in pixels to override the default level based size
