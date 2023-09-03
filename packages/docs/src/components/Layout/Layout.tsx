@@ -1,4 +1,4 @@
-import { IconBrandGithub, IconMenu2 } from '@tabler/icons';
+import { IconBrandGithub, IconMenu2 } from '@tabler/icons-react';
 import { Button, Flex, Header, Heading, Hidden, Link, Spacing } from '@bedrock-ui/core';
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
