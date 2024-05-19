@@ -3,17 +3,21 @@
   "version": "2.3.9",
   "description": "Bedrock UI Core",
   "files": [
-    "lib",
+    "dist",
     "sass"
   ],
-  "module": "lib/esm/index.js",
-  "main": "lib/cjs/index.js",
-  "types": "lib/cjs/index.d.ts",
-  "sideEffects": false,
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
   "scripts": {
-    "build": "pnpm rm:build && pnpm build:sass && pnpm build:cjs && pnpm build:esm",
-    "build:cjs": "tsc --project tsconfig.build-cjs.json && tsc-alias -p tsconfig.build-cjs.json",
-    "build:esm": "tsc --project tsconfig.build-esm.json && tsc-alias -p tsconfig.build-esm.json",
+    "build": "tsup",
     "build:sass": "node ./scripts/copy-sass.mjs",
     "build-storybook": "storybook build",
     "css-size": "node ./scripts/css-size.mjs",
@@ -51,6 +55,7 @@
     "sass": "^1.66.1",
     "storybook": "^7.4.0",
     "tsc-alias": "^1.8.7",
+    "tsup": "^8.0.2",
     "typescript": "^5.2.2"
   },
   "peerDependencies": {

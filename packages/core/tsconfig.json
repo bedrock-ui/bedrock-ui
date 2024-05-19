@@ -7,10 +7,10 @@
     "jsx": "react",
     "lib": ["es2020", "dom"],
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "noEmit": true,
     "strict": true,
-    "target": "es2019"
+    "target": "es2020"
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"]
 }
