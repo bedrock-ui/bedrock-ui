@@ -1,5 +1,5 @@
 import React from 'react';
-import { Spacing } from 'components/Spacing';
+import { Spacing } from '@pkg/components/Spacing';
 import BedrockNotification from './Notification';
 
 import type { Props } from './Notification.types';

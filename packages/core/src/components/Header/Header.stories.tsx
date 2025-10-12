@@ -1,7 +1,7 @@
 import React from 'react';
-import { Flex } from 'components/Flex';
-import { Heading } from 'components/Heading';
-import { TextInput } from 'components/TextInput';
+import { Flex } from '@pkg/components/Flex';
+import { Heading } from '@pkg/components/Heading';
+import { TextInput } from '@pkg/components/TextInput';
 import BedrockHeader from './Header';
 
 import type { Props } from './Header.types';

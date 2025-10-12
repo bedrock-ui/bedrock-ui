@@ -10,7 +10,11 @@
     "moduleResolution": "bundler",
     "noEmit": true,
     "strict": true,
-    "target": "es2020"
+    "target": "es2020",
+    "paths": {
+      "@pkg/*": ["*"]
+    }
   },
+
   "include": ["src/**/*.ts", "src/**/*.tsx"]
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
-import { breakpoints } from 'utils/breakpoints';
+import { breakpoints } from '@pkg/utils/breakpoints';
 
 import type { Props, ColProps } from './Grid.types';
 

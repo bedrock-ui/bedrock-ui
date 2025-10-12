@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import React from 'react';
-import { breakpoints } from 'utils/breakpoints';
+import { breakpoints } from '@pkg/utils/breakpoints';
 
 import type { Props } from './Hidden.types';
 

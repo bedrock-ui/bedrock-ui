@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button } from 'components/Button';
-import { Spacing } from 'components/Spacing';
+import { Button } from '@pkg/components/Button';
+import { Spacing } from '@pkg/components/Spacing';
 import BedrockCircularProgress from './CircularProgress';
 
 import type { Props } from './CircularProgress.types';

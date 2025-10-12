@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import clsx from 'clsx';
-import { useClickOutside } from 'hooks/useClickOutside';
+import { useClickOutside } from '@pkg/hooks/useClickOutside';
 
 import type { OptionProps, Props } from './Autocomplete.types';
 

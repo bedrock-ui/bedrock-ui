@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text } from 'components/Text';
+import { Text } from '@pkg/components/Text';
 import BedrockSpacing from './Spacing';
 
 import type { Props } from './Spacing.types';

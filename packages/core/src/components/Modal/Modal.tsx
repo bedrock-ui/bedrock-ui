@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import clsx from 'clsx';
-import { useClickOutside } from 'hooks/useClickOutside';
-import { breakpoints } from 'utils/breakpoints';
+import { useClickOutside } from '@pkg/hooks/useClickOutside';
+import { breakpoints } from '@pkg/utils/breakpoints';
 
 import type { Props } from './Modal.types';
 

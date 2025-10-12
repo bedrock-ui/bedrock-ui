@@ -1,6 +1,6 @@
 import React, { createElement } from 'react';
 import clsx from 'clsx';
-import { breakpoints } from 'utils/breakpoints';
+import { breakpoints } from '@pkg/utils/breakpoints';
 
 import type { Props } from './Heading.types';
 

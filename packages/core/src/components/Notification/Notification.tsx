@@ -1,7 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
-import { Flex } from 'components/Flex';
-import { Text } from 'components/Text';
+import { Flex } from '@pkg/components/Flex';
+import { Text } from '@pkg/components/Text';
 
 import type { Props } from './Notification.types';
 

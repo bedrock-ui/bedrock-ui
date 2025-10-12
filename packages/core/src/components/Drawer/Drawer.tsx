@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import clsx from 'clsx';
-import { useClickOutside } from 'hooks/useClickOutside';
+import { useClickOutside } from '@pkg/hooks/useClickOutside';
 
 import type { Props } from './Drawer.types';
 

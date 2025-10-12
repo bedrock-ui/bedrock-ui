@@ -1,5 +1,5 @@
 import React from 'react';
-import { Spacing } from 'components/Spacing';
+import { Spacing } from '@pkg/components/Spacing';
 import BedrockSkeleton from './Skeleton';
 
 import type { LineProps } from './Skeleton.types';
