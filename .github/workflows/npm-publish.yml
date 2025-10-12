@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 22
           registry-url: 'https://registry.npmjs.org'
       - run: git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
       - run: git config user.name "$GITHUB_ACTOR"
@@ -36,7 +36,7 @@ jobs:
       - run: git commit -m "Updating Version"
       - run: git push "https://$GITHUB_ACTOR:${{ secrets.ACCESS_TOKEN }}@github.com/$GITHUB_REPOSITORY.git" --follow-tags
       - run: git push "https://$GITHUB_ACTOR:${{ secrets.ACCESS_TOKEN }}@github.com/$GITHUB_REPOSITORY.git" --tags
-      - run: npm install -g pnpm
+      - run: npm install -g pnpm@10.18.2
       - run: pnpm install --frozen-lockfile
         working-directory: ./packages/core
       - run: pnpm build
