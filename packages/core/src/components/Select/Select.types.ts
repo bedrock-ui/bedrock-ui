@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import type { Div } from 'types/elements';
+import type { Div } from '@pkg/types/elements';
 
 export interface OptionProps extends Div {
   selected?: boolean;

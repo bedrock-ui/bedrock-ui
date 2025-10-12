@@ -1,4 +1,4 @@
-import type { Header } from 'types/elements';
+import type { Header } from '@pkg/types/elements';
 
 export interface Props extends Header {
   flat?: boolean;

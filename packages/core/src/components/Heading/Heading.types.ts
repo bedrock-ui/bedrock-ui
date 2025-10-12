@@ -1,5 +1,5 @@
 import type { DetailedHTMLProps, HTMLAttributes } from 'react';
-import type { MaybeBreakpointObject } from 'types/breakpoints';
+import type { MaybeBreakpointObject } from '@pkg/types/breakpoints';
 
 type HtmlHeading = DetailedHTMLProps<HTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement>;
 

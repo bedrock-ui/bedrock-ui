@@ -1,4 +1,4 @@
-import type { Li, Ul } from 'types/elements';
+import type { Li, Ul } from '@pkg/types/elements';
 
 export interface ListItemProps extends Li {}
 

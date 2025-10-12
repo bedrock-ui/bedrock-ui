@@ -62,7 +62,7 @@ export { Textarea } from '@pkg/components/Textarea';
 export { TextInput } from '@pkg/components/TextInput';
 
 // constants
-export { theme } from 'constants/theme';
+export { theme } from '@pkg/constants/theme';
 
 // hooks
 export { useClickOutside } from '@pkg/hooks/useClickOutside';

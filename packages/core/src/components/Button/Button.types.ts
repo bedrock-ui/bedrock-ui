@@ -1,4 +1,4 @@
-import type { MaybeBreakpointObject } from 'types/breakpoints';
+import type { MaybeBreakpointObject } from '@pkg/types/breakpoints';
 
 export interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   color?: 'neutral' | 'primary';

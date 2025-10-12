@@ -1,4 +1,4 @@
-import type { Input } from 'types/elements';
+import type { Input } from '@pkg/types/elements';
 
 export interface Props extends Omit<Input, 'onChange'> {
   onChange: (checked: boolean) => void;

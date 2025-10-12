@@ -1,5 +1,5 @@
-import type { MaybeBreakpointObject } from 'types/breakpoints';
-import type { Div } from 'types/elements';
+import type { MaybeBreakpointObject } from '@pkg/types/breakpoints';
+import type { Div } from '@pkg/types/elements';
 
 type AlignItems = 'center' | 'end' | 'flex-start' | 'flex-end' | 'normal' | 'start' | 'stretch';
 

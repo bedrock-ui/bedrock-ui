@@ -1,6 +1,6 @@
 import { IconSelector } from '@tabler/icons-react';
 import React, { useState } from 'react';
-import { theme } from 'constants/theme';
+import { theme } from '@pkg/constants/theme';
 import BedrockSelect from './Select';
 
 import type { Props } from './Select.types';
