@@ -4,4 +4,4 @@ $breakpoints: (
   'desktop': 1024,
 );
 
-@import '@bedrock-ui/core/sass/bedrock-ui.scss';
+@use '@bedrock-ui/core/sass/bedrock-ui.scss';

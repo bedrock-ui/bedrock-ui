@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@bedrock-ui/core':
-        specifier: ^2.5.0
-        version: 2.5.0(react@19.2.0)
+        specifier: ^2.6.0
+        version: 2.6.0(react@19.2.0)
       '@types/node':
         specifier: ^24.7.2
         version: 24.7.2
@@ -42,8 +42,8 @@ importers:
 
 packages:
 
-  '@bedrock-ui/core@2.5.0':
-    resolution: {integrity: sha512-9roTqtdY6XrE28RSEP73g9A50fuTImzQ3k24DEpD/Uwgn5b6c7ltFvC1vZKr+MgPsBfR1NPtlXG4hBZDqt+P0g==}
+  '@bedrock-ui/core@2.6.0':
+    resolution: {integrity: sha512-t14XdyB2b+tpiemw/M3M3S7be3dLHhPRE/pWN2c6tuXix4qWyMLRziGSGjVUSUvyzL6HGrQW7i8v4LZRvr6ueQ==}
     peerDependencies:
       react: ^18 || ^19
 
@@ -485,7 +485,7 @@ packages:
 
 snapshots:
 
-  '@bedrock-ui/core@2.5.0(react@19.2.0)':
+  '@bedrock-ui/core@2.6.0(react@19.2.0)':
     dependencies:
       clsx: 2.1.1
       react: 19.2.0

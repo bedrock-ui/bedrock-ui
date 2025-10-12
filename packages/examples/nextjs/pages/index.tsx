@@ -1,10 +1,11 @@
 import React from 'react';
-import { Flex, Heading } from '@bedrock-ui/core';
+import { Button, Flex, Heading } from '@bedrock-ui/core';
 
 function Home() {
   return (
-    <Flex>
+    <Flex flexDirection="column">
       <Heading level={1}>Hello World</Heading>
+      <Button>Click me</Button>
     </Flex>
   );
 }

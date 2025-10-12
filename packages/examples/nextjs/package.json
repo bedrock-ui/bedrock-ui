@@ -10,7 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@bedrock-ui/core": "^2.5.0",
+    "@bedrock-ui/core": "^2.6.0",
     "@types/node": "^24.7.2",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.1",
