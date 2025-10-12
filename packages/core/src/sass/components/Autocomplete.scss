@@ -1,33 +1,37 @@
-$autocomplete-border-color: $color-neutral-400 !default;
-$autocomplete-border-color-error: $color-error-600 !default;
-$autocomplete-border-color-focus: $color-primary-600 !default;
-$autocomplete-border-color-hover: $color-neutral-600 !default;
-$autocomplete-border-color-success: $color-success-600 !default;
+@use "../theme/colors";
+@use "../theme/shadows";
+@use "../theme/spacing";
 
-$autocomplete-input-color: $font-color-default !default;
-$autocomplete-color-success: $color-success-600 !default;
+$autocomplete-border-color: colors.$color-neutral-400 !default;
+$autocomplete-border-color-error: colors.$color-error-600 !default;
+$autocomplete-border-color-focus: colors.$color-primary-600 !default;
+$autocomplete-border-color-hover: colors.$color-neutral-600 !default;
+$autocomplete-border-color-success: colors.$color-success-600 !default;
 
-$autocomplete-border-radius: $spacing * 1px !default;
+$autocomplete-input-color: colors.$font-color-default !default;
+$autocomplete-color-success: colors.$color-success-600 !default;
 
-$autocomplete-box-shadow-focus: 0px 0px 0px 4px $color-primary-50 !default;
-$autocomplete-box-shadow-focus-error: 0px 0px 0px 4px $color-error-50 !default;
-$autocomplete-box-shadow-focus-success: 0px 0px 0px 4px $color-success-50 !default;
+$autocomplete-border-radius: spacing.$spacing * 1px !default;
 
-$autocomplete-menu-background-color: $color-paper !default;
+$autocomplete-box-shadow-focus: 0px 0px 0px 4px colors.$color-primary-50 !default;
+$autocomplete-box-shadow-focus-error: 0px 0px 0px 4px colors.$color-error-50 !default;
+$autocomplete-box-shadow-focus-success: 0px 0px 0px 4px colors.$color-success-50 !default;
 
-$autocomplete-menu-option-background-color-hover: $color-neutral-100 !default;
-$autocomplete-menu-option-background-color-selected: $color-primary-50 !default;
+$autocomplete-menu-background-color: colors.$color-paper !default;
 
-$autocomplete-menu-option-color: $font-color-default !default;
-$autocomplete-menu-option-color-hover: $color-neutral-900 !default;
-$autocomplete-menu-option-color-selected: $color-neutral-900 !default;
+$autocomplete-menu-option-background-color-hover: colors.$color-neutral-100 !default;
+$autocomplete-menu-option-background-color-selected: colors.$color-primary-50 !default;
+
+$autocomplete-menu-option-color: colors.$font-color-default !default;
+$autocomplete-menu-option-color-hover: colors.$color-neutral-900 !default;
+$autocomplete-menu-option-color-selected: colors.$color-neutral-900 !default;
 
 .autocomplete {
   position: relative;
   width: 100%;
 
   .input-container {
-    background-color: $color-paper;
+    background-color: colors.$color-paper;
     border-color: $autocomplete-border-color;
     border-radius: $autocomplete-border-radius;
     border-style: solid;
@@ -42,16 +46,16 @@ $autocomplete-menu-option-color-selected: $color-neutral-900 !default;
     width: 100%;
 
     input {
-      background-color: $color-paper;
+      background-color: colors.$color-paper;
       border: none;
       color: $autocomplete-input-color;
       font-size: 16px;
       line-height: 24px;
       outline: none;
-      padding-top: $spacing * 2px - 1px;
-      padding-bottom: $spacing * 2px - 1px;
-      padding-left: $spacing * 4px;
-      padding-right: $spacing * 4px;
+      padding-top: spacing.$spacing * 2px - 1px;
+      padding-bottom: spacing.$spacing * 2px - 1px;
+      padding-left: spacing.$spacing * 4px;
+      padding-right: spacing.$spacing * 4px;
       width: 100%;
     }
 
@@ -90,33 +94,33 @@ $autocomplete-menu-option-color-selected: $color-neutral-900 !default;
 
   .menu {
     background-color: $autocomplete-menu-background-color;
-    border: 1px solid $color-neutral-300;
-    border-radius: $spacing * 1px;
+    border: 1px solid colors.$color-neutral-300;
+    border-radius: spacing.$spacing * 1px;
     box-sizing: border-box;
-    box-shadow: $shadow-2;
+    box-shadow: shadows.$shadow-2;
     display: none;
-    max-height: $spacing * 45px;
+    max-height: spacing.$spacing * 45px;
     overflow-y: auto;
     position: absolute;
-    padding: $spacing * 1px;
+    padding: spacing.$spacing * 1px;
     width: 100%;
     z-index: 500;
 
     &.open {
       display: flex;
       flex-direction: column;
-      margin-top: $spacing * 2px;
+      margin-top: spacing.$spacing * 2px;
     }
 
     .option {
-      border-radius: $spacing * 1px;
+      border-radius: spacing.$spacing * 1px;
       color: $autocomplete-menu-option-color;
       cursor: pointer;
       position: relative;
-      padding-top: $spacing * 3px;
-      padding-bottom: $spacing * 3px;
-      padding-left: $spacing * 2px;
-      padding-right: $spacing * 2px;
+      padding-top: spacing.$spacing * 3px;
+      padding-bottom: spacing.$spacing * 3px;
+      padding-left: spacing.$spacing * 2px;
+      padding-right: spacing.$spacing * 2px;
 
       &:hover {
         background-color: $autocomplete-menu-option-background-color-hover;

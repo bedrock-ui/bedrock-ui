@@ -1,16 +1,19 @@
+@use "../mixins/responsive";
+@use "../theme/spacing";
+
 .spacing {
-  @include responsive() using ($key) {
+  @include responsive.responsive() using ($key) {
     @for $i from 1 through 16 {
       &.h-#{$i}#{$key} {
-        height: $spacing * $i + px;
-        min-height: $spacing * $i + px;
+        height: spacing.$spacing * $i + px;
+        min-height: spacing.$spacing * $i + px;
         width: 0;
       }
 
       &.w-#{$i}#{$key} {
         height: 0;
-        min-width: $spacing * $i + px;
-        width: $spacing * $i + px;
+        min-width: spacing.$spacing * $i + px;
+        width: spacing.$spacing * $i + px;
       }
     }
   }

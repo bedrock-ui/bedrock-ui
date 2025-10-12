@@ -1,16 +1,19 @@
-$radio-border-color: $color-neutral-400 !default;
-$radio-border-color-checked: $color-primary-600 !default;
-$radio-border-color-error: $color-error-600 !default;
-$radio-border-color-focus: $color-primary-600 !default;
-$radio-border-color-hover: $color-primary-600 !default;
-$radio-border-color-success: $color-success-600 !default;
+@use "../theme/colors";
+@use "../theme/spacing";
 
-$radio-border-radius: $spacing * 4px !default;
+$radio-border-color: colors.$color-neutral-400 !default;
+$radio-border-color-checked: colors.$color-primary-600 !default;
+$radio-border-color-error: colors.$color-error-600 !default;
+$radio-border-color-focus: colors.$color-primary-600 !default;
+$radio-border-color-hover: colors.$color-primary-600 !default;
+$radio-border-color-success: colors.$color-success-600 !default;
+
+$radio-border-radius: spacing.$spacing * 4px !default;
 $radio-border-size: 1px !default;
 
-$radio-box-shadow-focus: 0px 0px 0px 4px $color-primary-50 !default;
-$radio-box-shadow-focus-error: 0px 0px 0px 4px $color-error-50 !default;
-$radio-box-shadow-focus-success: 0px 0px 0px 4px $color-success-50 !default;
+$radio-box-shadow-focus: 0px 0px 0px 4px colors.$color-primary-50 !default;
+$radio-box-shadow-focus-error: 0px 0px 0px 4px colors.$color-error-50 !default;
+$radio-box-shadow-focus-success: 0px 0px 0px 4px colors.$color-success-50 !default;
 
 $radio-size: 20px !default;
 
@@ -18,7 +21,7 @@ $radio-size: 20px !default;
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
-  height: $radio-size + ($spacing * 1px);
+  height: $radio-size + (spacing.$spacing * 1px);
 
   .radio {
     border-color: $radio-border-color;

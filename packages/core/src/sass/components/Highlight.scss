@@ -1,8 +1,10 @@
-$highlight-background-color: $color-warning-200 !default;
+@use "../theme/colors";
+
+$highlight-background-color: colors.$color-warning-200 !default;
 
 .highlight {
   display: inline-flex;
-  color: $font-color-default;
+  color: colors.$font-color-default;
   white-space: pre-wrap;
 
   mark {

@@ -1,8 +1,12 @@
-$header-background-color: $color-paper !default;
-$header-box-shadow: $shadow-1 !default;
-$header-box-shadow-flat: $shadow-0 !default;
-$header-border-color-flat: $color-neutral-300 !default;
-$header-height: $spacing * 16px !default;
+@use "../theme/colors";
+@use "../theme/shadows";
+@use "../theme/spacing";
+
+$header-background-color: colors.$color-paper !default;
+$header-box-shadow: shadows.$shadow-1 !default;
+$header-box-shadow-flat: shadows.$shadow-0 !default;
+$header-border-color-flat: colors.$color-neutral-300 !default;
+$header-height: spacing.$spacing * 16px !default;
 
 .header {
   background-color: $header-background-color;
@@ -10,10 +14,10 @@ $header-height: $spacing * 16px !default;
   box-sizing: border-box;
   display: flex;
   height: $header-height;
-  padding-top: $spacing * 3px;
-  padding-bottom: $spacing * 3px;
-  padding-left: $spacing * 4px;
-  padding-right: $spacing * 4px;
+  padding-top: spacing.$spacing * 3px;
+  padding-bottom: spacing.$spacing * 3px;
+  padding-left: spacing.$spacing * 4px;
+  padding-right: spacing.$spacing * 4px;
   width: 100%;
 
   &.fixed {

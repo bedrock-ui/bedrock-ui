@@ -1,7 +1,11 @@
-$modal-background-color: $color-paper !default;
-$modal-border-radius: $spacing * 1px !default;
+@use "../mixins/responsive";
+@use "../theme/colors";
+@use "../theme/spacing";
+
+$modal-background-color: colors.$color-paper !default;
+$modal-border-radius: spacing.$spacing * 1px !default;
 $modal-max-height: calc(100vh - 128px) !default;
-$modal-padding: $spacing * 4px !default;
+$modal-padding: spacing.$spacing * 4px !default;
 $modal-width: 400px !default;
 
 .modal {
@@ -30,7 +34,7 @@ $modal-width: 400px !default;
     padding: 0;
   }
 
-  @include responsive() using ($key) {
+  @include responsive.responsive() using ($key) {
     &.full-screen-true#{$key} {
       border-radius: 0px;
       margin: 0;
@@ -52,7 +56,7 @@ $modal-width: 400px !default;
 }
 
 .modal-overlay {
-  background-color: $color-black;
+  background-color: colors.$color-black;
   display: none;
   opacity: 0.75;
   position: fixed;

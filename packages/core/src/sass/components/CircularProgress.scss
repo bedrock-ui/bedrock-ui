@@ -1,15 +1,18 @@
-$circular-progress-color: $color-primary-600 !default;
-$circular-progress-height: $spacing * 20px !default;
-$circular-progress-width: $spacing * 20px !default;
+@use "../theme/colors";
+@use "../theme/spacing";
 
-$circular-progress-height-sm: $spacing * 6px !default;
-$circular-progress-width-sm: $spacing * 6px !default;
+$circular-progress-color: colors.$color-primary-600 !default;
+$circular-progress-height: spacing.$spacing * 20px !default;
+$circular-progress-width: spacing.$spacing * 20px !default;
 
-$circular-progress-height-md: $spacing * 12px !default;
-$circular-progress-width-md: $spacing * 12px !default;
+$circular-progress-height-sm: spacing.$spacing * 6px !default;
+$circular-progress-width-sm: spacing.$spacing * 6px !default;
 
-$circular-progress-height-lg: $spacing * 20px !default;
-$circular-progress-width-lg: $spacing * 20px !default;
+$circular-progress-height-md: spacing.$spacing * 12px !default;
+$circular-progress-width-md: spacing.$spacing * 12px !default;
+
+$circular-progress-height-lg: spacing.$spacing * 20px !default;
+$circular-progress-width-lg: spacing.$spacing * 20px !default;
 
 .circular-progress {
   display: inline-block;
@@ -40,7 +43,7 @@ $circular-progress-width-lg: $spacing * 20px !default;
     height: $circular-progress-height-lg;
 
     div {
-      border-width: $spacing * 2px;
+      border-width: spacing.$spacing * 2px;
     }
   }
 
@@ -80,8 +83,8 @@ $circular-progress-width-lg: $spacing * 20px !default;
 
   &.white {
     div {
-      border-color: $color-white;
-      border-color: $color-white transparent transparent transparent;
+      border-color: colors.$color-white;
+      border-color: colors.$color-white transparent transparent transparent;
     }
   }
 }

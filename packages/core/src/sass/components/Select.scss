@@ -1,33 +1,37 @@
-$select-border-color: $color-neutral-400 !default;
-$select-border-color-error: $color-error-600 !default;
-$select-border-color-focus: $color-primary-600 !default;
-$select-border-color-hover: $color-neutral-600 !default;
-$select-border-color-success: $color-success-600 !default;
+@use "../theme/colors";
+@use "../theme/shadows";
+@use "../theme/spacing";
 
-$select-color-selected-label: $font-color-default !default;
-$select-color-success: $color-success-600 !default;
+$select-border-color: colors.$color-neutral-400 !default;
+$select-border-color-error: colors.$color-error-600 !default;
+$select-border-color-focus: colors.$color-primary-600 !default;
+$select-border-color-hover: colors.$color-neutral-600 !default;
+$select-border-color-success: colors.$color-success-600 !default;
 
-$select-border-radius: $spacing * 1px !default;
+$select-color-selected-label: colors.$font-color-default !default;
+$select-color-success: colors.$color-success-600 !default;
 
-$select-box-shadow-focus: 0px 0px 0px 4px $color-primary-50 !default;
-$select-box-shadow-focus-error: 0px 0px 0px 4px $color-error-50 !default;
-$select-box-shadow-focus-success: 0px 0px 0px 4px $color-success-50 !default;
+$select-border-radius: spacing.$spacing * 1px !default;
 
-$select-menu-background-color: $color-paper !default;
+$select-box-shadow-focus: 0px 0px 0px 4px colors.$color-primary-50 !default;
+$select-box-shadow-focus-error: 0px 0px 0px 4px colors.$color-error-50 !default;
+$select-box-shadow-focus-success: 0px 0px 0px 4px colors.$color-success-50 !default;
 
-$select-menu-option-background-color-hover: $color-neutral-100 !default;
-$select-menu-option-background-color-selected: $color-primary-50 !default;
+$select-menu-background-color: colors.$color-paper !default;
 
-$select-menu-option-color: $font-color-default !default;
-$select-menu-option-color-hover: $color-neutral-900 !default;
-$select-menu-option-color-selected: $color-neutral-900 !default;
+$select-menu-option-background-color-hover: colors.$color-neutral-100 !default;
+$select-menu-option-background-color-selected: colors.$color-primary-50 !default;
+
+$select-menu-option-color: colors.$font-color-default !default;
+$select-menu-option-color-hover: colors.$color-neutral-900 !default;
+$select-menu-option-color-selected: colors.$color-neutral-900 !default;
 
 .select {
   position: relative;
   width: 100%;
 
   .input {
-    background-color: $color-paper;
+    background-color: colors.$color-paper;
     border-color: $select-border-color;
     border-radius: $select-border-radius;
     border-style: solid;
@@ -40,15 +44,15 @@ $select-menu-option-color-selected: $color-neutral-900 !default;
     height: 40px;
     justify-content: space-between;
     line-height: 24px;
-    padding-top: $spacing * 2px - 1px;
-    padding-bottom: $spacing * 2px - 1px;
-    padding-left: $spacing * 4px;
-    padding-right: $spacing * 4px;
+    padding-top: spacing.$spacing * 2px - 1px;
+    padding-bottom: spacing.$spacing * 2px - 1px;
+    padding-left: spacing.$spacing * 4px;
+    padding-right: spacing.$spacing * 4px;
     outline: none;
     width: 100%;
 
     &:has(.right-icon) {
-      padding-right: $spacing * 2px;
+      padding-right: spacing.$spacing * 2px;
     }
 
     .right-icon {
@@ -88,33 +92,33 @@ $select-menu-option-color-selected: $color-neutral-900 !default;
 
   .menu {
     background-color: $select-menu-background-color;
-    border: 1px solid $color-neutral-300;
-    border-radius: $spacing * 1px;
+    border: 1px solid colors.$color-neutral-300;
+    border-radius: spacing.$spacing * 1px;
     box-sizing: border-box;
-    box-shadow: $shadow-2;
+    box-shadow: shadows.$shadow-2;
     display: none;
-    max-height: $spacing * 45px;
+    max-height: spacing.$spacing * 45px;
     overflow-y: auto;
     position: absolute;
-    padding: $spacing * 1px;
+    padding: spacing.$spacing * 1px;
     width: 100%;
     z-index: 500;
 
     &.open {
       display: flex;
       flex-direction: column;
-      margin-top: $spacing * 2px;
+      margin-top: spacing.$spacing * 2px;
     }
 
     .option {
-      border-radius: $spacing * 1px;
+      border-radius: spacing.$spacing * 1px;
       color: $select-menu-option-color;
       cursor: pointer;
       position: relative;
-      padding-top: $spacing * 3px;
-      padding-bottom: $spacing * 3px;
-      padding-left: $spacing * 2px;
-      padding-right: $spacing * 2px;
+      padding-top: spacing.$spacing * 3px;
+      padding-bottom: spacing.$spacing * 3px;
+      padding-left: spacing.$spacing * 2px;
+      padding-right: spacing.$spacing * 2px;
 
       &:hover {
         background-color: $select-menu-option-background-color-hover;

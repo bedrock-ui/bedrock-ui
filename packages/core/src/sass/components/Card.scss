@@ -1,12 +1,16 @@
-$card-background-color: $color-paper !default;
-$card-border-color-flat: $color-neutral-300 !default;
-$card-box-shadow: $shadow-1 !default;
+@use "../theme/colors";
+@use "../theme/shadows";
+@use "../theme/spacing";
+
+$card-background-color: colors.$color-paper !default;
+$card-border-color-flat: colors.$color-neutral-300 !default;
+$card-box-shadow: shadows.$shadow-1 !default;
 
 .card {
   background-color: $card-background-color;
-  border-radius: $spacing * 1px;
+  border-radius: spacing.$spacing * 1px;
   box-shadow: $card-box-shadow;
-  padding: $spacing * 5px;
+  padding: spacing.$spacing * 5px;
 
   &.flat {
     box-shadow: none;

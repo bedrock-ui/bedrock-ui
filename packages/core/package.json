@@ -14,7 +14,8 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
-    }
+    },
+    "./sass/bedrock-ui.scss": "./sass/bedrock-ui.scss"
   },
   "scripts": {
     "build": "tsup && pnpm build:sass",

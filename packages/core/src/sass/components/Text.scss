@@ -1,10 +1,14 @@
-$text-color: $font-color-default !default;
-$text-color-error: $color-error-600 !default;
-$text-color-neutral: $color-neutral-600 !default;
-$text-color-primary: $color-primary-600 !default;
+@use "../mixins/responsive";
+@use "../theme/colors";
+@use "../theme/spacing";
 
-$text-font-size: $spacing * 4px !default;
-$text-line-height: $spacing * 6px !default;
+$text-color: colors.$font-color-default !default;
+$text-color-error: colors.$color-error-600 !default;
+$text-color-neutral: colors.$color-neutral-600 !default;
+$text-color-primary: colors.$color-primary-600 !default;
+
+$text-font-size: spacing.$spacing * 4px !default;
+$text-line-height: spacing.$spacing * 6px !default;
 
 .text {
   color: $text-color;
@@ -21,7 +25,7 @@ $text-line-height: $spacing * 6px !default;
     font-weight: 700;
   }
 
-  @include responsive() using ($key) {
+  @include responsive.responsive() using ($key) {
     &.error#{$key} {
       color: $text-color-error;
     }
@@ -35,7 +39,7 @@ $text-line-height: $spacing * 6px !default;
     }
 
     &.white#{$key} {
-      color: $color-white;
+      color: colors.$color-white;
     }
   }
 }

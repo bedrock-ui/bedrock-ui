@@ -1,12 +1,15 @@
-$tabs-border-bottom-color: $color-neutral-200 !default;
-$tabs-border-bottom-color-active: $color-primary-600 !default;
+@use "../theme/colors";
+@use "../theme/spacing";
+
+$tabs-border-bottom-color: colors.$color-neutral-200 !default;
+$tabs-border-bottom-color-active: colors.$color-primary-600 !default;
 $tabs-border-bottom-width: 2px !default;
 
 .tabs {
   border-bottom-color: $tabs-border-bottom-color;
   border-bottom-style: solid;
   border-bottom-width: $tabs-border-bottom-width;
-  color: $font-color-default;
+  color: colors.$font-color-default;
   display: flex;
 
   .tab {
@@ -20,10 +23,10 @@ $tabs-border-bottom-width: 2px !default;
     height: 40px;
     margin-bottom: -2px;
     line-height: 24px;
-    padding-top: $spacing * 2px;
-    padding-bottom: $spacing * 2px;
-    padding-left: $spacing * 4px;
-    padding-right: $spacing * 4px;
+    padding-top: spacing.$spacing * 2px;
+    padding-bottom: spacing.$spacing * 2px;
+    padding-left: spacing.$spacing * 4px;
+    padding-right: spacing.$spacing * 4px;
 
     &.active {
       border-bottom-color: $tabs-border-bottom-color-active;

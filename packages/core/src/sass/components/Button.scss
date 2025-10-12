@@ -1,38 +1,43 @@
-$button-border-color: $color-primary-600 !default;
-$button-background-color-disabled: $color-neutral-200 !default;
-$button-color-disabled: $color-neutral-400 !default;
+@use "../mixins/responsive";
+@use "../theme/colors";
+@use "../theme/spacing";
+@use "../theme/typography";
 
-$button-background-color-contained: $color-primary-600 !default;
-$button-background-color-contained-neutral: $color-neutral-200 !default;
-$button-background-color-contained-hover: $color-primary-800 !default;
-$button-background-color-contained-hover-neutral: $color-neutral-300 !default;
+$button-border-color: colors.$color-primary-600 !default;
+$button-background-color-disabled: colors.$color-neutral-200 !default;
+$button-color-disabled: colors.$color-neutral-400 !default;
 
-$button-background-color-outlined: $color-paper !default;
+$button-background-color-contained: colors.$color-primary-600 !default;
+$button-background-color-contained-neutral: colors.$color-neutral-200 !default;
+$button-background-color-contained-hover: colors.$color-primary-800 !default;
+$button-background-color-contained-hover-neutral: colors.$color-neutral-300 !default;
+
+$button-background-color-outlined: colors.$color-paper !default;
 $button-background-color-text: transparent !default;
 
-$button-color-contained: $color-white !default;
-$button-color-contained-neutral: $color-neutral-900 !default;
-$button-color-outlined: $color-primary-600 !default;
-$button-color-text: $color-primary-600 !default;
+$button-color-contained: colors.$color-white !default;
+$button-color-contained-neutral: colors.$color-neutral-900 !default;
+$button-color-outlined: colors.$color-primary-600 !default;
+$button-color-text: colors.$color-primary-600 !default;
 
 .button {
   align-items: center;
   border: none;
-  border-radius: $spacing * 1px;
+  border-radius: spacing.$spacing * 1px;
   box-sizing: border-box;
   cursor: pointer;
   display: inline-flex;
-  font-size: $font-size-default;
+  font-size: typography.$font-size-default;
   font-weight: 500;
-  height: $spacing * 10px;
-  line-height: $spacing * 6px;
+  height: spacing.$spacing * 10px;
+  line-height: spacing.$spacing * 6px;
   outline: none;
-  padding-top: $spacing * 2px;
-  padding-bottom: $spacing * 2px;
-  padding-left: $spacing * 4px;
-  padding-right: $spacing * 4px;
+  padding-top: spacing.$spacing * 2px;
+  padding-bottom: spacing.$spacing * 2px;
+  padding-left: spacing.$spacing * 4px;
+  padding-right: spacing.$spacing * 4px;
 
-  @include responsive() using ($key) {
+  @include responsive.responsive() using ($key) {
     &.contained#{$key} {
       background-color: $button-background-color-contained;
       color: $button-color-contained;
@@ -59,7 +64,7 @@ $button-color-text: $color-primary-600 !default;
       border-width: 1px;
 
       &:hover {
-        background-color: $color-primary-50;
+        background-color: colors.$color-primary-50;
       }
     }
 
@@ -68,7 +73,7 @@ $button-color-text: $color-primary-600 !default;
       color: $button-color-text;
 
       &:hover {
-        background-color: $color-primary-50;
+        background-color: colors.$color-primary-50;
       }
     }
   }
@@ -81,6 +86,6 @@ $button-color-text: $color-primary-600 !default;
   }
 
   &.square {
-    padding: $spacing * 2px;
+    padding: spacing.$spacing * 2px;
   }
 }

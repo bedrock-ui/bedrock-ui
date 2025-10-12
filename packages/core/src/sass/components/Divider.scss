@@ -1,5 +1,8 @@
-$divider-color: $color-neutral-400 !default;
-$divider-color-light: $color-neutral-200 !default;
+@use "../mixins/responsive";
+@use "../theme/colors";
+
+$divider-color: colors.$color-neutral-400 !default;
+$divider-color-light: colors.$color-neutral-200 !default;
 $divider-size: 1px !default;
 
 .divider {
@@ -8,7 +11,7 @@ $divider-size: 1px !default;
   border-bottom-width: $divider-size;
   width: 100%;
 
-  @include responsive() using ($key) {
+  @include responsive.responsive() using ($key) {
     &.dashed#{$key} {
       border-style: dashed;
     }

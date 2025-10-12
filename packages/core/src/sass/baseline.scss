@@ -1,12 +1,12 @@
-@import 'theme/colors.scss';
-@import 'theme/typography.scss';
+@use 'theme/colors.scss';
+@use 'theme/typography.scss';
 
 html {
   -webkit-font-smoothing: antialiased;
 }
 
 body {
-  background-color: $color-paper;
+  background-color: colors.$color-paper;
   margin: 0;
 }
 
@@ -26,5 +26,5 @@ h6,
 input,
 table,
 textarea {
-  font-family: $font-family-default;
+  font-family: typography.$font-family-default;
 }

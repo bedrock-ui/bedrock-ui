@@ -1,5 +1,8 @@
-$drawer-background-color: $color-paper !default;
-$drawer-box-shadow: $shadow-1 !default;
+@use "../theme/colors";
+@use "../theme/shadows";
+
+$drawer-background-color: colors.$color-paper !default;
+$drawer-box-shadow: shadows.$shadow-1 !default;
 $drawer-width: 320px !default;
 
 .drawer {
@@ -30,7 +33,7 @@ $drawer-width: 320px !default;
 }
 
 .drawer-overlay {
-  background-color: $color-black;
+  background-color: colors.$color-black;
   display: none;
   opacity: 0.75;
   position: fixed;

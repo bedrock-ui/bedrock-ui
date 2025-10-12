@@ -1,35 +1,38 @@
-$badge-color-filled: $color-white !default;
+@use "../theme/colors";
+@use "../theme/spacing";
 
-$badge-background-color-error-filled: $color-error-600 !default;
-$badge-background-color-info-filled: $color-info-600 !default;
-$badge-background-color-neutral-filled: $color-neutral-600 !default;
-$badge-background-color-primary-filled: $color-primary-600 !default;
-$badge-background-color-success-filled: $color-success-600 !default;
-$badge-background-color-warning-filled: $color-warning-600 !default;
+$badge-color-filled: colors.$color-white !default;
 
-$badge-color-error-light: $color-error-600 !default;
-$badge-color-info-light: $color-info-600 !default;
-$badge-color-neutral-light: $color-neutral-600 !default;
-$badge-color-primary-light: $color-primary-600 !default;
-$badge-color-success-light: $color-success-600 !default;
-$badge-color-warning-light: $color-warning-600 !default;
+$badge-background-color-error-filled: colors.$color-error-600 !default;
+$badge-background-color-info-filled: colors.$color-info-600 !default;
+$badge-background-color-neutral-filled: colors.$color-neutral-600 !default;
+$badge-background-color-primary-filled: colors.$color-primary-600 !default;
+$badge-background-color-success-filled: colors.$color-success-600 !default;
+$badge-background-color-warning-filled: colors.$color-warning-600 !default;
 
-$badge-background-color-error-light: $color-error-50 !default;
-$badge-background-color-info-light: $color-info-50 !default;
-$badge-background-color-neutral-light: $color-neutral-50 !default;
-$badge-background-color-primary-light: $color-primary-50 !default;
-$badge-background-color-success-light: $color-success-50 !default;
-$badge-background-color-warning-light: $color-warning-50 !default;
+$badge-color-error-light: colors.$color-error-600 !default;
+$badge-color-info-light: colors.$color-info-600 !default;
+$badge-color-neutral-light: colors.$color-neutral-600 !default;
+$badge-color-primary-light: colors.$color-primary-600 !default;
+$badge-color-success-light: colors.$color-success-600 !default;
+$badge-color-warning-light: colors.$color-warning-600 !default;
+
+$badge-background-color-error-light: colors.$color-error-50 !default;
+$badge-background-color-info-light: colors.$color-info-50 !default;
+$badge-background-color-neutral-light: colors.$color-neutral-50 !default;
+$badge-background-color-primary-light: colors.$color-primary-50 !default;
+$badge-background-color-success-light: colors.$color-success-50 !default;
+$badge-background-color-warning-light: colors.$color-warning-50 !default;
 
 .badge {
-  border-radius: $spacing * 6px;
+  border-radius: spacing.$spacing * 6px;
   display: inline-flex;
-  height: $spacing * 6px;
-  font-size: $spacing * 3px;
+  height: spacing.$spacing * 6px;
+  font-size: spacing.$spacing * 3px;
   font-weight: 700;
-  line-height: $spacing * 6px;
-  padding-left: $spacing * 3px;
-  padding-right: $spacing * 3px;
+  line-height: spacing.$spacing * 6px;
+  padding-left: spacing.$spacing * 3px;
+  padding-right: spacing.$spacing * 3px;
   text-transform: uppercase;
 
   &.filled {

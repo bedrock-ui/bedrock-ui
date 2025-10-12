@@ -1,9 +1,11 @@
-$clickable-area-background-color-hover-error: $color-error-50 !default;
-$clickable-area-background-color-hover-info: $color-info-50 !default;
-$clickable-area-background-color-hover-neutral: $color-neutral-50 !default;
-$clickable-area-background-color-hover-primary: $color-primary-50 !default;
-$clickable-area-background-color-hover-success: $color-success-50 !default;
-$clickable-area-background-color-hover-warning: $color-warning-50 !default;
+@use "../theme/colors";
+
+$clickable-area-background-color-hover-error: colors.$color-error-50 !default;
+$clickable-area-background-color-hover-info: colors.$color-info-50 !default;
+$clickable-area-background-color-hover-neutral: colors.$color-neutral-50 !default;
+$clickable-area-background-color-hover-primary: colors.$color-primary-50 !default;
+$clickable-area-background-color-hover-success: colors.$color-success-50 !default;
+$clickable-area-background-color-hover-warning: colors.$color-warning-50 !default;
 
 .clickable-area {
   cursor: pointer;

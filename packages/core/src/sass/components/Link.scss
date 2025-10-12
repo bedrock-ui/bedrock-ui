@@ -1,4 +1,6 @@
-$link-color: $color-primary-600 !default;
+@use "../theme/colors";
+
+$link-color: colors.$color-primary-600 !default;
 
 .link {
   color: $link-color;

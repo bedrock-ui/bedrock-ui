@@ -1,15 +1,18 @@
-$switch-background-color: $color-neutral-200 !default;
-$switch-background-color-checked: $color-primary-600 !default;
-$switch-background-color-error: $color-error-600 !default;
-$switch-background-color-success: $color-success-600 !default;
+@use "../theme/colors";
+@use "../theme/spacing";
 
-$switch-border-color: $color-neutral-300 !default;
-$switch-border-color-checked: $color-primary-600 !default;
-$switch-border-color-error: $color-error-600 !default;
-$switch-border-color-success: $color-success-600 !default;
+$switch-background-color: colors.$color-neutral-200 !default;
+$switch-background-color-checked: colors.$color-primary-600 !default;
+$switch-background-color-error: colors.$color-error-600 !default;
+$switch-background-color-success: colors.$color-success-600 !default;
 
-$switch-height: $spacing * 5px !default;
-$switch-width: $spacing * 10px !default;
+$switch-border-color: colors.$color-neutral-300 !default;
+$switch-border-color-checked: colors.$color-primary-600 !default;
+$switch-border-color-error: colors.$color-error-600 !default;
+$switch-border-color-success: colors.$color-success-600 !default;
+
+$switch-height: spacing.$spacing * 5px !default;
+$switch-width: spacing.$spacing * 10px !default;
 
 $switch-thumb-height: $switch-height - 6px !default;
 $switch-thumb-width: $switch-height - 6px !default;
@@ -35,7 +38,7 @@ $switch-thumb-width: $switch-height - 6px !default;
     width: $switch-width;
 
     .thumb {
-      background-color: $color-white;
+      background-color: colors.$color-white;
       border-color: $switch-border-color;
       border-radius: 32px;
       border-style: solid;

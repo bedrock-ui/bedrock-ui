@@ -1,5 +1,7 @@
+@use "../mixins/responsive";
+
 .hidden {
-  @include responsive() using ($key) {
+  @include responsive.responsive() using ($key) {
     &.true#{$key} {
       display: none;
     }

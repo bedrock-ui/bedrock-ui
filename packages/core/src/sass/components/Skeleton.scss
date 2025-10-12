@@ -1,8 +1,11 @@
-$skeleton-background-color: $color-neutral-200 !default;
+@use "../theme/colors";
+@use "../theme/spacing";
+
+$skeleton-background-color: colors.$color-neutral-200 !default;
 
 @keyframes skeletonBackgroundColorAnimation {
   0% {
-    background: $color-neutral-100;
+    background: colors.$color-neutral-100;
   }
 
   100% {
@@ -21,19 +24,19 @@ $skeleton-background-color: $color-neutral-200 !default;
   }
 
   &.circle {
-    border-radius: $spacing * 6px;
-    height: $spacing * 12px;
-    width: $spacing * 12px;
+    border-radius: spacing.$spacing * 6px;
+    height: spacing.$spacing * 12px;
+    width: spacing.$spacing * 12px;
   }
 
   &.line {
-    border-radius: $spacing * 2px;
+    border-radius: spacing.$spacing * 2px;
     width: 100%;
 
     @for $i from 1 through 16 {
       &.h-#{$i} {
-        min-height: $spacing * $i + px;
-        height: $spacing * $i + px;
+        min-height: spacing.$spacing * $i + px;
+        height: spacing.$spacing * $i + px;
       }
     }
   }

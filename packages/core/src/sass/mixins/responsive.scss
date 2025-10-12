@@ -1,9 +1,9 @@
-@import '../theme/breakpoints.scss';
+@use '../theme/breakpoints.scss';
 
 @mixin responsive() {
   @content ("");
 
-  @each $key, $value in $breakpoints {
+  @each $key, $value in breakpoints.$breakpoints {
     @media (min-width: #{$value}px) {
       @content ("-#{$key}");
     }

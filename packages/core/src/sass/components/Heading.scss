@@ -1,5 +1,9 @@
-$heading-color: $font-color-default !default;
-$heading-color-primary: $color-primary-600 !default;
+@use "../mixins/responsive";
+@use "../theme/colors";
+@use "../theme/spacing";
+
+$heading-color: colors.$font-color-default !default;
+$heading-color-primary: colors.$color-primary-600 !default;
 $heading-font-size-multiplier: 10 !default;
 $heading-font-weight: 500 !default;
 
@@ -12,43 +16,43 @@ $heading-font-weight: 500 !default;
     font-weight: 700;
   }
 
-  @include responsive() using ($key) {
+  @include responsive.responsive() using ($key) {
     &.primary#{$key} {
       color: $heading-color-primary;
     }
 
     &.white#{$key} {
-      color: $color-white;
+      color: colors.$color-white;
     }
   }
 }
 
 h1.heading {
-  font-size: $heading-font-size-multiplier * $spacing * 1px;
-  line-height: ($heading-font-size-multiplier * $spacing * 1px) + ($spacing * 1px);
+  font-size: $heading-font-size-multiplier * spacing.$spacing * 1px;
+  line-height: ($heading-font-size-multiplier * spacing.$spacing * 1px) + (spacing.$spacing * 1px);
 }
 
 h2.heading {
-  font-size: ($heading-font-size-multiplier - 1) * $spacing * 1px;
-  line-height: ($heading-font-size-multiplier - 1) * $spacing * 1px + $spacing * 1px;
+  font-size: ($heading-font-size-multiplier - 1) * spacing.$spacing * 1px;
+  line-height: ($heading-font-size-multiplier - 1) * spacing.$spacing * 1px + spacing.$spacing * 1px;
 }
 
 h3.heading {
-  font-size: ($heading-font-size-multiplier - 2) * $spacing * 1px;
-  line-height: ($heading-font-size-multiplier - 2) * $spacing * 1px + $spacing * 1px;
+  font-size: ($heading-font-size-multiplier - 2) * spacing.$spacing * 1px;
+  line-height: ($heading-font-size-multiplier - 2) * spacing.$spacing * 1px + spacing.$spacing * 1px;
 }
 
 h4.heading {
-  font-size: ($heading-font-size-multiplier - 3) * $spacing * 1px;
-  line-height: ($heading-font-size-multiplier - 3) * $spacing * 1px + $spacing * 1px;
+  font-size: ($heading-font-size-multiplier - 3) * spacing.$spacing * 1px;
+  line-height: ($heading-font-size-multiplier - 3) * spacing.$spacing * 1px + spacing.$spacing * 1px;
 }
 
 h5.heading {
-  font-size: ($heading-font-size-multiplier - 4) * $spacing * 1px;
-  line-height: ($heading-font-size-multiplier - 4) * $spacing * 1px + $spacing * 1px;
+  font-size: ($heading-font-size-multiplier - 4) * spacing.$spacing * 1px;
+  line-height: ($heading-font-size-multiplier - 4) * spacing.$spacing * 1px + spacing.$spacing * 1px;
 }
 
 h6.heading {
-  font-size: ($heading-font-size-multiplier - 5) * $spacing * 1px;
-  line-height: ($heading-font-size-multiplier - 5) * $spacing * 1px + $spacing * 1px;
+  font-size: ($heading-font-size-multiplier - 5) * spacing.$spacing * 1px;
+  line-height: ($heading-font-size-multiplier - 5) * spacing.$spacing * 1px + spacing.$spacing * 1px;
 }
